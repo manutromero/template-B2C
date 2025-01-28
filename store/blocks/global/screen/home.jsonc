@@ -18,8 +18,6 @@
     },
     "children": [
       "list-context.image-list#banner-desktop",
-      "wrapper-greeting",
-      "wrapper-product-context",
       "flex-layout.row#shopByCategorySection",
       "flex-layout.row#wrapper-slider",
       "__fold__.desktop",
@@ -28,20 +26,6 @@
       "flex-layout.row#shopByBrandSection",
       "flex-layout.row#wrapper-banners-promise-home"
     ]
-  },
-  "wrapper-greeting": {
-    "props": {
-      "blockClass": "wrapper-greeting",
-      "name": "Manuel"
-    },
-    "children": [
-      "rich-text#title-greeting"
-    ]
-  },
-  "rich-text#title-greeting": {
-    "props": {
-      "text": "¡Hola, desde rich text"
-    }
   },
   "responsive-layout.mobile#Home": {
     "children": [

@@ -3,7 +3,6 @@
     "title": "Contenedor producto desktop",
     "children": [
       "flex-layout.row#product-breadcrumb",
-      "wrapper-product-context",
       "flex-layout.row#product-main",
       "tab-layout#description-and-specification",
       "__fold__.mobile",
