@@ -61,7 +61,8 @@
     "vtex.my-orders-app": "3.x",
     "vtex.my-authentication": "1.x",
     "vtex.store-form": "0.x",
-    "vtex.product-comparison": "0.x"
+    "vtex.product-comparison": "0.x",
+    "qamkpmovilidadco.frontend-app": "0.x"
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x"

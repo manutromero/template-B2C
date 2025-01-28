@@ -3,13 +3,13 @@
     "title": "Contenedor producto desktop",
     "children": [
       "flex-layout.row#product-breadcrumb",
+      "wrapper-product-context",
       "flex-layout.row#product-main",
       "tab-layout#description-and-specification",
       "__fold__.mobile",
       "flex-layout.row#wrapper-slider-pdp"
     ]
   },
-  /*Breadcrumb*/
   "flex-layout.row#product-breadcrumb": {
     "title": "breadcrumb pdp",
     "props": {
