@@ -1,0 +1,27 @@
+{
+  "store.custom#promotion": {
+      "children": [
+          "search-result-layout.customQuery#promotion"
+      ]
+  },
+  "search-result-layout.customQuery#promotion": {
+      "props": {
+          "querySchema": {
+              "orderByField": "OrderByTopSaleDESC",
+              "facetsBehavior": "Dynamic",
+              "simulationBehavior": "default",
+              "installmentCriteria": "MAX_WITHOUT_INTEREST",
+              "__unstableProductOriginVtex": true,
+              "maxItemsPerPage": 12,
+              "mapField": "productClusterIds",
+              "queryField": "/139",
+              "skusFilter": "ALL_AVAILABLE",
+              "hideUnavailableItems": false
+          }
+      },
+      "blocks": [
+          "search-result-layout.desktop.product-comparison#desktop__search-result--layout",
+          "search-result-layout.mobile#mobile__search-result--layout"
+      ]
+  }
+}

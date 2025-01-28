@@ -1,0 +1,335 @@
+.orderPlacedWrapper {
+    padding-top: 2rem;
+}
+
+.orderPlacedHeader {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.section--confirmation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.confirmationMessage {
+    font-size: 16px;
+    font-family: 'latoRegular';
+    font-weight: 400;
+    line-height: 19.2px;
+    color: var(--darkMid);
+    margin-top: 0;
+    text-align: left;
+}
+
+.confirmationTitle {
+    font-family: 'latoRegular';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: center;
+    color: var(--dark);
+    margin-top: 0;
+}
+
+.orderNumber {
+    font-family: 'latoRegular';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.orderNumber::before {
+    content: "Pedido";
+    color: var(--dark);
+}
+
+.orderPlacedMainWrapper {
+    margin-top: -3rem;
+}
+
+.customerInfoListName,
+.customerInfoListEmail,
+.customerInfoListPhone {
+    color: var(--darkMid);
+    font-family: 'latoRegular';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.customerInfoListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.packageHeader {
+    display: none;
+}
+
+.package--delivery {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.packageAddressWrapper {
+    background-color: var(--primaryLight);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 0 24px 12px 24px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.addressContainer {
+    font-family: 'latoRegular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: var(--darkMid);
+}
+
+.orderPaymentItem {
+    padding-bottom: 0;
+}
+
+.section--paymentMethods {
+    border-bottom: 0;
+    border-color: var(--primaryLight);
+}
+
+.paymentGroup {
+    font-family: 'latoRegular';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: left;
+    color: var(--dark);
+    margin-bottom: 0;
+}
+
+.totalListItem .totalListItemLabel,
+.totalListItem .totalListItemValue {
+    font-family: 'latoRegular';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: left;
+    color: var(--dark);
+}
+
+.totalListItem--Discounts .totalListItemLabel,
+.totalListItem--Items .totalListItemLabel,
+.totalListItem--Discounts .totalListItemValue,
+.totalListItem--Items .totalListItemValue {
+    font-family: 'latoRegular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: var(--darkMid);
+}
+
+.totalList {
+    margin-top: 1rem;
+    padding: 0rem 1.1rem;
+}
+
+.productList {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.productWrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.productListItem {
+    height: 88px;
+    gap: 16px;
+    border-radius: 16px;
+    background: var(--primaryLight);
+    border: 2px solid var(--primaryLight);
+    padding: 2px;
+    box-sizing: content-box;
+}
+
+.productImageColumn {
+    margin-bottom: 0;
+    width: 20%;
+    border-radius: 16px;
+    margin-top: -2px;
+}
+
+.productImageWrapper {
+    width: 88px;
+    height: 88px;
+    border-radius: 16px;
+}
+
+.productName {
+    font-family: 'latoRegular';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+    color: var(--darkMid);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.productInfoColumn {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 20px;
+}
+
+.productQuantity {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: 'latoRegular';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: center;
+    color: var(--primaryLight);
+    height: 22px;
+    border-radius: 16px;
+    background-color: var(--primary);
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.productPrice {
+    font-family: 'latoRegular';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+    color: var(--primary);
+    width: 68%;
+    margin-top: -45px;
+}
+
+.section--deliveryPackages {
+    border-bottom: none;
+    border-color: none;
+}
+
+.customerInfoListDocument {
+    display: none;
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+    .section--confirmation {
+        width: 638px;
+        justify-content: flex-start;
+    }
+
+    .orderWrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .packageAddressWrapper,
+    .packageHeaderColumn {
+        width: 417px;
+    }
+
+    .section--deliveryPackages {
+        width: 854px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .productList {
+        width: 417px;
+        margin-top: -50px;
+        height: 200px;
+        overflow-y: auto;
+    }
+
+    .package--delivery {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .totalList {
+        margin-top: 0rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 417px;
+    }
+
+    .totalListItem {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .productPrice {
+        margin-top: -25px;
+        width: 74%;
+    }
+
+    .productName {
+        margin: 0;
+    }
+
+    .productQuantity {
+        position: relative;
+        background-color: transparent;
+        color: var(--darkMid);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        margin-top: 7px;
+    }
+
+    .productInfoColumn {
+        margin-left: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .productName {
+        color: var(--dark);
+        margin-top: 10px;
+    }
+
+    .productListItem {
+        margin-bottom: 0.5rem;
+    }
+}

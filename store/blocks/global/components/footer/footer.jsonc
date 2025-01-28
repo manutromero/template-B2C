@@ -1,0 +1,162 @@
+{
+	"logo#logo-white": {
+		"title": "Logo white",
+		"props": {
+			"title": "Logo",
+			"href": "/",
+			"url": "/arquivos/Logo-ITG-White.svg",
+			"width": 161,
+			"height": 72,
+			"blockClass": "logo-white"
+		}
+	},
+
+	"rich-text#footer-text": {
+		"title": "middle footer text",
+		"props": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam felis et orci aliquam mollis. Nam dui ipsum, malesuada non convallis et, vestibulum quis ipsum. Praesent aliquet vestibulum massa sed ornare. Sed lobortis fringilla dignissim. Fusce sollicitudin tincidunt dui, in vehicula eros mollis a. Sed euismod libero nec est tincidunt, eget sollicitudin eros efficitur. ",
+			"blockClass": "footer-text",
+			"textAlignment": "CENTER"
+		}
+	},
+
+	//term and conditions
+	"flex-layout.col#footer__links": {
+		"title": "footer links container",
+		"children": [
+			"flex-layout.col#footer__terms",
+			"flex-layout.col#footer__suggestions",
+			"flex-layout.col#footer__catalogue"
+		],
+		"props": {
+			"blockClass": "footer__links",
+			"rowGap": 7
+		}
+	},
+
+	//footer terms
+	"flex-layout.col#footer__terms": {
+		"title": "footer term and conditions link",
+		"children": ["link#footer__terms"],
+		"props": { "blockClass": "footer__terms" }
+	},
+	"link#footer__terms": {
+		"props": {
+			"label": "Términos y condiciones",
+			"href": "/terminos-y-condiciones",
+			"blockClass": "footer__terms"
+		}
+	},
+
+	//footer suggestions
+	"flex-layout.col#footer__suggestions": {
+		"title": "footer suggestions link",
+		"children": ["link#footer__suggestions"],
+		"props": {
+			"blockClass": "footer__suggestions"
+		}
+	},
+	"link#footer__suggestions": {
+		"props": {
+			"label": "Sugerencias y reclamos",
+			"href": "/sugerencias-y-reclamos",
+			"blockClass": "footer__suggestions"
+		}
+	},
+
+	// footer catalogue
+	"flex-layout.col#footer__catalogue": {
+		"title": "footer catalogue link",
+		"children": ["link#footer__catalogue"],
+		"props": { "blockClass": "footer__catalogue" }
+	},
+
+	"link#footer__catalogue": {
+		"props": {
+			"label": "Catálogo del mes",
+			"href": "/",
+			"blockClass": "footer__catalogue"
+		}
+	},
+
+	//footer rights reserved
+	"flex-layout.col#footer__rights-reserved": {
+		"title": "footer rights reserved",
+		"children": [
+			"flex-layout.col#footer__watermark",
+			"flex-layout.col#footer__brand-logos"
+		],
+		"props": {
+			"blockClass": "footer__rights-reserved",
+			"horizontalAlign": "center"
+		}
+	},
+
+	//footer watermark
+	"flex-layout.col#footer__watermark": {
+		"title": "footer watermark container",
+		"children": ["rich-text#watermark"],
+		"props": {
+			"blockClass": "footer__watermark"
+		}
+	},
+
+	"rich-text#watermark": {
+		"title": "footer watermark",
+		"props": {
+			"text": "© TODOS LOS DERECHOS RESERVADOS",
+			"blockClass": "watermark"
+		}
+	},
+
+	// footer brand
+	"flex-layout.col#footer__brand-logos": {
+		"title": "footer brand logos",
+		"children": [
+			"rich-text#powered-text",
+			"flex-layout.row#footer__brand-logos"
+		],
+		"props": {
+			"blockClass": "footer__brand-logos",
+			"horizontalAlign": "center"
+		}
+	},
+
+	"rich-text#powered-text": {
+		"title": "footer brand logos text",
+		"props": { "text": "Powered by:", "blockClass": "powered-text" }
+	},
+
+	//footer brand logos container
+	"flex-layout.row#footer__brand-logos": {
+		"title": "logos container",
+		"children": ["logo#itg-logo", "logo#vtex-logo"],
+		"props": {
+			"blockClass": "footer__brand-logos"
+		}
+	},
+
+	"logo#itg-logo": {
+		"title": "Itg logo",
+		"props": {
+			"title": "Logo",
+			"href": "/",
+			"url": "/arquivos/itglobers-logo.svg",
+			"width": 125,
+			"height": 55,
+			"blockClass": "itg-logo"
+		}
+	},
+
+	"logo#vtex-logo": {
+		"title": "Vtex logo",
+		"props": {
+			"title": "Logo",
+			"href": "/",
+			"url": "/arquivos/vtex-logo.svg",
+			"width": 125,
+			"height": 55,
+			"blockClass": "vtex-logo"
+		}
+	}
+}

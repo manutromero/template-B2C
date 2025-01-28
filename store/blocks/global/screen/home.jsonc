@@ -1,0 +1,69 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop#Home",
+      "responsive-layout.mobile#Home",
+      "back-to-top-button"
+    ]
+  },
+  "back-to-top-button": {
+    "props": {
+      "displayThreshold": 800,
+      "display": "caret-icon"
+    }
+  },
+  "responsive-layout.desktop#Home": {
+    "props": {
+      "blockClass": "Wrapper-home"
+    },
+    "children": [
+      "list-context.image-list#banner-desktop",
+      "wrapper-greeting",
+      "wrapper-product-context",
+      "flex-layout.row#shopByCategorySection",
+      "flex-layout.row#wrapper-slider",
+      "__fold__.desktop",
+      "flex-layout.row#wrapper-banners-sections-home",
+      "flex-layout.row#wrapper-slider",
+      "flex-layout.row#shopByBrandSection",
+      "flex-layout.row#wrapper-banners-promise-home"
+    ]
+  },
+  "wrapper-greeting": {
+    "props": {
+      "blockClass": "wrapper-greeting",
+      "name": "Manuel"
+    },
+    "children": [
+      "rich-text#title-greeting"
+    ]
+  },
+  "rich-text#title-greeting": {
+    "props": {
+      "text": "¡Hola, desde rich text"
+    }
+  },
+  "responsive-layout.mobile#Home": {
+    "children": [
+      "list-context.image-list#banner-phone",
+      "flex-layout.row#shopByCategorySection",
+      "__fold__.mobile",
+      "flex-layout.row#wrapper-slider",
+      "flex-layout.row#wrapper-banners-sections-home",
+      "flex-layout.row#shopByBrandSection",
+      "flex-layout.row#wrapper-banners-promise-home"
+    ]
+  },
+  "slider-layout#banners-home-desktop": {
+    "title": "Banners Home Desktop",
+    "props": {
+      "blockClass": "wrapper-banners-home",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  }
+}

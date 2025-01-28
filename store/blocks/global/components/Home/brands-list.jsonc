@@ -1,0 +1,122 @@
+{
+	"link#brand-01": {
+		"title": "Link Marca 1",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": "wrapper-universal-slider-section"
+		},
+		"children": ["image#image-brand-01"]
+	},
+	"image#image-brand-01": {
+		"title": "Imagen marca 1",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#brand-02": {
+		"title": "Link Marca 2",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": "wrapper-universal-slider-section"
+		},
+		"children": ["image#image-brand-02"]
+	},
+	"image#image-brand-02": {
+		"title": "Imagen marca 2",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#brand-03": {
+		"title": "Link Marca 3",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": "wrapper-universal-slider-section"
+		},
+		"children": ["image#image-brand-03"]
+	},
+	"image#image-brand-03": {
+		"title": "Imagen marca 3",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#brand-04": {
+		"title": "Link Marca 4",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": "wrapper-universal-slider-section"
+		},
+		"children": ["image#image-brand-04"]
+	},
+	"image#image-brand-04": {
+		"title": "Imagen marca 4",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#brand-05": {
+		"title": "Link Marca 5",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": "wrapper-universal-slider-section"
+		},
+		"children": ["image#image-brand-05"]
+	},
+	"image#image-brand-05": {
+		"title": "Imagen marca 5",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#brand-06": {
+		"title": "Link Marca 6",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": "wrapper-universal-slider-section"
+		},
+		"children": ["image#image-brand-06"]
+	},
+	"image#image-brand-06": {
+		"title": "Imagen marca 6",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#brand-07": {
+		"title": "Link Marca 7",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": "wrapper-universal-slider-section"
+		},
+		"children": ["image#image-brand-07"]
+	},
+	"image#image-brand-07": {
+		"title": "Imagen marca 7",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#brand-08": {
+		"title": "Link Marca 8",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": "wrapper-universal-slider-section"
+		},
+		"children": ["image#image-brand-08"]
+	},
+	"image#image-brand-08": {
+		"title": "Imagen marca 8",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	}
+}

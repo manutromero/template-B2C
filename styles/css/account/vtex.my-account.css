@@ -1,0 +1,120 @@
+:global(.vtex-account) div[class="w-100 mw9 pv7-m pv9-l flex"] {
+  max-width: 1150px !important;
+  margin   : 0 auto;
+  padding  : 1rem 1rem;
+}
+
+:global(.vtex-account) div[class="w-100 mw9 pv7-m pv9-l flex"] section[class="vtex-account__page w-100 w-80-m"] {
+  margin: 0 auto;
+}
+
+:global(.vtex-account) div[class="w-100 mw9 pv7-m pv9-l flex"] main[class="vtex-account__page-body  vtex-my-account-1-x-profile w-100 pa4-s"] {
+  padding: .75rem 0 !important;
+}
+
+.userImage {
+  display: none;
+}
+
+.userGreeting {
+  font-size: 0;
+}
+
+.userGreeting::before {
+  content    : "¡Hola!";
+  font-size  : 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+}
+
+.userName {
+  font-size    : 32px;
+  font-weight  : 700;
+  max-width    : 319px;
+  white-space  : nowrap;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+}
+
+.menu {
+  max-width: 319px;
+  width    : 100%;
+  padding  : 0;
+  margin   : 0 auto;
+}
+
+.menuLinks div a {
+  border         : .063rem solid var(--darkMid);
+  border-radius  : 100px;
+  background     : var(--white);
+  color          : var(--darkMid);
+  font-size      : 1rem;
+  font-weight    : 400;
+  line-height    : 19.2px;
+  padding        : .85rem;
+  padding-left   : 2rem;
+  display        : flex;
+  align-items    : center;
+  justify-content: start;
+}
+
+.menuLinks div div a:hover {
+  border-color: transparent;
+  background  : var(--primaryLight);
+  color       : var(--primary);
+}
+
+.menuLink:last-child {
+  font-size      : 0;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  gap            : .5rem;
+  margin-bottom  : 12.813rem;
+}
+
+.menuLink:last-child::after {
+  content    : "Cerrar sesión";
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.menuLink:last-child::before {
+  content: url('/arquivos/logout-01.svg');
+}
+
+:global(.vtex-modal__confirmation) :local(button) {
+  text-transform: capitalize;
+  font-size     : 18px;
+  font-weight   : 400;
+  height        : 48px;
+  width         : 150px;
+  border        : 1px solid;
+}
+
+:global(.vtex-modal__confirmation) :local(button) {
+  background  : var(--primary);
+  color       : var(--white);
+  border-color: var(--primary);
+}
+
+:global(.vtex-modal__confirmation) :local(span button) {
+  background   : var(--white);
+  border-color : var(--primary);
+  color        : var(--primary);
+  border-radius: 2rem;
+}
+
+@media (width > 64rem) {
+  :global(.vtex-account) div[class="w-100 mw9 pv7-m pv9-l flex"] section[class="vtex-account__page w-100 w-80-m"] {
+    margin: 0;
+    width : 100%;
+  }
+}
+
+@media (width > 72rem) {
+  :global(.vtex-account) div[class="w-100 mw9 pv7-m pv9-l flex"] {
+    padding: 4rem 0 0;
+  }
+}

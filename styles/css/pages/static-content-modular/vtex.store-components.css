@@ -1,0 +1,38 @@
+.infoCardSubhead--info-card-three-static {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: var(--darkMid);
+}
+
+.infoCardHeadline--info-card-three-static {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: var(--dark);
+    margin-top: 2rem;
+}
+
+.infoCardContainer--info-card-three-static {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.infoCardTextContainer--info-card-three-static {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+@media (min-width: 64rem) {
+    .infoCardTextContainer--info-card-three-static,
+    .infoCardImageContainer--info-card-three-static {
+        width: 100%;
+    }
+
+    .infoCardHeadline--info-card-three-static {
+        margin-top: 0rem;
+    }
+}

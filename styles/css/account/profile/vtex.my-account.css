@@ -1,0 +1,513 @@
+.profile div[class="w-40-ns w-100-s"] {
+  display: none;
+}
+
+.profile div[class="w-60-ns w-100-s"] {
+  width: 100%;
+}
+
+.profile__header {
+  max-width: 336px;
+  width    : 100%;
+  margin   : 0 auto;
+}
+
+.profile__header :global(.vtex-pageHeader__container) {
+  padding : 0;
+  position: relative;
+}
+
+.profile__header :global(.vtex-pageHeader-link__container) {
+  position: absolute;
+  margin  : 0;
+  top     : .063rem;
+  left    : 0rem;
+  z-index : 1;
+}
+
+.profile__header :global(.vtex-pageHeader-link__container) button:hover,
+.profile__header :global(.vtex-pageHeader-link__container) button {
+  background: transparent;
+}
+
+.profile__header :global(.vtex-pageHeader-link__container) button div::before {
+  content: url('/arquivos/nav-arrow--left.svg');
+}
+
+.profile__header :global(.vtex-pageHeader-link__container) button div svg {
+  display: none;
+}
+
+.profile__header :global(.vtex-pageHeader-link__container) button div span {
+  display: none;
+}
+
+
+.profile__header :global(.vtex-pageHeader__title)::before {
+  content    : "Datos personales";
+  color      : var(--dark);
+  font-size  : 32px;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+
+.profile__header :global(.vtex-pageHeader__title) {
+  max-width    : 336px;
+  width        : 100%;
+  font-size    : 0;
+  text-align   : center;
+  margin-bottom: 1rem;
+}
+
+.profileBoxContainer div[class="pb5 pr5-ns flex-auto "] {
+  width    : 100%;
+  max-width: 336px;
+  margin   : 0 auto 10rem;
+}
+
+.profileBoxContainer div[class="pb5 pr5-ns flex-auto "] {
+  height        : 456px;
+  padding-bottom: 0;
+}
+
+.boxContainer {
+  border       : .063rem solid var(--gray);
+  border-radius: 2rem;
+}
+
+.emailContainer,
+.firstNameSubContainer,
+.lastNameSubContainer,
+.dataEntryLabel,
+.dataEntryChildren,
+.documentsSubContainer,
+.phoneNumberSubContainer,
+.dateOfBirthSubContainer {
+  margin: 0;
+}
+
+.businessPhoneContainer,
+.corporateDocument,
+.tradeName,
+.corporateName,
+.dateOfBirthSubContainer,
+.genderSubContainer {
+  display: none;
+}
+
+.profile div[class="vtex-profile-form-3-x-profileSummary"] {
+  display       : flex;
+  flex-direction: column;
+  gap           : 1.5rem;
+}
+
+.nameContainer {
+  display       : flex;
+  flex-direction: column;
+  gap           : 1.5rem;
+}
+
+.phoneNumberSubContainer,
+.documentsSubContainer,
+.emailContainer,
+.lastNameSubContainer,
+.firstNameSubContainer {
+  display       : flex;
+  flex-direction: column;
+  gap           : .5rem;
+}
+
+.documentsSubContainer .dataEntryLabel {
+  font-size: 0;
+}
+
+.dataEntryLabel {
+  color      : var(--darkMid);
+  font-size  : 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+.dataEntryChildren {
+  color      : var(--dark);
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.documentsSubContainer .dataEntryLabel::before {
+  content    : "RUC";
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.boxContainerFooter {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  margin-bottom  : 2rem;
+  padding        : 0;
+}
+
+.boxContainerFooter button {
+  width          : 272px;
+  height         : 48px;
+  padding        : 12px 24px 12px 24px;
+  border-radius  : 100px;
+  border         : .063rem solid var(--primary);
+  text-transform : capitalize;
+  display        : flex;
+  justify-content: center;
+  gap            : .25rem;
+}
+
+.boxContainerFooter button:hover {
+  background: var(--primaryLight);
+}
+
+.boxContainerFooter button div {
+  padding    : 0;
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.boxContainerFooter button::after {
+  content: url("/arquivos/pencil-edit-01.svg");
+}
+
+/* edit profile */
+
+.profileEdit__header,
+.profileEdit {
+  width    : 100%;
+  max-width: 360px;
+  margin   : 0 auto;
+}
+
+.profileEdit {
+  margin-bottom: 4rem;
+}
+
+.profileEdit__header div[class="db dn-m"] div {
+  display    : flex;
+  align-items: center;
+}
+
+.profileEdit__header div[class="vtex-pageHeader__title t-heading-2 order-0 flex-grow-1"] {
+  margin-left   : 1.5rem;
+  display       : flex;
+  flex-direction: column;
+  font-size     : 32px;
+  font-weight   : 700;
+  line-height   : 28.8px;
+  color         : var(--slateBlue);
+}
+
+.profileEdit__header div[class="vtex-pageHeader__title t-heading-2 order-0 flex-grow-1"]::before {
+  content       : "Datos personales";
+  font-size     : 18px;
+  font-weight   : 500;
+  line-height   : 21.6px;
+  padding-right : 1.85rem;
+  padding-bottom: .063rem;
+  color         : var(--darkMid);
+}
+
+.profileEdit__header div[class="vtex-pageHeader-link__container mb3"] button {
+  background: transparent;
+}
+
+.profileEdit__header div[class="vtex-pageHeader-link__container mb3"] button div svg,
+.profileEdit__header div[class="vtex-pageHeader-link__container mb3"] button div span {
+  display: none;
+}
+
+.profileEdit__header div[class="vtex-pageHeader-link__container mb3"] button div::before {
+  content   : url('/arquivos/nav-arrow--left.svg');
+  margin-top: 1rem;
+}
+
+.profileFormBoxContainer .boxContainerBody form,
+.profileFormBoxContainer .boxContainerBody {
+  width    : 100%;
+  max-width: 336px;
+}
+
+.profileFormBoxContainer .boxContainerBody {
+  margin : 2rem auto;
+  padding: 0;
+}
+
+.profileFormBoxContainer .boxContainerBody form {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+}
+
+.profileFormBoxContainer .boxContainerBody form .profileForm-gender div,
+.profileFormBoxContainer .boxContainerBody form .profileForm-birthDate div {
+  display: none;
+}
+
+.profileFormBoxContainer .boxContainerBody div[class="vtex-profile-form-3-x-businessFields"] div,
+.profileFormBoxContainer .boxContainerBody form .profileForm-homePhone div,
+.profileFormBoxContainer .boxContainerBody form .profileForm-document div,
+.profileFormBoxContainer .boxContainerBody form .profileForm-lastName div,
+.profileFormBoxContainer .boxContainerBody form .profileForm-firstName div {
+  margin   : 0;
+  padding  : 0;
+  max-width: 336px;
+}
+
+.profileFormBoxContainer .boxContainerBody form .profileForm-homePhone span,
+.profileFormBoxContainer .boxContainerBody form .profileForm-document span,
+.profileFormBoxContainer .boxContainerBody form .profileForm-lastName span,
+.profileFormBoxContainer .boxContainerBody form .profileForm-firstName span {
+  margin-left: 1rem;
+  color      : var(--slateBlue);
+  font-weight: 500;
+}
+
+.profileFormBoxContainer .boxContainerBody div[class="vtex-profile-form-3-x-personalFields"] {
+  display       : flex;
+  flex-direction: column;
+}
+
+.profileFormBoxContainer .boxContainerBody div[class="vtex-profile-form-3-x-businessFields"] input,
+.profileFormBoxContainer .boxContainerBody form .profileForm-homePhone input,
+.profileFormBoxContainer .boxContainerBody form .profileForm-document input,
+.profileFormBoxContainer .boxContainerBody form .profileForm-lastName input,
+.profileFormBoxContainer .boxContainerBody form .profileForm-firstName input {
+  margin       : 0 1rem 0;
+  width        : 100%;
+  max-width    : 272px;
+  height       : 48px;
+  padding      : 12px 30px 12px 30px;
+  border-radius: 2rem;
+  color        : var(--darkLight);
+  background   : var(--grayLight);
+  border-color : var(--grayLight);
+  margin-bottom: 1rem;
+  font-size    : 16px;
+  font-weight  : 400;
+  line-height  : 19.2px;
+}
+
+.profileFormBoxContainer .boxContainerBody form button[type="submit"] {
+  text-transform: capitalize;
+  background    : var(--primary);
+  border-color  : var(--primary);
+  max-width     : 272px;
+  width         : 100%;
+  margin        : 0 auto;
+}
+
+.profileFormBoxContainer .boxContainerBody form button[type="submit"]::hover {
+  border-color: var(--primary);
+}
+
+.profileFormBoxContainer .boxContainerBody form button[type="submit"] div {
+  font-size: 0;
+}
+
+.profileFormBoxContainer .boxContainerBody form button[type="submit"] div::before {
+  content    : "Guardar";
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+div[class="vtex-profile-form-3-x-toggleBusinessButtonWrapper mb7"] {
+  max-width    : 272px;
+  width        : 100%;
+  display      : grid;
+  place-content: center;
+  margin-bottom: 0;
+}
+
+div[class="vtex-profile-form-3-x-toggleBusinessButtonWrapper mb7"] button {
+  text-transform: capitalize;
+  width         : 100%;
+}
+
+div[class="vtex-profile-form-3-x-toggleBusinessButtonWrapper mb7"] button[class="vtex-button bw1 ba fw5 ttu br2 fw4 v-mid relative pv3 ph5 f6 bg-washed-blue b--washed-blue blue hover-bg-light-blue hover-b--light-blue hover-heavy-blue pointer w-100 "] {
+  display: none;
+}
+
+.profileFormBoxContainer .boxContainerBody div[class="vtex-profile-form-3-x-businessFields"] span {
+  margin-left: 2.5rem;
+  color      : var(--dark);
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.profileFormBoxContainer .boxContainerBody div[class="vtex-profile-form-3-x-businessFields"] {
+  display: none;
+}
+
+.profileBoxContainer .boxContainerBody {
+  padding: 2rem 2rem 1.5rem;
+}
+
+.profileFormBoxContainer .boxContainerBody {
+  padding: 0;
+}
+
+@media (width > 64rem) {
+  .profile__header {
+    margin: 0;
+  }
+
+  .profileBoxContainer,
+  .profileBoxContainer div[class="pb5 pr5-ns flex-auto "] {
+    max-width: 747px;
+  }
+
+  .profileFormBoxContainer .boxContainerBody form {
+    max-width: none;
+  }
+
+  .profileBoxContainer {
+    padding-left: 1rem;
+  }
+
+  .profile div[class="vtex-profile-form-3-x-profileSummary"] {
+    flex-wrap     : wrap;
+    flex-direction: row;
+  }
+
+  .nameContainer {
+    width         : 100%;
+    display       : flex;
+    flex-direction: row;
+    gap           : 0;
+  }
+
+  .emailContainer {
+    width: 100%;
+  }
+
+  .genderContainer {
+    width: 46%;
+  }
+
+  .boxContainerFooter {
+    margin-bottom: 0;
+  }
+
+  .phoneNumberSubContainer {
+    width          : 100%;
+    display        : flex;
+    justify-content: flex-end;
+  }
+
+  .boxContainerFooter {
+    display        : flex;
+    justify-content: flex-end;
+    margin-bottom  : 2rem;
+    margin-right   : 2.5rem;
+  }
+
+  .boxContainerFooter button {
+    width: 152px;
+  }
+
+  .profile__header :global(.vtex-pageHeader__title) {
+    text-align  : left;
+    padding-left: .9rem;
+  }
+
+  .profileEdit__header,
+  .profileEdit {
+    max-width: none;
+  }
+
+  .profileEdit__header div[class="db-m dn"] div[class="vtex-pageHeader__container pa5 pa7-ns"] {
+    position     : relative;
+    padding      : 0;
+    margin-left  : 3.125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .profileEdit__header div[class="db-m dn"] div[class="vtex-pageHeader__container pa5 pa7-ns"] div[class="vtex-pageHeader-link__container mb3"] {
+    position: absolute;
+    top     : 0;
+    left    : -1rem;
+  }
+
+  .profileEdit {
+    margin-left: 1rem;
+    width      : 418px;
+  }
+
+  .profileFormBoxContainer .boxContainer {
+    min-height: 496px;
+    width     : 418px;
+  }
+
+  .profileBoxContainer .boxContainer {
+    height: auto;
+  }
+
+  .profileBoxContainer .boxContainerBody {
+    padding: 2rem 2.5rem;
+  }
+
+  .profileFormBoxContainer .boxContainerBody {
+    padding: 0;
+  }
+
+  .profileFormBoxContainer .boxContainerBody div[class="vtex-profile-form-3-x-businessFields"] input,
+  .profileFormBoxContainer .boxContainerBody form .profileForm-homePhone input,
+  .profileFormBoxContainer .boxContainerBody form .profileForm-document input,
+  .profileFormBoxContainer .boxContainerBody form .profileForm-lastName input,
+  .profileFormBoxContainer .boxContainerBody form .profileForm-firstName input {
+    max-width: none;
+    margin   : 0 auto 1.5rem;
+    width    : 354px;
+  }
+
+  .profileFormBoxContainer .boxContainerBody form .profileForm-homePhone input {
+    margin: 0 auto 0;
+  }
+
+  .profileFormBoxContainer .boxContainerBody div[class="vtex-profile-form-3-x-businessFields"] div,
+  .profileFormBoxContainer .boxContainerBody form .profileForm-homePhone div,
+  .profileFormBoxContainer .boxContainerBody form .profileForm-document div,
+  .profileFormBoxContainer .boxContainerBody form .profileForm-lastName div,
+  .profileFormBoxContainer .boxContainerBody form .profileForm-firstName div {
+    max-width: none;
+    width    : 354px;
+    margin   : 0 auto;
+  }
+
+  .profileFormBoxContainer .boxContainerBody form {
+    align-items: stretch;
+  }
+
+  .profileFormBoxContainer div[class="pb5 pr5-ns flex-auto mw6-ns"] {
+    padding: 0 !important;
+  }
+
+  div[class="vtex-profile-form-3-x-toggleBusinessButtonWrapper mb7"] button,
+  .profileFormBoxContainer .boxContainerBody {
+    max-width: 354px;
+    margin   : 1.938rem auto;
+  }
+
+  div[class="vtex-profile-form-3-x-toggleBusinessButtonWrapper mb7"] {
+    max-width      : 354px;
+    margin         : 0 auto 1rem;
+    display        : flex;
+    justify-content: center;
+  }
+
+  .profileFormBoxContainer .boxContainerBody form button[type="submit"] {
+    max-width: none;
+    margin   : .5rem auto 0;
+  }
+}

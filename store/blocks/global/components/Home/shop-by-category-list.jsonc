@@ -1,0 +1,122 @@
+{
+	"link#category-01": {
+		"title": "Link Categoría 1",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": ["wrapper-universal-slider-section", "category1"]
+		},
+		"children": ["image#image-category-01"]
+	},
+	"image#image-category-01": {
+		"title": "Imagen Categoría 1",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#category-02": {
+		"title": "Link Categoría 2",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": ["wrapper-universal-slider-section", "category2"]
+		},
+		"children": ["image#image-category-02"]
+	},
+	"image#image-category-02": {
+		"title": "Imagen Categoría 2",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#category-03": {
+		"title": "Link Categoría 3",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": ["wrapper-universal-slider-section", "category3"]
+		},
+		"children": ["image#image-category-03"]
+	},
+	"image#image-category-03": {
+		"title": "Imagen Categoría 3",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#category-04": {
+		"title": "Link Categoría 4",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": ["wrapper-universal-slider-section", "category4"]
+		},
+		"children": ["image#image-category-04"]
+	},
+	"image#image-category-04": {
+		"title": "Imagen Categoría 4",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#category-05": {
+		"title": "Link Categoría 5",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": ["wrapper-universal-slider-section", "category5"]
+		},
+		"children": ["image#image-category-05"]
+	},
+	"image#image-category-05": {
+		"title": "Imagen Categoría 5",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#category-06": {
+		"title": "Link Categoría 6",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": ["wrapper-universal-slider-section", "category6"]
+		},
+		"children": ["image#image-category-06"]
+	},
+	"image#image-category-06": {
+		"title": "Imagen Categoría 6",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#category-07": {
+		"title": "Link Categoría 7",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": ["wrapper-universal-slider-section", "category7"]
+		},
+		"children": ["image#image-category-07"]
+	},
+	"image#image-category-07": {
+		"title": "Imagen Categoría 7",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	},
+	"link#category-08": {
+		"title": "Link Categoría 8",
+		"props": {
+			"href": "/",
+			"label": "",
+			"blockClass": ["wrapper-universal-slider-section", "category8"]
+		},
+		"children": ["image#image-category-08"]
+	},
+	"image#image-category-08": {
+		"title": "Imagen Categoría 8",
+		"props": {
+			"src": "/arquivos/category.jpg"
+		}
+	}
+}

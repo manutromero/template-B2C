@@ -1,0 +1,51 @@
+.container--Wrapper-check-permission {
+  min-height     : 433px;
+  display        : flex;
+  justify-content: space-around;
+}
+
+.container--Wrapper-check-permission:global(.vtex-rich-text-0-x-wrapper--Wrapper-check-permission) {
+  font-family: 'latoRegular';
+  font-weight: 800;
+}
+
+.paragraph--shopByBrandTitle {
+  margin      : 0;
+  padding-left: 10px;
+  color       : var(--dark);
+}
+
+.container--Wrapper-disallowed {
+  display        : flex;
+  justify-content: center;
+}
+
+.paragraph--form-request__title {
+  margin     : 0 0 .75rem;
+  font-size  : 2rem;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align : center;
+  color      : var(--dark);
+}
+
+.paragraph--form-request__text {
+  margin     : 0;
+  font-weight: 500;
+  font-size  : 1rem;
+  line-height: 19px;
+  color      : var(--darkMid);
+  text-align : center;
+}
+
+.paragraph--form-request-allowed {
+  font-size  : 2rem;
+  font-weight: 700;
+  color      : var(--dark);
+}
+
+@media (min-width: 64rem) {
+  .paragraph--form-request__text {
+    width: 20.625rem;
+  }
+}

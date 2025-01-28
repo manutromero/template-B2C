@@ -1,0 +1,91 @@
+:global(.vtex-modal__overlay),
+:global(.vtex-login-2-x-box),
+:global(.vtex-minicart-2-x-drawer),
+:global(.vtex-store__template),
+:global(.vtex-search-result-3-x-sidebar),
+:global(.vtex-telemarketing-2-x-portalContainer) {
+  /* White color */
+  --white: #fff;
+
+  /* Primary color */
+  --primary     : #492A77;
+  /* Primary Dark color */
+  --primaryDark : #322551;
+  /* Primary Light color */
+  --primaryLight: #F5F4F6;
+  /* Light blue */
+  --lightBlue   : #F0E8FE;
+
+  /* Dark color */
+  --dark     : #1f2327;
+  /* Dark Mid color */
+  --darkMid  : #525a62;
+  /* Dark Light color */
+  --darkLight: #92989e;
+
+  /* Gray Light color */
+  --grayLight      : #e6e7e8;
+  /* Gray color */
+  --gray           : #bcbec0;
+  /* Soft Silver */
+  --softSilver     : #C4C4C4;
+  /* Neutral Gray 50 color */
+  --neutral-gray-50: #F6F6F6;
+
+  /* Green */
+  --green     : #0F8A23;
+  /* GreenLight */
+  --greenLight: #D3ECD2;
+
+  /* Red */
+  --red     : #F31010;
+  /* Red Light */
+  --redLight: #ECD2D2;
+
+  /* Orange */
+  --orange     : #FF5733;
+  /* Orange Light */
+  --orangeLight: #FFE5B4;
+
+  /* Account Colors */
+  --slateBlue           : #1D2734;
+  --dotsProgressBarLight: #D9D9D9;
+
+  /* Extra Colors */
+  --box-shadow         : #21334e33;
+  --filterTextColor    : #404B59;
+  --backgroundProducts : #f1f4f9;
+  --borderLight        : #BCBEC0;
+  --textOrder          : #1D2734;
+  --middleFooterColor  : #fbf8ff;
+  --borderProduct      : #E7E7E7;
+  --box-shadow-minicart: #492A771A;
+  --dotsSlider         : #E2E9F1;
+  --filterTitleColor   : #454545;
+  --titleTabletPdp     : #888888;
+  --savingPrice        : #6D00CC;
+
+  /* Apply custom styles to the scroll bar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    /* Scroll bar width */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Background color of the scrollbar track */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background   : var(--primary);
+    /* Scroll bar color */
+    border-radius: 4px;
+    /* Rounded scroll bar edges */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the scroll bar when hovering the mouse over it */
+  }
+
+}

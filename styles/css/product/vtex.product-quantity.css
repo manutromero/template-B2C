@@ -1,0 +1,101 @@
+/* Base styles - Mobile First */
+.quantitySelectorTitle {
+  font-size  : 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  text-align : left;
+  color      : var(--darkMid);
+  margin-left: 10px;
+}
+
+.quantitySelectorContainer {
+  padding-top: 20px;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper-container) {
+  width          : 9.1875rem;
+  height         : 2.625rem;
+  padding        : 0.125rem;
+  border-radius  : 32px;
+  border         : 1px solid var(--grayLight);
+  align-items    : center;
+  justify-content: space-between;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__input),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button-container),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button-container) {
+  border: none;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__input) {
+  border-top   : 1px solid var(--grayLight);
+  border-bottom: 1px solid var(--grayLight);
+  height       : 2.625rem;
+  box-sizing   : border-box;
+  font-size    : 18px;
+  font-weight  : 500;
+  line-height  : 21.6px;
+  color        : var(--dark);
+  width        : 3rem;
+  outline      : none;
+}
+
+:global(.vtex-numeric-stepper__plus-button-container),
+:global(.vtex-numeric-stepper__minus-button-container) {
+  width          : 36px;
+  height         : 36px;
+  border-radius  : 32px;
+  display        : flex;
+  justify-content: center;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button) {
+  background                : var(--lightBlue);
+  width                     : 36px;
+  height                    : 36px;
+  padding                   : 0;
+  gap                       : 10px;
+  opacity                   : 0px;
+  border-color              : var(--lightBlue);
+  border-top-right-radius   : 32px;
+  border-top-left-radius    : 32px !important;
+  border-bottom-left-radius : 32px !important;
+  border-bottom-right-radius: 32px;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button) :global(.vtex-numeric-stepper__plus-button__text) {
+  font-size: 0;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button) :global(.vtex-numeric-stepper__plus-button__text)::after {
+  content: url('/arquivos/plus-sign-pdp.svg');
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button) {
+  padding                   : 0px;
+  height                    : 36px;
+  border-top-right-radius   : 32px;
+  border-top-left-radius    : 32px;
+  border-bottom-left-radius : 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button) :global(.vtex-numeric-stepper__minus-button__text) {
+  font-size: 0;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button) :global(.vtex-numeric-stepper__minus-button__text)::after {
+  content: url('/arquivos/minus-sign-pdp.svg');
+}
+
+/* Media Queries for larger screens */
+@media screen and (min-width: 48.01rem) {
+  .quantitySelectorContainer {
+    padding-top: 20px;
+  }
+
+  .quantitySelectorTitle {
+    margin-left: 10px;
+  }
+}

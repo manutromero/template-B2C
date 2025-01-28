@@ -1,0 +1,156 @@
+{
+    "store.custom#suggestions-complaints": {
+        "children": [
+            "flex-layout.row#container-breadcrumb-suggestion",
+            "flex-layout.row#container-title-suggestions-complaints",
+            "flex-layout.row#form-suggestions-complaints"
+        ]
+    },
+    //Breadcrumb
+    "flex-layout.row#container-breadcrumb-suggestion": {
+        "title": "Contendor breadcrumb",
+        "children": [
+            "rich-text#breadcrumb-suggestion"
+        ],
+        "props": {
+            "blockClass": "container-static-content",
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#breadcrumb-suggestion": {
+        "props": {
+            "text": "[**inicio**](/)[/sugerencias y reclamos](/sugerencias-y-reclamos)",
+            "blockClass": "breadcrumb"
+        }
+    },
+    //Title page
+    "flex-layout.row#container-title-suggestions-complaints": {
+        "title": "Contendor titulos",
+        "children": [
+            "rich-text#title-suggestions-complaints",
+            "rich-text#text-suggestions-complaints"
+        ],
+        "props": {
+            "blockClass": "container-suggestions-complaints",
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        }
+    },
+    "rich-text#title-suggestions-complaints": {
+        "title": "titulo",
+        "props": {
+            "text": "Formulario de quejas y sugerencias",
+            "blockClass": "title-suggestions-complaints"
+        }
+    },
+    "rich-text#text-suggestions-complaints": {
+        "title": "text",
+        "props": {
+            "text": "Queremos escucharte y mejorar nuestra atención",
+            "blockClass": "text-suggestions-complaints"
+        }
+    },
+    //form
+    "flex-layout.row#form-suggestions-complaints": {
+        "children": [
+            "form#suggestions-complaints"
+        ],
+        "props": {
+            "blockClass": "form-suggestions"
+        }
+    },
+    "form#suggestions-complaints": {
+        "props": {
+            "entity": "SR",
+            "schema": "suggestionAndComplaintsForm",
+            "blockClass": "suggestions-complaints"
+        },
+        "children": [
+            "form-input.text#fullName",
+            "form-input.text#areaCode",
+            "form-input.text#cellPhoneNumber",
+            "form-input.text#email",
+            "form-input.text#identityCard",
+            "form-input.dropdown#typeOfManagement",
+            "form-input.dropdown#whereHeWasTreated",
+            "form-input.textarea#comments",
+            "form-submit##suggestions-complaints"
+        ],
+        "blocks": ["form-success#suggestions-complaints"]
+    },
+    "form-input.text#fullName": {
+        "props": {
+            "pointer": "#/properties/fullName",
+            "placeholder": "Nombre completo",
+            "blockClass": "suggestions-complaints"
+        }
+    },
+    "form-input.text#areaCode": {
+        "props": {
+            "pointer": "#/properties/areaCode",
+            "placeholder": "Código de área",
+            "blockClass": "suggestions-complaints"
+        }
+    },
+    "form-input.text#cellPhoneNumber": {
+        "props": {
+            "pointer": "#/properties/cellPhoneNumber",
+            "placeholder": "Número de celular",
+            "blockClass": "suggestions-complaints"
+        }
+    },
+    "form-input.text#email": {
+        "props": {
+            "pointer": "#/properties/email",
+            "placeholder": "Correo electrónico",
+            "blockClass": "suggestions-complaints"
+        }
+    },
+    "form-input.text#identityCard": {
+        "props": {
+            "pointer": "#/properties/identityCard",
+            "placeholder": "Cédula de identidad",
+            "blockClass": "suggestions-complaints"
+        }
+    },
+    "form-input.dropdown#typeOfManagement": {
+        "props": {
+            "pointer": "#/properties/typeOfManagement",
+            "label": "Tipo de gestión",
+            "blockClass": "suggestions-complaints"
+        }
+    },
+    "form-input.dropdown#whereHeWasTreated": {
+        "props": {
+            "pointer": "#/properties/whereHeWasTreated",
+            "label": "¿Donde fue atendido?",
+            "blockClass": "suggestions-complaints"
+        }
+    },
+    "form-input.textarea#comments": {
+        "props": {
+            "pointer": "#/properties/comments",
+            "placeholder": "Comentarios",
+            "blockClass": "suggestions-complaints"
+        }
+    },
+    "form-submit##suggestions-complaints": {
+        "props": {
+            "label": "Enviar",
+            "blockClass": "suggestions-complaints"
+        }
+    },
+    "form-success#suggestions-complaints": {
+        "children": ["rich-text#successSubmit"]
+    },
+    "rich-text#successSubmit": {
+        "props": {
+            "text": "¡Formulario enviado con exito!",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+             "blockClass": "text-suggestions-complaints"
+        }
+    }
+}

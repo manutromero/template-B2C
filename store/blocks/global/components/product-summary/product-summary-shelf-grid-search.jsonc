@@ -1,0 +1,33 @@
+{
+	"product-summary.shelf#products-global_grid-search": {
+		"children": [
+			"product-summary-image#global",
+			"product-summary-brand",
+			"product-summary-name",
+			"product-summary-price",
+			"flex-layout.row#button-add-to-cart"
+		],
+		"props": {
+			"blockClass": [
+				"vitrina-home",
+				"search"
+			]
+		}
+	},
+	"flex-layout.row#button-add-to-cart": {
+		"children": [
+			"add-to-cart-button#product-add-to-cart-plp"
+		],
+		"props": {
+			"blockClass": "btn-plp"
+		}
+	},
+	"add-to-cart-button#product-add-to-cart-plp": {
+		"title": "Boton agregar a carrito",
+		"props": {
+			"blockClass": "product-plp-button",
+			"unavailableText": "Agotado",
+			"text": "Añadir al carrito"
+		}
+	}
+}

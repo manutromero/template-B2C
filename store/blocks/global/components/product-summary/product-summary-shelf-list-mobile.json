@@ -1,0 +1,17 @@
+{
+    "product-summary.shelf#products-global_list-search": {
+		"children": [
+			"product-summary-image#global",
+			"product-summary-brand",
+			"product-summary-name",
+			"product-summary-price",
+			"flex-layout.row#button-add-to-cart"
+		],
+		"props": {
+			"blockClass": [
+				"vitrina-home",
+				"search"
+			]
+		}
+	}
+}

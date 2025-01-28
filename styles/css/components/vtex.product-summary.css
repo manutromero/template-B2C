@@ -1,0 +1,148 @@
+/* Wrapper de todo el producto */
+.element--vitrina-home {
+  padding         : 0 1px;
+  background-color: white;
+  border-radius   : 24px;
+  border          : 1px solid var(--borderProduct);
+  display         : flex;
+  justify-content : space-between;
+  height          : 100%;
+}
+
+
+/*** Imagen de producto ***/
+.imageStackContainer {
+  border-radius  : 24px;
+  width          : 100%;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  min-height      : 210px;
+}
+
+.element--list-search {
+  width     : 100%;
+  box-sizing: border-box;
+}
+
+.element--list-search .imageContainer {
+  justify-content: left;
+}
+
+.element--vitrina-home .imageContainer:global(.vtex-store-components-3-x-discountContainer) {
+  width : 100%;
+  height: 100%;
+}
+
+/*** Fin Imagen de producto ***/
+
+/***** Marca del producto *****/
+
+/* Contenedor */
+.element--vitrina-home :global(.vtex-product-summary-2-x-productBrandContainer) {
+  display   : flex;
+  width     : 100%;
+  padding   : 24px 20px 0;
+  min-height: 17px;
+}
+
+/* Texto del nombre de la marca */
+.element--vitrina-home :global(.vtex-product-summary-2-x-productBrandContainer) :global(.vtex-product-summary-2-x-productBrandName) {
+  font-size  : 14px;
+  color      : var(--primaryDark);
+  font-weight: 500;
+  text-align : left;
+}
+
+/***** Finaliza Marca del producto *****/
+
+/***** Nombre del producto *****/
+.element--vitrina-home .nameContainer {
+  padding        : 0 20px 12px;
+  text-align     : left;
+  justify-content: flex-start;
+  min-height     : 22px;
+}
+
+.element--vitrina-home .brandName {
+  font-weight       : 700;
+  font-size         : 18px;
+  text-align        : left;
+  display           : -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow          : hidden;
+  text-overflow     : ellipsis;
+}
+
+/***** Finaliza Marca del producto *****/
+
+/* Descripción */
+.element--vitrina-home .description {
+  padding   : 0 7.52% 4.51%;
+  text-align: left;
+  font-size : 16px;
+  color     : var(--dark);
+}
+
+/*** Sección Precio  ***/
+.element--vitrina-home .priceContainer {
+  padding    : 0 20px 30px;
+  align-items: flex-start;
+}
+
+.priceContainer {
+  min-height: 45px;
+}
+
+.element--vitrina-home .priceContainer .sellingPrice {
+  font-size  : 20px;
+  font-weight: 700;
+  color      : var(--primary);
+}
+
+/*** Fin Sección Precio ***/
+
+/*** Sección Precio  ***/
+.element--vitrina-home .buyButton {
+  padding: 0 16px 16px;
+  width  : 100%;
+}
+
+.element--vitrina-home .buyButtonContainer {
+  padding: 0;
+}
+
+.element--vitrina-home .buyButton :global(.vtex-button) {
+  padding         : 10px;
+  border-radius   : 100px;
+  background-color: var(--white);
+  border          : 1px solid var(--primary);
+  color           : var(--primary);
+}
+
+/*** Fin Sección Button ***/
+
+.brandName {
+  color: var(--dark);
+}
+
+@media (max-width: 48rem) {
+  :global(.vtex-product-summary-2-x-container--vitrina-home) :global(.vtex-product-summary-2-x-productBrandName) {
+    font-size    : 14px;
+    font-weight  : 500;
+    line-height  : 16.8px;
+    text-align   : left;
+    color        : var(--primary);
+    margin-top   : 5px;
+    margin-bottom: 5px;
+  }
+
+  :global(.vtex-product-summary-2-x-container--vitrina-home) :global(.vtex-product-summary-2-x-productBrandContainer) {
+    display        : flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+}

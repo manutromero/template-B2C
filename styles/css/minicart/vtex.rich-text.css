@@ -1,0 +1,26 @@
+.paragraph--quantity-text {
+  color      : var(--darkMid);
+  margin     : 0;
+  font-size  : 1rem;
+  line-height: 1.188rem;
+  font-weight: 700;
+}
+
+.paragraph--minicart__text-top {
+  width      : 310px;
+  font-weight: 700;
+  line-height: 28px;
+  font-size  : 24px;
+  padding    : 0 1rem;
+  margin     : 0;
+  color      : var(--dark);
+}
+
+.paragraph--minicart__text-bottom {
+  width      : 320px;
+  font-weight: 400;
+  line-height: 19px;
+  font-size  : 1rem;
+  margin: 12px 0 ;
+  color      : var(--darkLight);
+}

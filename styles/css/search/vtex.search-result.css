@@ -1,0 +1,742 @@
+.searchResultContainer--customQuery {
+  padding-top: 0;
+}
+
+.totalProducts--layout {
+  padding       : 5px 0px;
+  display       : flex;
+  color         : var(--darkLight);
+  text-transform: capitalize;
+}
+
+.galleryTitle--layout {
+  font-size: 24px;
+  margin   : 10px 0px;
+}
+
+.orderByText {
+  display  : none;
+  font-size: 0;
+}
+
+.orderByDropdown {
+  padding-top: 0px;
+}
+
+.orderByDropdown :global(.vtex-search-result-3-x-caretIcon) {
+  height: 24px;
+  width : 24px;
+}
+
+.gallery {
+  margin-top   : 24px;
+  margin-bottom: 10px;
+}
+
+.galleryItem {
+  padding   : 12px 8px;
+  min-height: 510px;
+}
+.galleryLayoutOptionButton {
+  border         : 1px solid var(--gray);
+  border-radius  : 100px;
+  color          : var(--darkMid);
+  text-transform : capitalize;
+  width          : 48px;
+  display        : flex;
+  justify-content: center;
+}
+
+.galleryLayoutOptionButton--selected {
+  display: none;
+}
+
+.orderByOptionsContainer {
+  margin-top    : 35px;
+  min-width     : 336px;
+  overflow      : hidden;
+  box-shadow    : 0px 16px 16px 8px var(--box-shadow);
+  border-radius : 32px;
+  padding-bottom: 1rem;
+  top           : 1rem;
+}
+
+.orderByOptionItem {
+  width : 90%;
+  margin: auto;
+}
+
+.orderByOptionItem--selected {
+  background-color: var(--grayLight);
+  border-radius   : 32px;
+}
+
+/* filter */
+.sidebar {
+  width        : 290px;
+  border-radius: 32px 0 0 32px;
+}
+
+.accordionFilter {
+  border-radius : 32px 0 0 32px;
+  overflow      : auto;
+  padding-bottom: 7rem !important;
+}
+
+.filterButtonsBox {
+  border-radius: 0 0 0 32px;
+  box-shadow   : 0px -8px 16px 0px var(--box-shadow);
+}
+
+.accordionFilterContainer {
+  padding      : 0 16px;
+  margin       : 0 12px;
+  border-radius: 32px;
+}
+
+.accordionFilterContent {
+  font-size  : 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  color      : var(--filterTextColor);
+}
+
+.accordionFilterContainer:active,
+.accordionFilterContainer:hover,
+.accordionFilterContainer:focus {
+  background: var(--lightBlue);
+}
+
+.accordionFilterContainer:active .accordionFilterItemTitle,
+.accordionFilterContainer:hover .accordionFilterItemTitle,
+.accordionFilterContainer:focus .accordionFilterItemTitle {
+  color: var(--primary);
+}
+
+
+.accordionFilterContent .accordionFilterItemTag {
+  justify-self: flex-end;
+}
+
+.accordionFilter :local(div[class=ReactCollapse--content] div) {
+  padding-left: 0;
+}
+
+.accordionFilterOpen {
+  overflow: auto;
+  padding : 0;
+}
+
+.filterAccordionItemBox {
+  padding: 0;
+  border : none;
+}
+
+.filterAccordionItemBox :global(.vtex-checkbox__line-container) {
+  display        : flex;
+  flex-direction : row-reverse;
+  justify-content: space-between;
+  width          : 100%;
+  padding-left   : 45px !important;
+  padding-right  : 27px !important;
+}
+
+.accordionFilterItem {
+  border       : none;
+  padding      : 0;
+  display      : flex;
+  place-content: center;
+}
+
+.accordionFilterContent {
+  padding        : 0;
+  width          : 100%;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.accordionFilterItemTag {
+  display: none;
+}
+
+.accordionFilterItemIcon {
+  margin-top: 4px;
+}
+
+.filterAccordionItemBox :global(.vtex-checkbox__label) {
+  color      : var(--darkMid);
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.accordionFilterItemIcon :global(.vtex-search-result-3-x-caretIcon) {
+  height: 24px;
+  width : 24px;
+}
+
+.filterAccordionBreadcrumbs {
+  border       : none;
+  width        : 258px;
+  height       : 48px;
+  margin       : 27px auto 20px;
+  background   : var(--primary);
+  border-radius: 32px;
+  position     : sticky;
+  top          : 27px;
+  z-index      : 1;
+}
+
+.filterAccordionBreadcrumbs::before {
+  content   : "";
+  width     : 260px;
+  height    : 48px;
+  background: var(--white);
+  position  : absolute;
+  top       : -48px;
+  left      : 0;
+  z-index   : -1;
+}
+
+.filterBreadcrumbsText {
+  font-size: 0;
+}
+
+.filterBreadcrumbsText::before {
+  content     : 'Filtra por';
+  color       : var(--white);
+  padding-left: 5px;
+  font-size   : 25px;
+  font-weight : 400;
+  line-height : 30px;
+}
+
+:global(.vtex-search-result-3-x-closeIconButton) {
+  top               : 39px;
+  right             : 6px;
+  padding           : 0;
+  padding-inline-end: 2rem;
+  z-index           : 3;
+}
+
+:global(.vtex-search-result-3-x-closeIconButton)::after {
+  content: url("/arquivos/cancel-01.svg");
+}
+
+:global(.vtex-search-result-3-x-closeIconButton) :local(svg) {
+  display: none;
+}
+
+.filterButtonsBox {
+  height: 91px;
+  border: none;
+}
+
+.filterClearButtonWrapper :global(.vtex-button) {
+  min-height : auto;
+  border     : 1px solid var(--gray) !important;
+  color      : var(--darkMid);
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.filterApplyButtonWrapper :global(.vtex-button) {
+  min-height : auto;
+  background : var(--primary);
+  color      : var(--white);
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.filterClearButtonWrapper :global(.vtex-button) :global(.vtex-button__label),
+.filterApplyButtonWrapper :global(.vtex-button) :global(.vtex-button__label) {
+  height : 43px !important;
+  padding: 0 !important;
+}
+
+.accordionFilterItemOptions {
+  overflow: hidden;
+}
+
+.filter__container {
+  width  : 220px;
+  padding: 0 0 0 1rem !important;
+  margin : 0 auto;
+  border : none;
+}
+
+.filterTemplateOverflow :global(.vtex-slider__values-container) {
+  color      : var(--darkMid) !important;
+  line-height: 19.2px;
+}
+
+.filterAccordionItemBox :global(.vtex-checkbox__inner-container) {
+  background: none;
+  border    : none;
+}
+
+.filterAccordionItemBox :global(.vtex-checkbox__box-wrapper),
+.filterAccordionItemBox :local(input) {
+  border       : 2px solid var(--darkMid);
+  border-radius: 5px;
+  height       : 19px !important;
+  width        : 19px !important;
+  margin       : 0;
+}
+
+.filterAccordionItemBox :local(path) {
+  fill        : var(--darkMid) !important;
+  stroke      : var(--darkMid) !important;
+  stroke-width: .01px !important;
+}
+
+.filterAccordionItemBox :global(.vtex__icon-check) {
+  transform: scale(1.2);
+}
+
+.filterContent .filterItem :global(.vtex-checkbox__line-container) {
+  padding-left  : 1rem;
+  padding-right : 1.5rem;
+  display       : flex;
+  align-items   : center;
+  flex-direction: row-reverse;
+
+}
+
+.filterContent .filterItem :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__label):hover {
+  color: var(--primary);
+}
+
+.filtersWrapperMobile:last-child .filterPopupArrowIcon {
+  margin: .25rem;
+}
+
+.filtersWrapperMobile:last-child .filterPopupArrowIcon .filterIcon {
+  margin-top  : .25rem;
+  margin-right: .5rem;
+  width       : 24px;
+  height      : 24px;
+}
+
+/* final filter */
+
+.galleryTitle--layout {
+  font-size     : 24px;
+  font-weight   : 700;
+  line-height   : 28.8px;
+  text-align    : left;
+  color         : var(--dark);
+  text-transform: capitalize;
+}
+
+.totalProducts--layout {
+  font-size  : 14px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align : left;
+  color      : var(--darkLight);
+}
+
+.galleryLayoutSwitcher {
+  gap: 20px;
+}
+
+.orderBy--layout {
+  margin-left : -15px;
+  margin-right: 15px;
+}
+
+.galleryLayoutOptionButton--selected {
+  display: none;
+}
+
+.galleryLayoutSwitcher .galleryLayoutOptionButton {
+  width        : 48px;
+  height       : 48px;
+  border-radius: 100px;
+  border       : 1px;
+  border       : 1px solid var(--gray);
+}
+
+.galleryLayoutSwitcher .galleryLayoutOptionButton:hover {
+  background: var(--primaryLight);
+  border    : 1px solid var(--primaryLight);
+}
+
+.galleryLayoutSwitcher :global(.vtex-store-icons-0-x-gridIcon),
+.galleryLayoutSwitcher :global(.vtex-store-icons-0-x-inlineGridIcon) {
+  width : 24px;
+  height: 24px;
+}
+
+.galleryLayoutSwitcher .galleryLayoutOptionButton :global(.vtex-rich-text-0-x-wrapper--layout-option) :global(.vtex-rich-text-0-x-paragraph--layout-option) {
+  font-size    : 16px;
+  font-weight  : 400;
+  line-height  : 19.2px;
+  color        : var(--dark);
+  margin-top   : 0;
+  margin-bottom: 0;
+}
+
+.galleryLayoutSwitcher .galleryLayoutOptionButton :global(.vtex-rich-text-0-x-wrapper--layout-option) :global(.vtex-rich-text-0-x-paragraph--layout-option):hover {
+  color: var(--primary);
+}
+
+.selectedFilterItem :global(.vtex-checkbox__line-container) {
+  display       : flex;
+  flex-direction: row-reverse;
+  align-items   : center;
+}
+
+.selectedFilterItem :global(.vtex-checkbox__label):hover {
+  color: var(--primary);
+}
+
+.galleryItem--grid :global(.vtex-product-summary-2-x-imageWrapper--imagen-summary) {
+  min-height: 120px;
+}
+
+.galleryItem--list :global(.vtex-product-summary-2-x-imageWrapper--imagen-summary) {
+  min-height: 298px;
+}
+
+/* ------ */
+
+/* Tablet */
+@media (min-width: 40rem) and (max-width: 58.75rem) {
+  .orderByOptionsContainer {
+    min-width     : 225px;
+  }
+}
+
+/* Desktop */
+
+/* filter */
+
+.filter__container--title .filterMessage {
+  margin      : 0;
+  padding-left: 16px;
+  font-size   : 0;
+}
+
+.filter__container--title .filterMessage::before {
+  content    : "Filtra por";
+  color      : var(--filterTitleColor);
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.filtersWrapperMobile .filterPopupTitle::before {
+  content       : 'Filtrar';
+  font-size     : 16px;
+  color         : var(--darkMid);
+  text-transform: capitalize;
+  padding-left  : 0;
+}
+
+/* final filter */
+
+
+.orderByOptionsContainer::before {
+  content    : 'Ordenar por:';
+  font-weight: 700;
+  font-size  : 21px;
+  padding    : 19px 24px 12px 24px;
+  display    : block;
+  color      : var(--dark);
+  text-align : left;
+  font-family: LatoRegular;
+  line-height: 28.8px;
+}
+.searchNotFoundTextListLine {
+  line-height: 15px;
+}
+
+.searchNotFoundTextListLine,
+.searchNotFoundTerm {
+  margin-top   : 0;
+  margin-bottom: 0;
+  font-size    : 18px;
+  font-weight  : 400;
+  text-align   : left;
+  color        : var(--darkLight);
+}
+
+.searchNotFoundInfo {
+  padding    : 1rem 0;
+  font-size  : 36px;
+  font-weight: 800;
+  color      : var(--darkMid);
+  text-align : center;
+}
+
+.searchNotFoundTextListLine {
+  font-size: 0;
+}
+
+.searchNotFoundTextListLine::before {
+  content  : "No encontramos ningún resultado relacionado con ";
+  font-size: 18px;
+}
+
+.searchNotFoundTerm::before {
+  content  : "“";
+  font-size: 18px;
+}
+
+.searchNotFoundTerm::after {
+  content  : "”";
+  font-size: 18px;
+}
+
+.accordionFilterOpen {
+  display       : flex;
+  flex-direction: column;
+}
+
+.seeMoreButton {
+  background: var(--white);
+  color     : var(--primary);
+}
+
+@media (min-width: 64rem) {
+
+  /* filter */
+  .filter__container {
+    padding: 0 0 0 0 !important;
+    width  : 100%;
+  }
+
+  .filter__container .filterTitle {
+    padding-left: 1rem;
+  }
+
+  .filter__container--category-2 .filterAvailable {
+    margin-top: .5rem;
+  }
+
+  .filterTitleSpan {
+    font-size     : 18px;
+    font-weight   : 600;
+    line-height   : 21.6px;
+    color         : var(--dark);
+    text-transform: capitalize;
+  }
+
+
+  .filter__container--selectedFilters .filterTemplateOverflow {
+    display       : flex;
+    flex-direction: column;
+    gap           : 1.25rem;
+  }
+
+  .filterIcon :global(.vtex-search-result-3-x-caretIcon) {
+    height: 24px;
+    width : 24px;
+  }
+
+  .filterTemplateOverflow {
+    padding-bottom: 0;
+    max-height    : 200px !important;
+  }
+
+  .filterAvailable:hover {
+    background   : var(--primaryLight);
+    border-radius: 32px;
+  }
+
+  .filterContent {
+    display       : flex;
+    flex-direction: column;
+    gap           : 1.25rem;
+    margin-top    : .25rem;
+    margin-bottom : .5rem;
+  }
+
+  .filterItem :global(.vtex-checkbox__line-container) {
+    padding-right: .8rem !important;
+  }
+
+  .filterItem :global(.vtex-checkbox__inner-container) {
+    background: none;
+    border    : none;
+  }
+
+  .filterItem :global(.vtex-checkbox__box-wrapper),
+  .filterItem :local(input) {
+    border       : 2px solid var(--darkMid);
+    border-radius: 5px;
+    height       : 19px !important;
+    width        : 19px !important;
+    margin       : 0;
+  }
+
+  .filterItem :local(path) {
+    fill        : var(--darkMid) !important;
+    stroke      : var(--darkMid) !important;
+    stroke-width: .01px !important;
+  }
+
+  .filterItem :global(.vtex__icon-check) {
+    transform    : scale(1.2);
+    padding-right: 1px;
+  }
+
+  .filter__container--priceRange .filterTemplateOverflow {
+    padding-left : 1.5rem;
+    padding-right: 2rem;
+  }
+
+  /* end filter */
+
+  .searchResultContainer {
+    max-width: 1290px;
+  }
+
+  .galleryLayoutSwitcher .galleryLayoutOptionButton {
+    width         : 140px;
+    padding       : 12px 24px;
+    display       : flex;
+    flex-direction: row-reverse;
+    column-gap    : 10px;
+  }
+
+  .galleryLayoutSwitcher :local([aria-checked="true"]) {
+    border-color: var(--primary);
+  }
+
+  .galleryLayoutSwitcher :local([aria-checked="true"] p) {
+    color: var(--primary) !important;
+  }
+
+  .galleryLayoutSwitcher :local([aria-checked="true"] svg) {
+    display: none;
+  }
+
+  .galleryLayoutSwitcher :local([aria-checked="true"][aria-label="Switch to list layout"])::before,
+  .galleryLayoutSwitcher :local([aria-checked="true"][aria-label="Switch to grid layout"])::before {
+    transform  : scale(1.25);
+    margin-top : 5px;
+    margin-left: 2px;
+  }
+
+  .galleryLayoutSwitcher :local([aria-checked="true"][aria-label="Switch to grid layout"])::before {
+    content: url('/arquivos/grid-view.svg');
+  }
+
+  .galleryLayoutSwitcher :local([aria-checked="true"][aria-label="Switch to list layout"])::before {
+    content: url('/arquivos/row-insert.svg');
+  }
+
+  .gallery {
+    margin-top   : 0px;
+    margin-bottom: 0px;
+    padding      : 0px;
+  }
+
+  .galleryTitle--layout {
+    padding-bottom: 10px;
+    border-bottom : 1px solid var(--gray);
+  }
+
+  .flexRowContent--wrapper_search-result {
+    justify-content: space-between;
+  }
+
+  .galleryLayoutOptionButton--selected {
+    display   : block;
+    background: var(--primaryLight);
+  }
+
+  .orderByOptionsContainer::before {
+    font-size  : 18px;
+    padding    : 20px 24px 14px 24px;
+    line-height: 28.8px;
+  }
+
+  .orderByOptionsContainer {
+    top       : 0;
+    margin-top: 50px;
+  }
+
+  /*Carga lenta */
+   .galleryItem--grid :global(.vtex-product-summary-2-x-imageWrapper--imagen-summary) {
+    min-height: 272px;
+  } 
+
+  .galleryItem--list :global(.vtex-product-summary-2-x-imageWrapper--imagen-summary) {
+    min-height: 193px;
+  } 
+
+  .galleryItem--list{
+    min-height: 202px;
+  }
+
+  /*Carga lenta */
+
+  .searchNotFoundTextListLine {
+    line-height: normal;
+  }
+
+  .searchNotFoundTextListLine::before,
+  .searchNotFoundTerm,
+  .searchNotFoundTerm::after,
+  .searchNotFoundTerm::before {
+    font-size: 24px;
+  }
+}
+
+.searchNotFoundOops,
+.searchNotFoundWhatDoIDo,
+.searchNotFoundWhatToDoDotsContainer {
+  display: none;
+}
+
+.searchNotFound {
+  height: auto !important;
+}
+
+.galleryItem--list {
+  padding: 6px 5px;
+}
+
+.filterAccordionItemBox:active :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__label),
+.filterAccordionItemBox:focus :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__label),
+.filterAccordionItemBox:hover :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__label) {
+  color: var(--primary) !important;
+}
+
+.filterAccordionItemBox:active :global(.vtex-checkbox__box-wrapper),
+.filterAccordionItemBox:active :local(input),
+.filterAccordionItemBox:focus :global(.vtex-checkbox__box-wrapper),
+.filterAccordionItemBox:focus :local(input) {
+  border: 2px solid var(--primary);
+}
+
+@media (width > 64rem) {
+
+  .orderByOptionItem {
+   font-family             : latoRegular;
+   font-size               : 14px;
+   font-weight             : 400;
+   line-height             : 13.44px;
+   color                   : var(--dark);
+ }
+}
+
+.orderByOptionItem--orderMobile {
+  font-size  : 18px;
+  font-weight: 400;
+  line-height: 17.28px;
+  color      : var(--darkMid);
+  font-family: 'latoRegular';
+
+}
+
+.orderByOptionItem--selected {
+  color: var(--dark);
+}

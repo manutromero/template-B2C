@@ -1,0 +1,111 @@
+{
+	"header-row#mobile": {
+		"title": "Header top allowed mobile",
+		"children": [
+			"logo#logo",
+			"flex-layout.row#header__container-one--mobile",
+			"flex-layout.row#header__container-two--mobile"
+		],
+		"props": {
+			"blockClass": "mobile",
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#header__container-one--mobile": {
+		"title": "Header container 1 mobile",
+		"children": [
+			"flex-layout.col#header__login--mobile",
+			"flex-layout.col#header__minicart--mobile"
+		],
+		"props": {
+			"blockClass": "header__container-one--mobile",
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true,
+			"horizontalAlign": "center",
+			"verticalAlign": "middle",
+			"colGap": 5
+		}
+	},
+	"flex-layout.col#header__minicart--mobile": {
+		"title": "Minicart mobile",
+		"children": ["minicart.v2"],
+		"props": {
+			"blockClass": "header__minicart--mobile",
+			"verticalAlign": "middle",
+			"horizontalAlign": "center"
+		}
+	},
+	"flex-layout.col#header__login--mobile": {
+		"title": "Login mobile",
+		"children": ["login"],
+		"props": {
+			"blockClass": "header__login--mobile",
+			"verticalAlign": "middle",
+			"horizontalAlign": "center"
+		}
+	},
+	// container two
+	"flex-layout.row#header__container-two--mobile": {
+		"title": "Header container 2 mobile",
+		"children": [
+			"flex-layout.col#menu__container--mobile",
+			"flex-layout.col#search-bar"
+		],
+		"props": {
+			"blockClass": "header__container-two--mobile",
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true,
+			"horizontalAlign": "center",
+			"verticalAlign": "middle",
+			"colGap": 2
+		}
+	},
+	"flex-layout.col#search-bar": {
+		"title": "Search Bar mobile",
+		"children": ["search-bar#search-bar--mobile"],
+		"props": {
+			"width": "82%"
+		}
+	},
+	"search-bar#search-bar--mobile": {
+		"props": {
+			"blockClass": "search-bar--mobile",
+			"placeholder": "¿Qué estás buscando?"
+		}
+	},
+	// Nav bar
+	"header-row#navbar": {
+		"title": "Header bottom allowed mobile",
+		"children": ["slider-layout#navbar__container"],
+		"props": {
+			"fullWidth": true,
+			"blockClass": "navbar--mobile"
+		}
+	},
+	"slider-layout#navbar__container": {
+		"title": "Slider navbar container",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 3,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"blockClass": "navbar__container",
+			"centerMode": "to-the-left",
+			"showPaginationDots": "never",
+			"centerModeSlidesGap": 2,
+			"arrowSize": 16
+		},
+		"children": ["link#promotions", "link#about-us", "link#contact"]
+	},
+	"flex-layout.col#menu__container--mobile": {
+		"title": "Menu mobile",
+		"children": ["category-menu"],
+		"props": {
+			"horizontalAlign": "center",
+			"verticalAlign": "middle",
+			"blockClass": "menu__container--mobile"
+		}
+	}
+}

@@ -1,0 +1,113 @@
+.wrapper,
+.popoverHeader,
+.popoverArrowUp {
+    background-color: var(--primary);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.attendantEmail,
+.loginAsText {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+}
+
+.loginButton .profileIcon,
+.logoutHeader .profileIcon {
+    display: none;
+}
+
+.loginButton,
+.logoutHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.loginButton::before,
+.logoutHeader::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.39535C10.0883 3.39535 8.53853 4.95715 8.53853 6.88372C8.53853 8.81029 10.0883 10.3721 12 10.3721C13.9118 10.3721 15.4615 8.8103 15.4615 6.88372C15.4615 4.95715 13.9118 3.39535 12 3.39535ZM7.15394 6.88372C7.15394 4.18652 9.3236 2 12 2C14.6764 2 16.8461 4.18652 16.8461 6.88372C16.8461 9.58092 14.6764 11.7674 12 11.7674C9.3236 11.7674 7.15394 9.58092 7.15394 6.88372ZM6.6406 14.6392C9.92121 12.6706 14.0788 12.6706 17.3594 14.6392L17.0052 15.2387L17.3594 14.6392C17.4668 14.7037 17.5994 14.779 17.7495 14.8644C18.4075 15.2385 19.4021 15.804 20.0835 16.4761C20.5097 16.8965 20.9146 17.4504 20.9882 18.1291C21.0664 18.8508 20.754 19.5281 20.1272 20.1299L19.6497 19.6247L20.1272 20.1299C19.046 21.168 17.7483 22 16.0699 22H7.93012C6.2517 22 4.95408 21.168 3.87277 20.1299L3.87275 20.1299C3.24598 19.5281 2.93356 18.8508 3.01184 18.1291C3.08545 17.4504 3.49035 16.8965 3.9165 16.4761C4.59788 15.804 5.5925 15.2385 6.25047 14.8644C6.40062 14.7791 6.53323 14.7037 6.6406 14.6392ZM16.651 15.8381C13.8069 14.1314 10.1931 14.1314 7.34897 15.8381L7.34896 15.8382C7.19398 15.9311 7.02417 16.0282 6.84629 16.1299C6.1885 16.506 5.42049 16.9451 4.88502 17.4733C4.55261 17.8012 4.4109 18.0717 4.38824 18.2807C4.37024 18.4466 4.41187 18.7202 4.82783 19.1196C5.78399 20.0376 6.75558 20.6047 7.93012 20.6047H16.0699C17.2445 20.6047 18.2161 20.0376 19.1722 19.1196C19.5881 18.7202 19.6298 18.4466 19.6118 18.2807C19.5891 18.0717 19.4474 17.8012 19.115 17.4733C18.5795 16.9451 17.8115 16.506 17.1537 16.1299C16.9758 16.0282 16.806 15.9311 16.651 15.8382L16.651 15.8381Z" fill="%23FFF"/></svg>');
+}
+
+.assistantSalesIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.popoverHeaderEmail {
+    color: var(--white);
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+}
+
+.loginFormMessage {
+    color: var(--primary);
+    font-size: 16px;
+}
+
+.emailField,
+.documentField,
+.phoneField {
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    font-size: 16px;
+    color: var(--dark);
+}
+
+.emailValue,
+.documentValue,
+.phoneValue {
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    font-size: 16px;
+    color: var(--darkMid);
+}
+
+.clientName {
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.clientNameBar {
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    font-size: 14px;
+    color: var(--white);
+    max-width: min-content;
+}
+
+.logoutHeader {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logoutButtonsContainer :global(.vtex-button) {
+    height: 48px;
+    box-sizing: border-box;
+    border-color: transparent;
+    border-radius: 100px;
+}
+
+.logoutButtonsContainer :global(.vtex-button__label) {
+    font-weight: 400;
+    line-height: normal !important;
+    text-align: left;
+    font-size: 14px;
+    color: var(--white);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: auto !important;
+}

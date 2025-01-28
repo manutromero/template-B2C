@@ -1,0 +1,1485 @@
+:global(.vtex-account__cancel-order__header) :global(.vtex-pageHeader__container),
+:global(.vtex-account__order-details__header) :global(.vtex-pageHeader__container),
+:global(.vtex-account__orders-list__header) :global(.vtex-pageHeader__container) {
+  position      : relative;
+  max-width     : 336px;
+  width         : 100%;
+  margin        : 0 auto;
+  padding-bottom: 1.5rem;
+}
+
+:global(.vtex-account__cancel-order__header) :global(.vtex-pageHeader__container),
+:global(.vtex-account__order-details__header) :global(.vtex-pageHeader__container) {
+  padding: 1.5rem 0 0;
+}
+
+:global(.vtex-account__cancel-order__header) :global(.vtex-pageHeader-link__container),
+:global(.vtex-account__order-details__header) :global(.vtex-pageHeader-link__container),
+:global(.vtex-account__orders-list__header) :global(.vtex-pageHeader-link__container) {
+  position: absolute;
+  top     : 1.1rem;
+  left    : .6rem;
+}
+
+:global(.vtex-account__cancel-order__header) :global(.vtex-pageHeader-link__container),
+:global(.vtex-account__order-details__header) :global(.vtex-pageHeader-link__container) {
+  top : 2.5rem;
+  left: 0;
+}
+
+:global(.vtex-account__cancel-order__header) :global(.vtex-pageHeader-link__container) :local(button),
+:global(.vtex-account__order-details__header) :global(.vtex-pageHeader-link__container) :local(button),
+:global(.vtex-account__orders-list__header) :global(.vtex-pageHeader-link__container) :local(button) {
+  background: transparent;
+}
+
+:global(.vtex-account__cancel-order__header) :global(.vtex-pageHeader-link__container) :local(svg),
+:global(.vtex-account__order-details__header) :global(.vtex-pageHeader-link__container) :local(svg),
+:global(.vtex-account__orders-list__header) :global(.vtex-pageHeader-link__container) :local(svg) {
+  display: none;
+}
+
+:global(.vtex-account__cancel-order__header) :global(.vtex-pageHeader-link__container) :local(div)::before,
+:global(.vtex-account__order-details__header) :global(.vtex-pageHeader-link__container) :local(div)::before,
+:global(.vtex-account__orders-list__header) :global(.vtex-pageHeader-link__container) :local(div)::before {
+  content  : url('/arquivos/nav-arrow--left.svg');
+  font-size: 24px;
+}
+
+:global(.vtex-account__cancel-order__header) :global(.vtex-pageHeader-link__container) :local(span),
+:global(.vtex-account__order-details__header) :global(.vtex-pageHeader-link__container) :local(span),
+:global(.vtex-account__orders-list__header) :global(.vtex-pageHeader-link__container) :local(span) {
+  display: none;
+}
+
+:global(.vtex-account__cancel-order__header) :global(.vtex-pageHeader__title),
+:global(.vtex-account__order-details__header) :global(.vtex-pageHeader__title) {
+  margin-left: 3rem;
+  width      : 100%;
+  font-size  : 32px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color      : var(--slateBlue);
+  position   : relative;
+}
+
+:global(.vtex-account__cancel-order__header) :global(.vtex-pageHeader__title)::before,
+:global(.vtex-account__order-details__header) :global(.vtex-pageHeader__title)::before {
+  content    : "Tus pedidos";
+  font-size  : 18px;
+  font-weight: 500 !important;
+  line-height: 21.6px;
+  position   : absolute;
+  color      : var(--darkMid);
+  top        : -1.3rem;
+  left       : 0;
+}
+
+:global(.vtex-account__orders-list__header) :global(.vtex-pageHeader__title) {
+  margin-left: 2rem;
+  font-size  : 0;
+}
+
+:global(.vtex-account__orders-list__header) :global(.vtex-pageHeader__title)::before {
+  content    : "Tus Pedidos";
+  font-size  : 32px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color      : var(--dark);
+}
+
+
+:local(main[class="vtex-account__page-body vtex-my-orders-app-3-x-ordersList vtex-account__orders-list w-100 pa4-s"]) {
+  padding-top: 0;
+}
+
+
+.ordersList {
+  max-width: 336px;
+  margin   : 0 auto;
+  padding  : 0;
+}
+
+.ordersList :local(div[class="center w-100 helvetica"]) {
+  border       : .063rem solid var(--gray);
+  border-radius: 1.5rem;
+  width        : 100%;
+  margin       : 0 0 10.5rem;
+}
+
+.ordersList .orderCard {
+  border: none;
+  margin: .5rem 0 0;
+}
+
+
+.ordersList .orderHeader {
+  background    : transparent;
+  border        : none;
+  padding       : 1.5rem 1rem 0;
+  display       : flex;
+  flex-direction: row;
+  flex-wrap     : wrap;
+}
+
+.ordersList .collapsedOrder {
+  background    : transparent;
+  border        : none;
+  padding       : 1.5rem 1rem 0;
+  display       : flex;
+  flex-direction: column;
+}
+
+.ordersList .collapsedOrder:hover {
+  transform: scale(1.020);
+}
+
+.ordersList .collapsedOrder :local(div[class="fl-ns w-50-ns"]) .orderHeaderLabel {
+  font-size: 0;
+}
+
+.ordersList .collapsedOrder :local(div[class="fl-ns w-50-ns"]) .orderHeaderLabel::before {
+  content  : "Fecha";
+  font-size: 14px;
+  position : absolute;
+}
+
+
+.ordersList .orderHeader :local(div[class="fl db w-25-ns w-50-s"]),
+.ordersList .orderHeader :local(div[class="fr fl-ns w-50"]) {
+  width: 50%;
+}
+
+.ordersList .orderHeader :local(div[class="fr fl-ns w-50"]) .orderHeaderLabel,
+.ordersList .orderHeader :local(div[class="fr fl-ns w-50"]) .orderHeaderValue {
+  text-align: end;
+}
+
+.ordersList .orderHeader :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"]) {
+  width          : 100%;
+  display        : flex;
+  flex-direction : column;
+  justify-content: start;
+  align-items    : start;
+}
+
+.ordersList :local(div[class="fl db w-25-ns w-50-s"]) .orderHeaderLabel {
+  font-size: 0;
+}
+
+.ordersList :local(div[class="fl db w-25-ns w-50-s"]) .orderHeaderLabel {
+  font-size: 0;
+  position : relative;
+}
+
+.ordersList :local(div[class="fl db w-25-ns w-50-s"]) .orderHeaderLabel::before {
+  content  : "Fecha";
+  font-size: 14px;
+  position : absolute;
+  top      : 0;
+  left     : .063rem;
+}
+
+.ordersList .orderHeaderValue {
+  color      : var(--dark);
+  font-size  : 18px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+.ordersList .orderHeaderLabel {
+  color         : var(--darkMid);
+  text-transform: capitalize;
+  font-size     : 14px;
+  font-weight   : 400;
+  line-height   : 16.8px;
+}
+
+.ordersList .orderHeaderValue {
+  color      : var(--dark);
+  font-size  : 18px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+.ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"]) {
+  margin-top: 1rem;
+}
+
+.ordersList .collapsedOrder .orderId,
+.ordersList .orderId {
+  color       : var(--darkMid);
+  font-size   : 16px;
+  font-weight : 400;
+  line-height : 19.2px;
+  position    : relative;
+  padding-left: 2.5rem;
+}
+
+.ordersList .collapsedOrder .orderId::before,
+.ordersList .orderId::before {
+  content         : "";
+  position        : absolute;
+  top             : 0;
+  left            : 0;
+  width           : 5.5ch;
+  height          : 100%;
+  background-color: var(--white);
+}
+
+.ordersList .collapsedOrder .orderId::after,
+.ordersList .orderId::after {
+  content : "Pedido";
+  position: absolute;
+  top     : 0;
+  left    : 0;
+}
+
+
+:global(.vtex-account__cancel-order) .summaryHeader :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"]),
+:global(.vtex-account__cancel-order) .summaryHeader :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"]),
+.ordersList :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-warning"]),
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-warning"]),
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"]),
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"]),
+.ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"] div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"]),
+.ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"] div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"]) {
+  width     : 157px;
+  padding   : .5rem 0;
+  margin-top: .60rem;
+}
+
+:global(.vtex-account__cancel-order) .summaryHeader :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"] span),
+:global(.vtex-account__cancel-order) .summaryHeader :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"] span),
+.ordersList :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-warning"] span),
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"] span),
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-warning"] span),
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"] span),
+.ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"] div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"] span),
+.ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"] div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"] span) {
+  font-size  : 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+}
+
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-warning"]),
+.ordersList :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-warning"]) {
+  background: var(--redLight);
+}
+
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-warning"] span),
+.ordersList :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-warning"] span) {
+  color: var(--red);
+}
+
+:global(.vtex-account__cancel-order) .summaryHeader :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"]),
+:global(.vtex-account__cancel-order) .summaryHeader :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"]),
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"]),
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"]),
+.ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"] div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"]),
+.ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"] div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"]) {
+  background: var(--greenLight);
+}
+
+:global(.vtex-account__cancel-order) .summaryHeader :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"] span),
+:global(.vtex-account__cancel-order) .summaryHeader :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"] span),
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"] span),
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"] span),
+.ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"] div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"] span),
+.ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"] div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"] span) {
+  color: var(--green);
+}
+
+.ordersList :local(div[class="fl w-100 w-70-ns"]) {
+  overflow  : auto;
+  max-height: 245px;
+  width     : 100%;
+  max-width : 349px;
+}
+
+.ordersList :local(div[class="fl w-100 w-70-ns"])::-webkit-scrollbar {
+  width        : 4px;
+  background   : var(--gray);
+  border-radius: 2rem
+}
+
+.ordersList :local(div[class="fl w-100 w-70-ns"])::-webkit-scrollbar-thumb {
+  background   : var(--darkMid);
+  border-radius: 2rem
+}
+
+.orderBody {
+  border-radius  : 2rem;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  flex-direction : column;
+}
+
+.ordersList .orderProduct {
+  background   : var(--primaryLight);
+  border-radius: 1rem;
+  margin-bottom: .5rem;
+  padding      : 2px;
+  min-height   : 88px;
+  position     : relative;
+}
+
+.ordersList .orderProduct :local(div[class="v-top dib w-20 h-auto"]) {
+  width : 30% !important;
+  height: 88px;
+}
+
+.ordersList .orderProduct :local(img) {
+  width        : 5.5rem;
+  height       : 5.5rem;
+  border-radius: 15px;
+}
+
+.ordersList .orderProduct :local(div:last-child) {
+  width: 60% !important;
+}
+
+.ordersList .orderProduct .orderProductName {
+  color             : var(--darkMid);
+  font-size         : 16px;
+  font-weight       : 700;
+  line-height       : 19.2px;
+  margin-bottom     : 6px;
+  display           : -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow          : hidden;
+  max-height        : 3.813rem
+}
+
+.ordersList .orderProduct .orderProductShipping {
+  display: none;
+}
+
+.ordersList .orderProduct .orderProductQuantityValue .orderProductValue {
+  color      : var(--primary);
+  font-size  : 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+.ordersList .orderProduct .orderProductQuantityValue {
+  display        : flex;
+  justify-content: space-between;
+  margin         : 0;
+}
+
+.ordersList .orderProduct .orderProductQuantityValue .orderProductQuantity {
+  position     : absolute;
+  right        : .5rem;
+  bottom       : .5rem;
+  background   : var(--primary);
+  color        : var(--white);
+  font-size    : 12px;
+  font-weight  : 400;
+  line-height  : 14.4px;
+  width        : 35px;
+  height       : 35px;
+  display      : grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.ordersList .orderProduct .orderProductQuantityValue :local(span) {
+  padding: 0;
+}
+
+.orderBody :local(div[class="cf fr db w-100 w-30-ns pt0-xl pt5"]) {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  flex-direction : column;
+  width          : 100%;
+  padding        : 0;
+  margin         : 16px 0 0 0;
+}
+
+.orderBody :local(div[class="cf fr db w-100 w-30-ns pt0-xl pt5"] div[class="flex flex-grow-1 w-100 flex-column"]) {
+  display: none;
+}
+
+.orderBody .cancelBtn {
+  order: 1;
+}
+
+.orderBody .reorderBtn {
+  order: 2;
+}
+
+.orderBody .detailsBtn {
+  order: 3;
+}
+
+.orderBody .detailsBtn,
+.orderBody .cancelBtn,
+.orderBody .reorderBtn {
+  display      : grid;
+  place-content: center;
+  max-width    : 304px;
+  width        : 100%;
+  height       : 48px;
+  padding      : 12px 24px;
+  border-radius: 100px;
+  margin       : 0;
+}
+
+.orderBody .cancelBtn,
+.orderBody .reorderBtn {
+  margin: 0 0 16px 0;
+}
+
+.orderBody .detailsBtn {
+  background: var(--primary);
+  color     : var(--white);
+}
+
+.orderBody .cancelBtn {
+  border: 1px solid var(--gray);
+}
+
+.orderBody .detailsBtn,
+.orderBody .reorderBtn {
+  border: 1px solid var(--primary);
+}
+
+.orderBody .cancelBtn :local(svg),
+.orderBody .reorderBtn :local(svg) {
+  display: none;
+}
+
+.orderBody .detailsBtn :local(span),
+.orderBody .cancelBtn :local(span),
+.orderBody .reorderBtn :local(span) {
+  margin   : 0;
+  padding  : 0;
+  font-size: 0;
+}
+
+.orderBody .detailsBtn :local(span)::before,
+.orderBody .cancelBtn :local(span)::before,
+.orderBody .reorderBtn :local(span)::before {
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.orderBody .cancelBtn :local(span)::before {
+  content: "Cancelar pedido";
+  color  : var(--darkMid);
+}
+
+.orderBody .reorderBtn :local(span)::before {
+  content: "Pedir nuevamente";
+}
+
+.orderBody .detailsBtn :local(span)::before {
+  content: "Ver detalles de órden";
+}
+
+.ordersList {}
+
+
+.orderDetails {
+  max-width: 336px;
+  width    : 100%;
+  margin   : 0 auto;
+  padding  : 0;
+}
+
+.orderDetails :local(section[class="w-100 fl mt5 mb2-l mb2-xl"]) {
+  display       : flex;
+  flex-direction: column;
+}
+
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"]) {
+  width         : 100%;
+  padding-bottom: 1rem;
+}
+
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time) {
+  width          : 100%;
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+}
+
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time span[class="mr2 mv2"]) {
+  display        : flex;
+  flex-direction : column;
+  justify-content: start;
+  font-size      : 18px;
+  font-weight    : 700;
+  line-height    : 19.2px;
+  color          : var(--dark);
+}
+
+.orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time span[class="mr2 mv2"])::before {
+  content    : "Fecha";
+  font-size  : 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color      : var(--darkMid);
+}
+
+.orderDetails :local(ul[class="list tl tr-ns ma0 pa0-s"]) {
+  display        : flex;
+  justify-content: flex-start;
+  align-items    : center;
+}
+
+.orderDetails :local(li[class="db dib-ns mr7-ns mb5 mb0-ns"]) {
+  width        : 284px;
+  height       : 48px;
+  padding      : 12px 24px;
+  border-radius: 100px;
+  border       : 0.063rem solid var(--primary);
+  display      : grid;
+  place-content: center;
+  margin       : 0;
+  flex-grow    : 1;
+  cursor       : pointer;
+}
+
+.orderDetails :local(li[class="db dib-ns mr7-ns mb5 mb0-ns"] a svg) {
+  display: none;
+}
+
+.orderDetails :local(li[class="db dib-ns mr7-ns mb5 mb0-ns"] a span[class="dib"]) {
+  margin   : 0 !important;
+  padding  : 0;
+  font-size: 0;
+  width    : 100%;
+
+}
+
+.orderDetails :local(li[class="db dib-ns mr7-ns mb5 mb0-ns"] a span[class="dib"])::before {
+  content    : "Pedir nuevamente";
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color      : var(--primary);
+}
+
+.orderDetails :local(li[class="db dib-ns mb5 mb0-ns"]) {
+  margin: 0;
+}
+
+.orderDetails :local(li[class="db dib-ns mb5 mb0-ns"] a span) {
+  display: none;
+}
+
+.orderDetails :local(li[class="db dib-ns mb5 mb0-ns"] a) {
+  width        : 30px;
+  height       : 30px;
+  margin       : 0 12px 0;
+  display      : grid;
+  place-content: center;
+}
+
+.orderDetails :local(li[class="db dib-ns mb5 mb0-ns"] a)::before {
+  content: url('/arquivos/more-02.svg');
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"]),
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"]),
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"]) {
+  border       : 1px solid var(--gray);
+  border-radius: 1.5rem;
+  padding      : .75rem 1.5rem;
+  overflow     : hidden;
+  height       : 100%;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"]) {
+  min-height: 130px;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"]) {
+  min-height: 80px;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"]) {
+  padding   : 24px 16px;
+  min-height: auto;
+  height    : 126px;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"])::before {
+  content: url('/arquivos/home-black.svg');
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"] h3) {
+  position      : relative;
+  letter-spacing: normal;
+  text-transform: none;
+  color         : var(--dark);
+  font-size     : 14px;
+  font-weight   : 500;
+  line-height   : 19.2px;
+  margin        : 12px 0 8px;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"] h3)::before {
+  content    : "Datos de envío";
+  font-size  : 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color      : var(--dark);
+  position   : absolute;
+  right      : 47%;
+  bottom     : 35px;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"] div[class="lh-copy f6"]) {
+  font-size  : 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color      : var(--darkMid);
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"] div[class="lh-copy f6"] strong),
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"] div[class="lh-copy f6"] br) {
+  display: none;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"] div[class="lh-copy f6"] div[class="address-summary address-summary-NIC"] br) {
+  display: block;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"] div[class="lh-copy f6"] span[class="street"]) {
+  margin: 0 0 8px;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"] h3) {
+  font-size  : 0;
+  display    : flex;
+  align-items: center;
+  gap        : .375rem;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"] h3)::before {
+  content: url('/arquivos/credit-card-pos.svg');
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"] h3)::after {
+  content       : "Medio de pago";
+  font-size     : 18px;
+  font-weight   : 500;
+  line-height   : 24px;
+  color         : var(--dark);
+  text-transform: none;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"] div[class="dib ma0 pa0 f6 lh-copy"]) {
+  font-size  : 14px;
+  font-weight: 500;
+  line-height: 19.2px;
+  color      : var(--dark);
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"] hr),
+.orderDetails :local(article[class="w-100 fl w-third-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"] h3) {
+  display: none;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"] div[class="cf w-100"] div) {
+  font-size    : 16px;
+  font-weight  : 400;
+  line-height  : 19.2px;
+  color        : var(--darkMid);
+  margin-bottom: .5rem;
+}
+
+.orderDetails :local(article[class="w-100 fl w-third-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"] div[class="cf w-100 mb7"] div) {
+  font-size  : 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  color      : var(--dark);
+}
+
+.orderDetails :local(div[class="myo-progress-bar w-100 h4-plus pb9 ph5 fl b--muted-5 bw1 ba"]) {
+  max-width    : 336px;
+  width        : 100%;
+  height       : 108px;
+  padding      : .75rem 1.5rem;
+  border-radius: 1.5rem;
+  border       : 1px solid var(--gray);
+  position     : relative;
+}
+
+.orderDetails :local(div[class="myo-progress-bar w-100 h4-plus pb9 ph5 fl b--muted-5 bw1 ba"])::after {
+  content    : "Handling order";
+  display    : inline-block;
+  font-size  : 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color      : var(--primary);
+  position   : absolute;
+  bottom     : .75rem;
+  left       : calc(50% - 59.36px);
+}
+
+.orderDetails :local(div[class="myo-progress-bar w-100 h4-plus pb9 ph5 fl b--muted-5 bw1 ba"] div[class="pt7"]) {
+  margin : 0;
+  padding: .75rem 0 0;
+}
+
+.orderDetails :local(div[class="myo-progress-bar__title-font c-on-base mt2 mb5 tracked-mega lh-solid ttu f6 pt5"]) {
+  font-size  : 0;
+  margin     : 0;
+  padding    : 0;
+  display    : flex;
+  align-items: center;
+  gap        : .35rem;
+}
+
+.orderDetails :local(div[class="myo-progress-bar__title-font c-on-base mt2 mb5 tracked-mega lh-solid ttu f6 pt5"])::after {
+  content       : "Estado de la órden";
+  color         : var(--dark);
+  font-size     : 18px;
+  font-weight   : 500;
+  line-height   : 24px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.orderDetails :local(div[class="myo-progress-bar__title-font c-on-base mt2 mb5 tracked-mega lh-solid ttu f6 pt5"])::before {
+  content: url('/arquivos/package-delivered.svg');
+}
+
+.orderDetails :local(div[class="myo-progress-bar"] div[class="myo-progress-bar__mobile-text"]) {
+  padding: 0;
+}
+
+.orderDetails :local(div[class="myo-progress-bar"] div[class="flex"]) {
+  display: none;
+}
+
+.orderDetails :local(div[class="myo-progress-bar"] div[class="myo-progress-bar__line w-20 myo-progress-bar__height1 bt bw1 b--success mt5"]) {
+  border-color: var(--primary);
+  margin      : 5.3px 0 0;
+  padding     : 0;
+  border-width: 2px;
+}
+
+.orderDetails :local(div[class="myo-progress-bar"] div[class="relative flex items-center flex-column br-100 myo-progress-bar__height1 myo-progress-bar__circle mh2 w1 bg-success ba b--white bw1 mv3 "]) {
+  background: var(--primary);
+  margin    : 0;
+  padding   : 0;
+  border    : none;
+}
+
+.orderDetails :local(div[class="myo-progress-bar"] div[class="relative z-0 myo-progress-bar__margin flex items-center flex-column ma3 br-100"]) {
+  margin : 0 0;
+  padding: 0;
+}
+
+.orderDetails :local(div[class="myo-progress-bar"] div[class="br-100 mb2 myo-progress-bar__height1 w1 relative ba b--white bw1 myo-progress-bar__ma-inner-circle c-success bg-success"]) {
+  color     : var(--primary);
+  background: var(--primary);
+  margin    : 0;
+  padding   : 0;
+}
+
+.orderDetails :local(div[class="myo-progress-bar"] div[class="myo-progress-bar__line w-20 myo-progress-bar__height1 bt bw1 b--muted-3 mt5"]) {
+  border-color: transparent;
+  margin      : 5.3px 0 0;
+  padding     : 0;
+  border-width: 2px;
+}
+
+.orderDetails :local(div[class="myo-progress-bar"] div[class="relative flex items-center flex-column br-100 myo-progress-bar__height1 w1 myo-progress-bar__circle bg-muted-3 ba b--white bw1 mv3 mh2"]) {
+  background: var(--dotsProgressBarLight);
+  margin    : 0;
+  padding   : 0;
+  border    : none;
+}
+
+.orderDetails :local(div[class="w-100 pv7 fl"]) {
+  margin       : 1rem 0 4.563rem;
+  padding      : 1.5rem 1rem;
+  border       : .063rem solid var(--gray);
+  border-radius: 1.5rem;
+  max-width    : 336px;
+  width        : 100%;
+  min-height   : 232px;
+}
+
+.orderDetails :local(div[class="w-100 pv7 fl"] div[class="flex flex-column"]) {
+  display: none;
+}
+
+.orderDetails .productTable {
+  margin         : 0;
+  border-collapse: collapse;
+}
+
+.orderDetails .productTable :local(thead tr th) {
+  color      : var(--dark);
+  font-size  : 20px;
+  font-weight: 700;
+  line-height: 24px;
+
+}
+
+.orderDetails .productTable :local(thead tr th[class="pa0 w-20 pl2 pr2 pb3 dn dtc-ns"]) {
+  display: none;
+}
+
+.orderDetails .productTable :local(thead tr th:last-child) {
+  text-align: center;
+}
+
+.orderDetails .productTable .productRow {
+  height       : 91px;
+  border-radius: 1rem 0 0 0;
+  border       : none;
+}
+
+.orderDetails .productTable .productRow .productInfo,
+.orderDetails .productTable .productRow .productPrice,
+.orderDetails .productTable .productRow .productTotalPrice,
+.orderDetails .productTable .productRow .productQuantity {
+  height: 100%;
+}
+
+.orderDetails .productTable .productRow .productPrice {
+  display: none;
+}
+
+.orderDetails .productTable .productRow .productTotalPrice,
+.orderDetails .productTable .productRow .productQuantity {
+  text-align : center;
+  font-size  : 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  color      : var(--dark);
+}
+
+.orderDetails .productTable .productRow .productInfo :local(img) {
+  margin: 0 auto;
+}
+
+.orderDetails .productTable .productRow .productInfo :local(div span) {
+  display: none;
+}
+
+.orderDetails .productTable .productRow .productInfo :local(div a) {
+  font-size         : 16px;
+  font-weight       : 500;
+  line-height       : 19.2px;
+  color             : var(--darkMid);
+  text-decoration   : none;
+  display           : -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow          : hidden;
+  max-height        : 91px;
+}
+
+:local(main[class="vtex-account__page-body vtex-my-orders-app-3-x-cancelOrder vtex-account__cancel-order w-100 pa4-s"]) {
+  padding: 1.5rem 0 0;
+}
+
+:global(.vtex-account__cancel-order) :local(article) {
+  max-width    : 336px;
+  width        : 100%;
+  padding      : .938rem 1rem 1rem;
+  border-radius: 1.5rem;
+  border       : 1px solid var(--gray);
+  margin       : 0 auto;
+}
+
+:global(.vtex-account__cancel-order) .summaryHeader :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"]) {
+  margin-top: 0;
+}
+
+:global(.vtex-account__cancel-order) .summaryHeader {
+  background     : var(--white);
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+  padding        : 0;
+  border         : none;
+}
+
+:global(.vtex-account__cancel-order) .summaryHeader::after,
+:global(.vtex-account__cancel-order) .summaryHeader::before {
+  content: none;
+}
+
+:global(.vtex-account__cancel-order) .summaryHeader :local(div[class="dib mt2 fl max-w-30 f6 fw5 c-on-muted-5"]) {
+  color      : var(--dark);
+  font-size  : 18px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+:global(.vtex-account__cancel-order) .summary :local(div[class="pt3 bg-base bt-0"]) {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  flex-direction : column;
+  gap            : .5rem;
+}
+
+:global(.vtex-account__cancel-order) .summaryProduct::before,
+:global(.vtex-account__cancel-order) .summaryProduct::after {
+  content: none;
+}
+
+:global(.vtex-account__cancel-order) .summaryProduct :local(div:first-child) {
+  width: 31%;
+}
+
+:global(.vtex-account__cancel-order) .summaryProduct {
+  width          : 100%;
+  height         : 92px;
+  border-radius  : 1rem;
+  display        : flex;
+  justify-content: space-between;
+  background     : var(--primaryLight);
+  padding        : .125rem;
+}
+
+:global(.vtex-account__cancel-order) .summaryProduct :local(div:last-child) {
+  height : 88px;
+  padding: .25rem 2.5rem 0 1rem;
+}
+
+:global(.vtex-account__cancel-order) .summaryProduct :local(div:last-child h4) {
+  color             : var(--dark);
+  font-size         : 16px;
+  font-weight       : 700;
+  line-height       : 19.2px;
+  display           : -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow          : hidden;
+  max-height        : 2.3rem;
+  margin-bottom     : .35rem;
+}
+
+:global(.vtex-account__cancel-order) .summaryProduct :local(div:last-child p) {
+  display        : flex;
+  justify-content: flex-start;
+  align-items    : flex-start;
+  flex-direction : column;
+  margin         : 0;
+}
+
+:global(.vtex-account__cancel-order) .summaryProduct :local(div:last-child p span:first-child) {
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color      : var(--darkMid);
+}
+
+:global(.vtex-account__cancel-order) .summaryProduct :local(div:last-child p span:last-child) {
+  color      : var(--primary);
+  font-size  : 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+:global(.vtex-account__cancel-order) .summaryProduct :local(img) {
+  height       : 88px;
+  width        : 88px;
+  border-radius: .875rem;
+}
+
+:global(.vtex-account__cancel-order) :local(div[class="pt3 bg-base bt-0"] div[class="bt bw1 b--muted-5 w-100"]) {
+  border: none;
+
+}
+
+:global(.vtex-account__cancel-order) :local(div[class="pt3 bg-base bt-0"] div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"]) {
+  width        : 100%;
+  height       : 130px;
+  padding      : .75rem 1.5rem;
+  border-radius: 1.5rem;
+  border       : 1px solid var(--gray);
+  margin-top   : 4px;
+}
+
+:global(.vtex-account__cancel-order) :local(div[class="pt3 bg-base bt-0"] div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"] div[class="w-100 f6 fw4 c-on-base mb2 ttu"]) {
+  text-transform: math-auto;
+  font-size     : 18px;
+  font-weight   : 500;
+  line-height   : 24px;
+  color         : var(--dark);
+}
+
+:global(.vtex-account__cancel-order) :local(div[class="pt3 bg-base bt-0"] div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"] div[class="w-100 f6 fw6 c-on-base"]) {
+  font-size    : 14px;
+  font-weight  : 700;
+  line-height  : 16.8px;
+  color        : var(--darkMid);
+  margin-bottom: .25rem;
+}
+
+:global(.vtex-account__cancel-order) :local(div[class="pt3 bg-base bt-0"] div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"] div[class="w-100 f6 fw4 c-on-base"]) {
+  font-size  : 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color      : var(--darkMid);
+  margin-top : 2px;
+}
+
+:global(.vtex-account__cancel-order) .summary :local(div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"]) {
+  padding: 24px 16px;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul section strong),
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] h5),
+:global(.vtex-account__cancel-order) .summary :local(div[class="bt bw1 b--muted-5 w-100"]:last-child div[class="pa5"] div[class="w-100 f6 fw4 c-on-base mb2 ttu"]),
+:global(.vtex-account__cancel-order) .summary :local(div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"] hr) {
+  display: none;
+}
+
+:global(.vtex-account__cancel-order) .summary :local(div[class="bt bw1 b--muted-5 w-100"]:last-child div[class="pa5"]) {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  flex-direction : column;
+}
+
+:global(.vtex-account__cancel-order) .summary :local(div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"] div[class="cf w-100"])::before,
+:global(.vtex-account__cancel-order) .summary :local(div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"] div[class="cf w-100"])::after {
+  content: none;
+}
+
+:global(.vtex-account__cancel-order) .summary :local(div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"] div[class="cf w-100"]) {
+  margin-bottom: .5rem;
+}
+
+:global(.vtex-account__cancel-order) .summary :local(div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"] div[class="cf w-100"] div[class="dib f6 fw4 c-on-base w-60"]) {
+  color      : var(--darkMid);
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+:global(.vtex-account__cancel-order) .summary :local(div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"] div[class="cf w-100 mb7"]) {
+  margin: 0;
+}
+
+:global(.vtex-account__cancel-order) .summary :local(div[class="bt bw1 b--muted-5 w-100"] div[class="pa5"] div[class="cf w-100 mb7"] div) {
+  color      : var(--dark);
+  font-size  : 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"]) {
+  margin   : 0 auto;
+  padding  : 0;
+  max-width: 336px;
+  width    : 100%;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] p[class="db f3 c-on-base mb3"]) {
+  color      : var(--slateBlue);
+  font-size  : 32px;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] p[class="f4 c-on-base lh-copy mt7"]) {
+  font-size : 0;
+  margin-top: 28px;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] p[class="f4 c-on-base lh-copy mt7"])::before {
+  content    : "¿Por qué deseas cancelar el pedido?";
+  color      : var(--darkMid);
+  font-size  : 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"]) {
+  margin: .75rem 0 0;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul li[class="vtex-my-orders-app-3-x-option myo-option pv5 bb bw1 b--muted-5"]) {
+  border-bottom: 1px solid var(--softSilver);
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] li label) {
+  color      : var(--dark);
+  font-size  : 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] li input) {
+  border-color: var(--slateBlue);
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] li input)::after {
+  top       : 50%;
+  left      : 50%;
+  transform : translate(-50%, -50%);
+  background: var(--slateBlue);
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul section) {
+  background: var(--white);
+  margin    : 0;
+  padding   : .75rem 0;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul section button) {
+  cursor       : pointer;
+  width        : 100%;
+  height       : 48px;
+  padding      : 12px 24px;
+  border-radius: 100px;
+  background   : var(--red);
+  color        : var(--white);
+  border       : none;
+  font-size    : 16px;
+  font-weight  : 400;
+  line-height  : 19.2px;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul form label) {
+  color      : var(--darkMid);
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul form textarea) {
+  border-radius: 1.5rem;
+  border       : none;
+  background   : var(--grayLight);
+  padding      : 1rem;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul section ul li) {
+  color      : var(--darkMid);
+  font-size  : 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul section ul li::marker) {
+  color: var(--darkMid);
+}
+
+:global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul form) {
+  padding-bottom: 0;
+}
+
+@media (width < 23.625rem) {
+  .orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"] h3)::before {
+    right: 43%;
+  }
+}
+
+@media (width > 40rem) {
+
+  .orderDetails :local(article[class="w-100 fl w-third-m mb5"]),
+  .orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"]) {
+    width: 100%;
+  }
+
+  .orderDetails :local(div[class="w-100 fl w-60-ns pv3-ns pr0"]) {
+    width: 100%;
+  }
+}
+
+@media (width > 64rem) {
+
+  :global(.vtex-account__cancel-order__header) {
+    display: none;
+  }
+
+  :global(.vtex-account__order-details__header) :global(.vtex-pageHeader__container) {
+    max-width     : none;
+    padding-bottom: 1.8rem;
+  }
+
+  :global(.vtex-account__order-details__header) :global(.vtex-pageHeader-link__container) {
+    top: 1rem;
+  }
+
+  :global(.vtex-account__orders-list__header) :global(.vtex-pageHeader__container) {
+    margin : 0;
+    padding: 0 0 43px;
+  }
+
+  :global(.vtex-account__orders-list__header) :global(.vtex-pageHeader__title) {
+    margin-left: 0;
+  }
+
+  :global(.vtex-account__orders-list__header) :global(.vtex-pageHeader-link__container) :local(div)::before {
+    content: "";
+  }
+
+  :local(main[class="vtex-account__page-body vtex-my-orders-app-3-x-cancelOrder vtex-account__cancel-order w-100 pa4-s"]) {
+    padding: .75rem 0 0;
+  }
+
+  .ordersList {
+    max-width: 747px;
+    width    : 100%;
+    margin   : 0 0 0 1rem;
+  }
+
+  .ordersList .collapsedOrder {
+    flex-direction: row;
+  }
+
+  .ordersList .collapsedOrder .orderId::after {
+    left: 10rem;
+  }
+
+  .ordersList .collapsedOrder .orderId::before {
+    top  : 0;
+    left : 11.5rem;
+    width: 3ch;
+  }
+
+
+  .ordersList .collapsedOrder :local(div[class="fl db w-25-ns w-50-s"]),
+  .ordersList .orderHeader :local(div[class="fr fl-ns w-50"]),
+  .ordersList .orderHeader :local(div[class="fl db w-25-ns w-50-s"]),
+  .ordersList .orderHeader :local(div[class="fr fl-ns w-50"]) {
+    width: 25%;
+  }
+
+  .ordersList .orderHeader :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"]) {
+    margin     : 0;
+    width      : 50%;
+    align-items: end;
+  }
+
+  .ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"] div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-muted-1"]),
+  .ordersList :local(div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-warning"]),
+  .ordersList :local(div[class="fl mt3 mt0-ns w-25-ns w-100-s"] div[class="dib br2 pv2 ph3 f7 fw5 tc mv2 bg-success"]) {
+    margin-right : 2.45rem;
+    margin-bottom: 0;
+  }
+
+  .orderBody {
+    flex-direction: row;
+    align-items   : start;
+    padding       : 1rem;
+  }
+
+  .orderBody :local(div[class="fl w-100 w-70-ns"]) {
+    height: 200px;
+  }
+
+  .orderBody :local(div[class="cf fr db w-100 w-30-ns pt0-xl pt5"]) {
+    margin: 0;
+  }
+
+  .ordersList .orderProduct {
+    margin-bottom: 12px;
+    max-height   : 88px;
+  }
+
+  .ordersList .orderProduct :local(img) {
+    height       : 84px;
+    border-radius: 14px;
+    object-fit   : cover;
+  }
+
+  .ordersList .orderProduct .orderProductQuantityValue {
+    justify-content: flex-start;
+    flex-direction : column;
+  }
+
+  .ordersList .orderProduct .orderProductQuantityValue .orderProductQuantity {
+    position   : static;
+    width      : auto;
+    height     : auto;
+    background : none;
+    display    : inline-block;
+    font-size  : 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color      : var(--darkMid);
+  }
+
+  .orderDetails {
+    max-width  : 856px;
+    margin-left: 1rem;
+  }
+
+  .orderDetails :local(section[class="w-100 fl mt5 mb2-l mb2-xl"]) {
+    flex-direction: row;
+  }
+
+  .orderDetails :local(article[class="w-100 fl w-third-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"]) {
+    height         : 143px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    gap            : .75rem;
+  }
+
+  .orderDetails :local(article[class="w-100 fl w-third-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"] div[class="cf w-100"] div),
+  .orderDetails :local(article[class="w-100 fl w-third-m mb5"] section[class="pa5 ba bw1 b--muted-5 overflow-y-scroll bg-base h4-plus"] div[class="cf w-100 mb7"]) {
+    margin-bottom: 0;
+  }
+
+  .orderDetails :local(div[class="w-100 fl w-60-ns pv3-ns pr0"]),
+  .orderDetails :local(div[class="fl w-40-ns pv3 pl0"]) {
+    width: 50%;
+  }
+
+  .orderDetails :local(div[class="w-100 fl w-60-ns pv3-ns pr0"]) {
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-end;
+  }
+
+  .orderDetails :local(ul[class="list tl tr-ns ma0 pa0-s"]) {
+    width: 279px;
+  }
+
+  .orderDetails :local(div[class="fl w-40-ns pv3 pl0"] time) {
+    justify-content: flex-start;
+    gap            : 2.188rem;
+  }
+
+  .orderDetails :local(li[class="db dib-ns mr7-ns mb5 mb0-ns"]) {
+    background: var(--primary);
+  }
+
+  .orderDetails :local(li[class="db dib-ns mr7-ns mb5 mb0-ns"] a span[class="dib"])::before {
+    color: var(--white);
+  }
+
+  .orderDetails :local(article[class="w-100 fl w-third-m pr3-m mb5"] section[class="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base"] h3)::before {
+    right: 32%;
+  }
+
+  .orderDetails :local(div[class="myo-progress-bar w-100 h4-plus pb9 ph5 fl b--muted-5 bw1 ba"]) {
+    max-width: none;
+  }
+
+  .orderDetails :local(div[class="myo-progress-bar w-100 h4-plus pb9 ph5 fl b--muted-5 bw1 ba"])::after {
+    content: none;
+  }
+
+  .orderDetails :local(div[class="myo-progress-bar w-100 h4-plus pb9 ph5 fl b--muted-5 bw1 ba"]) {
+    padding-bottom: 7.5rem;
+  }
+
+  .orderDetails :local(div[class="myo-progress-bar"] div[class="myo-progress-bar__line w-20 myo-progress-bar__height1 bt bw1 b--muted-3 mt5"]),
+  .orderDetails :local(div[class="myo-progress-bar"] div[class="myo-progress-bar__line w-20 myo-progress-bar__height1 bt bw1 b--success mt5"]) {
+    margin: 7px 0 0;
+  }
+
+  .orderDetails :local(div[class="myo-progress-bar w-100 h4-plus pb9 ph5 fl b--muted-5 bw1 ba"] div[class="absolute myo-progress-bar__highlighted-circle myo-progress-bar__subtitle mt5 pa3 tc f6"] span) {
+    color      : var(--primary);
+    font-size  : 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .orderDetails :local(div[class="relative flex items-center flex-column br-100 myo-progress-bar__height1 myo-progress-bar__circle mh2 w1 bg-success ba b--white bw1 mv3 "] span) {
+    color      : var(--darkMid);
+    font-size  : 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .orderDetails .productTable .productRow .productInfo :local(div) {
+    width: 70%;
+  }
+
+  .orderDetails .productTable .productRow .productInfo :local(img) {
+    margin-right: .75rem;
+    width       : 96px;
+    height      : 96px;
+  }
+
+  .orderDetails :local(div[class="w-100 pv7 fl"]) {
+    max-width: none;
+  }
+
+  .orderDetails .productTable :local(thead tr th[class="pa0 w-20 pl2 pr2 pb3 dn dtc-ns"]),
+  .orderDetails .productTable .productRow .productPrice {
+    display   : block;
+    width     : 100%;
+    text-align: center;
+  }
+
+  .orderDetails .productTable .productRow .productPrice {
+    text-align : center;
+    font-size  : 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color      : var(--dark);
+  }
+
+  .orderDetails .productTable :local(thead tr th:nth-child(3)) {
+    text-align: center;
+  }
+
+  .orderBody .detailsBtn,
+  .orderBody .cancelBtn,
+  .orderBody .reorderBtn {
+    max-width  : 349px;
+    margin-left: 1.1rem;
+  }
+
+  :global(.vtex-account__cancel-order) :local(div[class="center w-100 cf"]) {
+    display        : flex;
+    justify-content: center;
+    align-items    : flex-start;
+    flex-direction : row-reverse;
+    gap            : 1rem;
+  }
+
+  :global(.vtex-account__cancel-order) .summaryProduct :local(div:first-child) {
+    width: 38%;
+  }
+
+  :global(.vtex-account__cancel-order) .summaryProduct :local(div:last-child) {
+    padding-right: 1.875rem;
+  }
+
+  :global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"]) {
+    max-width: none;
+  }
+
+  :global(.vtex-account__cancel-order) :local(div[class="center w-100 cf"] aside) {
+    width: 19.438rem;
+  }
+
+  :global(.vtex-account__cancel-order) :local(article) {
+    margin: 5.063rem 0 3rem;
+    width : 19.670rem;
+  }
+
+  :global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] p[class="db f3 c-on-base mb3"]) {
+    margin-top   : 0;
+    margin-bottom: 3.375rem;
+  }
+
+  :global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul section) {
+    display       : flex;
+    flex-direction: column;
+    gap           : 1.5rem;
+  }
+
+  :global(.vtex-account__cancel-order) :local(section[class="w-100 w-70-xl fl-xl pr9"] section[class="mv7"] ul section button) {
+    max-width : 311px;
+    align-self: center;
+  }
+}

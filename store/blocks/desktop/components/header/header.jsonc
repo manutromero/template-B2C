@@ -1,0 +1,112 @@
+{
+  "flex-layout.row#telemarketing": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "telemarketing"
+    }
+  },
+  "header-row#desktop": {
+    "title": "Header top allowed desktop",
+    "children": [
+      "logo#logo",
+      "flex-layout.row#header__container--desktop"
+    ],
+    "props": {
+      "blockClass": "desktop",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#header__container--desktop": {
+    "title": "Main container top desktop",
+    "children": [
+      "flex-layout.col#header__search-bar--desktop",
+      "header-spacer",
+      "flex-layout.col#header__login--desktop",
+      "flex-layout.col#header__minicart--desktop"
+    ],
+    "props": {
+      "blockClass": "header__container--desktop",
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#header__search-bar--desktop": {
+    "title": "Search bar desktop",
+    "children": [
+      "search-bar#search-bar--desktop"
+    ],
+    "props": {
+      "width": "54%",
+      "blockClass": "header__search-bar--desktop"
+    }
+  },
+  "flex-layout.col#header__login--desktop": {
+    "title": "Login desktop",
+    "children": [
+      "login"
+    ],
+    "props": {
+      "blockClass": "header__login--desktop",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#header__minicart--desktop": {
+    "title": "Minicart desktop",
+    "children": [
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header__minicart--desktop",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
+  "search-bar#search-bar--desktop": {
+    "props": {
+      "blockClass": "search-bar--desktop",
+      "placeholder": "¿Qué estás buscando?"
+    }
+  },
+  // Navbar / menu
+  "header-row#navbar--desktop": {
+    "title": "Header bottom allowed desktop",
+    "children": [
+      "flex-layout.row#navbar--desktop"
+    ],
+    "props": {
+      "blockClass": "navbar--desktop",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#navbar--desktop": {
+    "title": "Main container bottom desktop",
+    "children": [
+      "category-menu",
+      "flex-layout.col#navbar__container--desktop"
+    ],
+    "props": {
+      "blockClass": "navbar--desktop",
+      "fullWidth": true
+    }
+  },
+  //Navbar
+  "flex-layout.col#navbar__container--desktop": {
+    "title": "Navbar desktop",
+    "children": [
+      "link#promotions",
+      "link#about-us",
+      "link#contact"
+    ],
+    "props": {
+      "blockClass": "navbar__container--desktop",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "width": "80%"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.flexRowContent--order-customer {
+    display: flex;
+    flex-direction: column;
+    height: 148px;
+    padding: 12px 24px 12px 24px;
+    background-color: var(--primaryLight);
+    border-radius: 16px;
+    gap: 12px;
+}
+
+.flexCol--order-customers-info,
+.flexRowContent--shipping-information-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.flexRowContent--shipping-information-title {
+    justify-content: flex-start;
+}
+
+.flexRowContent--order-summary-title {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.flexRowContent--shipping-information-title {
+    padding: 12px 24px 0 24px;
+    background-color: var(--primaryLight);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding-bottom: 1rem;
+}
+
+.flexRow--order-payments :global(.vtex-store-components-3-x-container) {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.flexRowContent--order-payments {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRowContent--order-header {
+    display: flex;
+    justify-content: center;
+}
+
+.flexRowContent--order-payments-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.flexCol--order-payments {
+    padding: 12px 24px 12px 24px;
+    background-color: var(--primaryLight);
+    border-radius: 16px;
+}
+
+.flexRowContent--order-payments .stretchChildrenWidth {
+    width: 100% !important;
+}
+
+.flexRowContent--order-payments-content .stretchChildrenWidth {
+    width: auto !important;
+}
+
+.flexRowContent--order-customer .stretchChildrenWidth {
+justify-content: flex-start;
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+    .flexRowContent--order-customer {
+        width: 417px;
+    }
+
+    .flexRow--order-customer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flexRowContent--order-payments {
+        flex-direction: row;
+        width: 854px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .flexColChild--order-payments {
+        height: auto !important;
+    }
+
+    .flexCol--order-payments {
+        height: 80px;
+    }
+
+    .flexRow--shipping-information-title{
+        width: 854px;
+        margin: 0 auto;
+    }
+
+    .flexRowContent--shipping-information-title {
+        width: 417px;
+    }
+
+}

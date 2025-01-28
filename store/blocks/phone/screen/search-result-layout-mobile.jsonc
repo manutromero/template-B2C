@@ -1,0 +1,72 @@
+{
+	"search-result-layout.mobile#mobile__search-result--layout": {
+		"title": "Contenedor Plp mobile",
+		"props": {
+			"pagination": "show-more",
+			"preventRouteChange": true,
+			"defaultGalleryLayout": "grid",
+			"blockClass": "customQuery"
+		},
+		"children": [
+			"responsive-layout.desktop#search",
+			"responsive-layout.mobile#search"
+		]
+	},
+	"responsive-layout.mobile#search": {
+		"children": [
+			"flex-layout.row#searchbread",
+			"flex-layout.row#searchtitle",
+			"flex-layout.row#productCount",
+			"flex-layout.row#wrapper-filters-and-order",
+			"flex-layout.row#products-mobile",
+			"flex-layout.row#fetchmore"
+		]
+	},
+	"flex-layout.row#products-mobile": {
+		"title": "Contenedor gallery productos",
+		"children": ["search-content#mobile"]
+	},
+	"search-content#mobile": {
+		"blocks": ["gallery#mobile", "not-found"]
+	},
+	"gallery#mobile": {
+		"props": {
+			"customSummaryInterval": 1,
+			"layouts": [
+				{
+					"name": "grid",
+					"component": "GridSummary",
+					"itemsPerRow": {
+						"(min-width:1008px)": 3,
+						"(min-width:623px) and (max-width:1007px)": 3,
+						"(max-width:622px)": 2
+					}
+				},
+				{
+					"name": "list",
+					"component": "ListSummary",
+					"itemsPerRow": 1
+				}
+			],
+			"GridSummary": "product-summary.shelf#products-global_grid-search",
+			"ListSummary": "product-summary.shelf#products-global_grid-search"
+		}
+	},
+
+	"flex-layout.row#wrapper-filters-and-order": {
+		"title": "Contenedor ordernar - filtros - gallery",
+		"children": [
+			"order-by.v2#mobile",
+			"filter-navigator.v3",
+			"gallery-layout-switcher"
+		],
+		"props": {
+			"blockClass": "wrapper-filters-and-order"
+		}
+	},
+	"order-by.v2#mobile": {
+		"props": {
+			"blockClass": "orderMobile"
+		}
+	}
+}

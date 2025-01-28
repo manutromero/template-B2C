@@ -1,0 +1,25 @@
+.trigger--hidden,
+.trigger--visible {
+    background     : transparent;
+    border         : none;
+    display        : flex;
+    flex-direction : row;
+    align-items    : baseline;
+    justify-content: space-between;
+    width          : 100%;
+}
+
+.trigger--visible::after {
+    content: url(/arquivos/minus-sign.png);
+    width  : 24px;
+    height : 24px;
+}
+
+.trigger--hidden::after {
+    content: url(/arquivos/plus-sign.png);
+    width  : 24px;
+    height : 24px;
+}
+.trigger--specification--hidden, .trigger--description--hidden{
+    border-bottom: 1px solid var(--gray);
+}

@@ -1,0 +1,12 @@
+{
+    "search-not-found-layout": {
+        "title": "Resultado de Búsqueda No Encontrado",
+        "children": [
+            "responsive-layout.desktop#search-not-found",
+            "responsive-layout.mobile#search-not-found"
+        ],
+        "props": {
+            "blockClass": "product-search"
+        }
+    }
+}

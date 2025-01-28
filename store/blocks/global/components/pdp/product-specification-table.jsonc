@@ -1,0 +1,68 @@
+{
+  "product-specification-group#table-pdp": {
+    "children": [
+      "flex-layout.row#spec-group"
+    ]
+  },
+  "flex-layout.row#spec-group": {
+    "props": {"blockClass": "productSpecificationGroup"},
+    "children": ["flex-layout.col#spec-group-technical-specifications"]
+  },
+  "flex-layout.col#spec-group-technical-specifications": {
+    "children": [
+      "product-specification#technical-specifications"
+    ],
+    "props": {
+      "blockClass": "container-pdp-specification"
+    }
+  },
+  "product-specification#technical-specifications": {
+    "children": [
+      "flex-layout.row#spec-item-technical-specifications"
+    ]
+  },
+  "flex-layout.row#spec-item-technical-specifications": {
+    "props": {
+      "blockClass": "productSpecification-pdp"
+    },
+    "children": [
+      "flex-layout.col#spec-name-technical-specifications",
+      "flex-layout.col#spec-value-technical-specifications"
+    ]
+  },
+  "flex-layout.col#spec-name-technical-specifications": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": [
+      "product-specification-text#specification-technical-specifications"
+    ]
+  },
+  "flex-layout.col#spec-value-technical-specifications": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": [
+      "product-specification-values#-technical-specifications"
+    ]
+  },
+  "product-specification-values#-technical-specifications": {
+    "children": [
+      "product-specification-text#value-technical-specifications"
+    ]
+  },
+  "product-specification-text#specification-technical-specifications": {
+    "props": {
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-text#value-technical-specifications": {
+    "props": {
+      "message": "{specificationValue}"
+    }
+  }
+}

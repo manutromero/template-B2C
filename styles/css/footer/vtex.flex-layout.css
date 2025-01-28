@@ -1,0 +1,170 @@
+/* general footer */
+.flexRow--footer--desktop,
+.flexRowContent--footer--desktop .flexRow--footer--mobile,
+.flexRowContent--footer--mobile {
+  padding: 0;
+  margin : 0;
+}
+
+/* footer top */
+.flexCol--footer__container-top--desktop,
+.flexCol--footer__container-top--mobile {
+  height    : 8.532rem;
+  background: var(--primary);
+}
+
+/* footer middle*/
+.flexColChild--footer--desktop,
+.flexColChild--footer--mobile {
+  background: var(--middleFooterColor);
+}
+
+.flexCol--footer__container-middle--desktop,
+.flexCol--footer__container-middle--mobile {
+  max-width     : 336px;
+  margin        : 0 auto;
+  padding-bottom: 48px;
+  display       : flex;
+  flex-direction: column;
+  gap           : 2rem;
+}
+
+.flexColChild--footer__container-middle--desktop,
+.flexColChild--footer__container-middle--mobile {
+  display        : flex;
+  flex-direction : column;
+  gap            : 2rem;
+  justify-content: center;
+}
+
+/* footer middle links */
+.flexColChild--footer__links :global(.vtex-store-link-0-x-link--footer__terms),
+.flexColChild--footer__links :global(.vtex-store-link-0-x-link--footer__suggestions),
+.flexColChild--footer__links :global(.vtex-store-link-0-x-link--footer__catalogue) {
+  color          : var(--dark);
+  text-decoration: none;
+  font-size      : 20px;
+  line-height    : 24px;
+  font-weight    : 500;
+}
+
+/* footer bottom */
+
+.flexCol--footer__container-bottom--mobile {
+  background: var(--white);
+  height    : 11.125rem;
+}
+
+.flexRowContent--footer__brand-logos {
+  display  : flex;
+  flex-wrap: nowrap;
+  gap      : 1rem;
+}
+
+.flexRowContent--footer__brand-logos :global(.vtex-store-components-3-x-logoContainer--itg-logo) {
+  padding: 0;
+}
+
+.flexRowContent--footer__brand-logos :global(.vtex-store-components-3-x-logoContainer--vtex-logo) {
+  padding: 0;
+}
+
+.flexCol--footer__rights-reserved {
+  display       : flex;
+  flex-direction: column;
+  gap           : 0.75rem;
+}
+
+@media (width < 22.75rem) {
+
+  .flexColChild--footer__container-middle--desktop:first-child,
+  .flexColChild--footer__container-middle--mobile:first-child {
+    padding: 0 0.15rem;
+  }
+}
+
+@media (width > 40rem) {
+
+  /* footer middle */
+  .flexCol--footer__container-middle--desktop,
+  .flexCol--footer__container-middle--mobile {
+    max-width      : 857px;
+    margin         : 0 auto;
+    flex-direction : row;
+    justify-content: space-between;
+    gap            : 2rem;
+  }
+
+  .flexColChild--footer__container-middle--desktop:first-child,
+  .flexColChild--footer__container-middle--mobile:first-child {
+    width: 60%;
+  }
+
+  .flexColChild--footer__container-middle--desktop:last-child,
+  .flexColChild--footer__container-middle--mobile:last-child {
+    width        : 40%;
+    align-self   : center;
+    justify-self : center;
+    padding-right: 0.5rem;
+    margin-top   : 1.25rem;
+  }
+
+  .flexColChild--footer__links {
+    text-align: start;
+  }
+}
+
+@media (width > 64rem) {
+  .flexColChild--footer__container-middle--desktop:first-child {
+    width: 529px;
+  }
+
+  .flexColChild--footer__container-middle--desktop:last-child {
+    align-self: flex-start;
+    width     : auto;
+    margin-top: 3rem;
+  }
+
+  /* footer bottom */
+  .flexCol--footer__container-bottom--desktop {
+    height    : 6.5rem;
+    background: var(--white);
+  }
+
+  .flexCol--footer__rights-reserved {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    width          : 51rem;
+  }
+
+  .flexColChild--footer__watermark {
+    display    : flex;
+    align-items: center;
+  }
+
+  .flexCol--footer__brand-logos {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    gap           : 2rem;
+  }
+
+  .flexColChild--footer__brand-logos:first-child {
+    display    : flex;
+    align-items: center;
+  }
+
+  .flexRowContent--footer__brand-logos {
+    display: flex;
+    gap    : 2rem;
+  }
+  /* footer middle links */
+  .flexColChild--footer__links :global(.vtex-store-link-0-x-link--footer__terms),
+  .flexColChild--footer__links :global(.vtex-store-link-0-x-link--footer__suggestions),
+  .flexColChild--footer__links :global(.vtex-store-link-0-x-link--footer__catalogue) {
+    font-size  : 16px;
+    line-height: 19px;
+    font-weight: 400;
+  }
+}

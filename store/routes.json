@@ -1,0 +1,17 @@
+{
+	"store.custom#terminos-y-condiciones": {
+		"path": "/terminos-y-condiciones"
+	},
+	"store.custom#static-page-modular": {
+		"path": "/sobre-nosotros"
+	},
+	"store.custom#suggestions-complaints": {
+		"path": "/sugerencias-y-reclamos"
+	},
+	"store.custom#promotion": {
+		"path": "/promociones"
+	},
+  "store.custom#product-comparison-list" : {
+    "path": "/product-comparison"
+  }
+}

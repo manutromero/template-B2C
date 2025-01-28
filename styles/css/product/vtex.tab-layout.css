@@ -1,0 +1,65 @@
+.container--container-description-specification {
+    max-width    : 1074px;
+    margin       : auto;
+    margin-bottom: 40px;
+}
+
+.listItemActive :global(.vtex-button) {
+    background: transparent;
+    border    : none;
+}
+
+.listItemActive--description :global(.vtex-button),
+.listItemActive--specification :global(.vtex-button) {
+    color: var(--primary);
+}
+
+.listContainer--description-specification :global(.vtex-button__label) {
+    font-family : latoBold;
+    font-size   : 32px;
+    font-weight : 900;
+    line-height : 38.4px;
+    padding-top : 0 !important;
+    padding-left: 32px;
+}
+
+.listItemActive {
+    background   : var(--box-shadow-minicart);
+    height       : 60px;
+    padding      : 8px 0px 8px 0px;
+    border-radius: 16px 16px 0px 0px;
+    max-width    : 529px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.listItem {
+    width: 48%;
+}
+
+.contentItem--description-new :global(.vtex-store-components-3-x-content){
+    margin-top: 5px;
+}
+
+.listContainer--description-specification {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.listItem--specification :local(button[class="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-transparent b--transparent c-action-primary hover-b--transparent hover-bg-action-secondary hover-b--action-secondary pointer "]):hover,
+.listItem--description :local(button[class="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-transparent b--transparent c-action-primary hover-b--transparent hover-bg-action-secondary hover-b--action-secondary pointer "]):hover{
+    background: transparent !important;
+}
+
+.listItem--description :local(button[class="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-transparent b--transparent c-action-primary hover-b--transparent hover-bg-action-secondary hover-b--action-secondary pointer "]) :local(div[class="vtex-button__label flex items-center justify-center h-100 ph6 "]),
+.listItem--specification :local(button[class="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-transparent b--transparent c-action-primary hover-b--transparent hover-bg-action-secondary hover-b--action-secondary pointer "]) :local(div[class="vtex-button__label flex items-center justify-center h-100 ph6 "]){
+    color: var(--filterTitleColor) !important;
+}
+
+.listItem--specification :local(button[class="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-transparent b--transparent c-action-primary hover-b--transparent hover-bg-action-secondary hover-b--action-secondary pointer "]) :local(div[class="vtex-button__label flex items-center justify-center h-100 ph6 "]):hover,
+.listItem--description :local(button[class="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-transparent b--transparent c-action-primary hover-b--transparent hover-bg-action-secondary hover-b--action-secondary pointer "]) :local(div[class="vtex-button__label flex items-center justify-center h-100 ph6 "]):hover{
+    color: var(--titleTabletPdp) !important;
+}
+
+.listItem--description, .listItem--specification, .listItemActive--specification, .listItemActive--description {
+    border-bottom: 1px solid var(--gray);
+}

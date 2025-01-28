@@ -1,0 +1,279 @@
+{
+	"store.custom#static-page-modular": {
+		"children": [
+			"responsive-layout.desktop#banner",
+			"flex-layout.row#container-title-text-one",
+			"flex-layout.row#container-imagen-title-text-one",
+			"flex-layout.row#container-title-text-two",
+			"flex-layout.row#container-imagen-title-text-two",
+			"flex-layout.row#container-tab-card-static"
+		]
+	},
+	//Banner
+	"responsive-layout.desktop#banner": {
+		"children": [
+			"list-context.image-list#banner-static",
+			"flex-layout.row#container-breadcrumb-modular"
+		]
+	},
+	//Breadcrumb
+	"flex-layout.row#container-breadcrumb-modular": {
+		"title": "Contendor modular",
+		"children": ["rich-text#breadcrumb-suggestion"],
+		"props": {
+			"blockClass": ["container-static-content", "width-static__modular"],
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"list-context.image-list#banner-static": {
+		"title": "Banner",
+		"children": ["slider-layout#banners-static"],
+		"props": {
+			"height": 300,
+			"images": [
+				{
+					"image": "/arquivos/banner-home.png",
+					"description": "banner principal"
+				}
+			]
+		}
+	},
+	"slider-layout#banners-static": {
+		"props": {
+			"blockClass": "banner-static",
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true
+		}
+	},
+	//title - text 1
+	"flex-layout.row#container-title-text-one": {
+		"title": "Contendor titulo texto 1",
+		"children": [
+			"rich-text#seccion-title-static-one",
+			"rich-text#seccion-text-static-one"
+		],
+		"props": {
+			"blockClass": ["container-title-text-one", "padding-page"],
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	"rich-text#seccion-title-static-one": {
+		"title": "titulo",
+		"props": {
+			"text": "Información requerida del usuario",
+			"blockClass": "title-info-required-user"
+		}
+	},
+	"rich-text#seccion-text-static-one": {
+		"title": "texto",
+		"props": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel velit facilisis, rutrum nisi sit amet, molestie sem. Cras aliquet nunc eu sem iaculis, blandit dignissim magna venenatis. Integer pellentesque neque sit amet mi elementum rutrum. Ut id feugiat justo. Nulla vestibulum convallis tempus. Vestibulum lorem leo, lacinia eu arcu vel, imperdiet pretium lorem. Integer dapibus commodo nulla ut molestie. Nulla facilisi. In tincidunt mi eu accumsan dictum. Fusce volutpat orci leo, placerat blandit odio faucibus ac. Nullam sit amet tempus nulla. In hac habitasse platea dictumst. <br> Quisque tempor, neque vitae vestibulum pulvinar, ipsum erat commodo augue, sit amet tristique risus quam ac ex. Nullam et imperdiet nisl, eu aliquet ipsum. Donec pharetra quis nibh vitae dictum. Fusce et venenatis magna. Etiam quis nibh pulvinar, malesuada diam ut, rhoncus lorem. Integer semper enim non tincidunt malesuada. Etiam ultrices nisl sed volutpat finibus. Proin sit amet sodales ex. Aliquam id malesuada lectus, vel efficitur sem. Vivamus suscipit urna id maximus vestibulum. Fusce et eros ultrices, congue magna vel, consequat massa. Praesent a venenatis neque..",
+			"blockClass": "text-info-required-user"
+		}
+	},
+	// card imagen - title - text 1
+	"flex-layout.row#container-imagen-title-text-one": {
+		"title": "Contendor uno card",
+		"children": [
+			"flex-layout.col#container-imagen-card-static-one",
+			"flex-layout.col#container-title-text-static-one"
+		],
+		"props": {
+			"blockClass": ["container-imagen-title-text-one", "paddingDesktop"],
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	"flex-layout.col#container-imagen-card-static-one": {
+		"title": "Contendor imagen",
+		"children": ["image#card-static-one"],
+		"props": {
+			"blockClass": ["container--imagen-card-static-one", "marginBottom-page"],
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	"image#card-static-one": {
+		"title": "imagen card",
+		"props": {
+			"src": "/arquivos/card-one-desktop.png",
+			"maxHeight": 426
+		}
+	},
+	"flex-layout.col#container-title-text-static-one": {
+		"title": "Contendor titulo - texto",
+		"children": ["rich-text#title-static-one", "rich-text#text-static-one"],
+		"props": {
+			"blockClass": "container-title-text-static-one",
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	"rich-text#title-static-one": {
+		"title": "titulo",
+		"props": {
+			"text": "Compra con total seguridad",
+			"blockClass": "title-info-required-user"
+		}
+	},
+	"rich-text#text-static-one": {
+		"title": "texto",
+		"props": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel velit facilisis, rutrum nisi sit amet, molestie sem. Cras aliquet nunc eu sem iaculis, blandit dignissim magna venenatis. Integer pellentesque neque sit amet mi elementum rutrum. Ut id feugiat justo. Nulla vestibulum convallis tempus. Vestibulum lorem leo, lacinia eu arcu vel, imperdiet pretium lorem. Integer dapibus commodo nulla ut molestie. Nulla facilisi. In tincidunt mi eu accumsan dictum. Fusce volutpat orci leo, placerat blandit odio faucibus ac. Nullam sit amet tempus nulla. In hac habitasse platea dictumst. <br> <br> Quisque tempor, neque vitae vestibulum pulvinar, ipsum erat commodo augue, sit amet tristique risus quam ac ex. Nullam et imperdiet nisl, eu aliquet ipsum. Donec pharetra quis nibh vitae dictum. Fusce et venenatis magna. Etiam quis nibh pulvinar, malesuada diam ut, rhoncus lorem. Integer semper enim non tincidunt malesuada. Etiam ultrices nisl sed volutpat finibus. Proin sit amet sodales ex. Aliquam id malesuada lectus, vel efficitur sem. Vivamus suscipit urna id maximus vestibulum. Fusce et eros ultrices, congue magna vel, consequat massa. Praesent a venenatis neque..",
+			"blockClass": "text-info-required-user"
+		}
+	},
+	// title - text 2
+	"flex-layout.row#container-title-text-two": {
+		"title": "Contendor titulo - texto 2",
+		"children": [
+			"rich-text#seccion-title-static-two",
+			"rich-text#seccion-text-static-two"
+		],
+		"props": {
+			"blockClass": ["container-title-text-one", "marginTop-page"],
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	"rich-text#seccion-title-static-two": {
+		"title": "titulo",
+		"props": {
+			"text": "Para ventas a través de Whatsapp",
+			"blockClass": "title-info-required-user"
+		}
+	},
+	"rich-text#seccion-text-static-two": {
+		"title": "texto",
+		"props": {
+			"text": "Los productos vendidos por nuestro canal digital tienen los precios vigentes a nivel nacional. El costo de envío dependerá del volumen o del peso de su compra y de la zona de entrega. Para mayor información consulte con un agente de ventas en línea a través de nuestro Whatsapp +505 8888 9994",
+			"blockClass": "text-info-required-user"
+		}
+	},
+	// card imagen - title - text 2
+	"flex-layout.row#container-imagen-title-text-two": {
+		"title": "Contendor dos card",
+		"children": [
+			"flex-layout.col#container-title-text-static-two",
+			"flex-layout.col#container-imagen-card-static-two"
+		],
+		"props": {
+			"blockClass": ["container-imagen-title-text-one", "paddingDesktop"],
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	"flex-layout.col#container-imagen-card-static-two": {
+		"title": "Contendor imagen",
+		"children": ["image#card-static-two"],
+		"props": {
+			"blockClass": ["container--imagen-card-static-one", "marginBottom-page"],
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	"image#card-static-two": {
+		"title": "imagen card",
+		"props": {
+			"src": "/arquivos/card-two-desktop.png",
+			"maxHeight": 426
+		}
+	},
+	"flex-layout.col#container-title-text-static-two": {
+		"title": "Contendor titulo - texto uno",
+		"children": ["rich-text#title-static-two", "rich-text#text-static-two"],
+		"props": {
+			"blockClass": "container-title-text-static-one",
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	"rich-text#title-static-two": {
+		"title": "titulo",
+		"props": {
+			"text": "Compra con total seguridad",
+			"blockClass": "title-info-required-user"
+		}
+	},
+	"rich-text#text-static-two": {
+		"title": "texto",
+		"props": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel velit facilisis, rutrum nisi sit amet, molestie sem. Cras aliquet nunc eu sem iaculis, blandit dignissim magna venenatis. Integer pellentesque neque sit amet mi elementum rutrum. Ut id feugiat justo. Nulla vestibulum convallis tempus. Vestibulum lorem leo, lacinia eu arcu vel, imperdiet pretium lorem. Integer dapibus commodo nulla ut molestie. Nulla facilisi. In tincidunt mi eu accumsan dictum. Fusce volutpat orci leo, placerat blandit odio faucibus ac. Nullam sit amet tempus nulla. In hac habitasse platea dictumst. <br> <br> Quisque tempor, neque vitae vestibulum pulvinar, ipsum erat commodo augue, sit amet tristique risus quam ac ex. Nullam et imperdiet nisl, eu aliquet ipsum. Donec pharetra quis nibh vitae dictum. Fusce et venenatis magna. Etiam quis nibh pulvinar, malesuada diam ut, rhoncus lorem. Integer semper enim non tincidunt malesuada. Etiam ultrices nisl sed volutpat finibus. Proin sit amet sodales ex. Aliquam id malesuada lectus, vel efficitur sem. Vivamus suscipit urna id maximus vestibulum. Fusce et eros ultrices, congue magna vel, consequat massa. Praesent a venenatis neque..",
+			"blockClass": "text-info-required-user"
+		}
+	},
+	//tab - card
+	"flex-layout.row#container-tab-card-static": {
+		"title": "Contendor tab - card",
+		"children": [
+			"flex-layout.col#container-tab-static",
+			"flex-layout.col#container-card-static"
+		],
+		"props": {
+			"blockClass": "container-container-tab-card-static",
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	//tab
+	"flex-layout.col#container-tab-static": {
+		"title": "Contendor tab",
+		"children": [
+			"rich-text#title-tab",
+			"disclosure-layout-group#group-page-static-modular"
+		],
+		"props": {
+			"blockClass": "container-tab-static",
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	"rich-text#title-tab": {
+		"title": "titulo",
+		"props": {
+			"text": "Preguntas frecuentes",
+			"blockClass": ["title-info-required-user", "marginBotton-desktop"]
+		}
+	},
+	//card
+	"flex-layout.col#container-card-static": {
+		"children": ["info-card#three"],
+		"props": {
+			"blockClass": "container-card-static",
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		}
+	},
+	"info-card#three": {
+		"title": "info card 3",
+		"props": {
+			"id": "info-card-three",
+			"isFullModeStyle": false,
+			"textPosition": "left",
+			"imageUrl": "/arquivos/card-three-desktop.png",
+			"mobileImageUrl": "/arquivos/card-three.png",
+			"headline": "Por qué elegirnos?",
+			"subhead": "En nuestro sitio web, podrás navegar fácilmente por diferentes categorías y encontrar lo que estás buscando en segundos. Además, ofrecemos envío rápido y seguro a todo el mundo, para que puedas recibir tu pedido en la comodidad de tu hogar. <br> <br> También puedes estar seguro de que tu información está protegida, ya que nuestra página cuenta con altos estándares de seguridad y privacidad para garantizar una experiencia de compra sin preocupaciones.",
+			"blockClass": "info-card-three-static",
+			"textAlignment": "left",
+			"callToActionMode": "none"
+		}
+	}
+}

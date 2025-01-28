@@ -1,0 +1,7 @@
+@media (min-width: 64rem) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--container-imagen-title-text-one) :global(.items-stretch):first-child,
+    :global(.vtex-flex-layout-0-x-flexRowContent--container-imagen-title-text-one) :global(.items-stretch):last-child,
+    :global(.vtex-flex-layout-0-x-flexRowContent--container-container-tab-card-static) :global(.items-stretch) {
+        width: 50% !important;
+    }
+}

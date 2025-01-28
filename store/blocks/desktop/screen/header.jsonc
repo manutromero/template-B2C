@@ -1,0 +1,16 @@
+{
+	"header-layout.desktop": {
+		"title": "Header layout desktop",
+		"children": ["sticky-layout#desktop"]
+	},
+	"sticky-layout#desktop": {
+		"children": [
+			"flex-layout.row#telemarketing",
+			"header-row#desktop",
+			"header-row#navbar--desktop"
+		],
+		"props": {
+			"blockClass": "header-sticky--desktop"
+		}
+	}
+}

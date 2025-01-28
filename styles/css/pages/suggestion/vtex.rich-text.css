@@ -1,0 +1,19 @@
+.paragraph--title-suggestions-complaints {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: var(--dark);
+}
+
+.paragraph--text-suggestions-complaints {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: var(--darkMid);
+}

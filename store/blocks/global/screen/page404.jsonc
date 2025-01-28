@@ -1,0 +1,8 @@
+{
+	"store.not-found#product": {
+		"blocks": [
+			"responsive-layout.desktop#page-404",
+			"responsive-layout.mobile#page-404"
+		]
+	}
+}

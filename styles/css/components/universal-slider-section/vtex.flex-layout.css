@@ -1,0 +1,20 @@
+.flexColChild--showcaseSection:first-child {
+  border-bottom: 2px solid var(--neutral-gray-50);
+  margin       : 0px 20px 0px 20px;
+}
+
+/* Tablet */
+@media (min-width: 40rem) {}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  .flexRow--showcaseSection {
+    max-width    : 1290px;
+    margin       : auto;
+    margin-bottom: 32px;
+  }
+
+  .flexColChild--showcaseSection:first-child {
+    max-width: none;
+  }
+}

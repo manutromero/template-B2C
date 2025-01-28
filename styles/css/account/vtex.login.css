@@ -1,0 +1,138 @@
+.arrowUp {
+  display: none;
+}
+
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--recoveryPassword,
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--codeConfirmation,
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--beginCreatePass,
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--emailAndPassword,
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--emailVerification,
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .contentContainer :local(div[class="bg-base relative"]),
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .contentInitialScreen,
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--accountOptions {
+  width        : 17.9375rem;
+  height       : 9.25rem;
+  display      : grid;
+  place-content: center;
+  right        : -12rem;
+  margin       : 0;
+  top          : 3rem;
+  padding      : 0;
+  border-radius: 1.5rem;
+  box-shadow   : 0px 1rem 1rem 0.5rem #21334E33;
+}
+
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .contentInitialScreen {
+  width : 20rem;
+  height: 10rem;
+}
+
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--recoveryPassword,
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--codeConfirmation,
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--beginCreatePass,
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--emailAndPassword,
+:local(div[class="vtex-login-2-x-box z-max absolute"]) .content--emailVerification {
+  height : auto;
+  width  : auto;
+  padding: 1rem;
+}
+
+.loginOptionsContainer :global(.vtex-login-2-x-options) {
+  min-width: auto;
+}
+
+.contentContainer {
+  box-shadow: none;
+  margin    : 0;
+  padding   : 0;
+}
+
+.accountOptions {
+  margin : 0;
+  padding: 0;
+}
+
+.accountOptions div:last-child,
+.accountOptions a {
+  text-decoration: none;
+  display        : grid;
+  place-content  : center;
+}
+
+.accountOptions div:last-child button,
+.accountOptions :global(.vtex-login-2-x-button) {
+  width          : 247px;
+  height         : 48px;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.accountOptions :global(.vtex-login-2-x-button) {
+  border: .063rem solid var(--gray);
+}
+
+.accountOptions :global(.vtex-login-2-x-button) span {
+  font-size: 0;
+  position : relative;
+}
+
+.accountOptions :global(.vtex-login-2-x-button) span::after {
+  content : url('/arquivos/account-purple.svg');
+  position: absolute;
+  left    : -1.8rem;
+  top     : -.1rem;
+}
+
+.accountOptions :global(.vtex-login-2-x-button) span::before {
+  content       : "Datos personales";
+  font-size     : 16px;
+  font-weight   : 400;
+  line-height   : 19.2px;
+  text-transform: none;
+  padding-right : 1rem;
+  color         : var(--darkMid);
+}
+
+.accountOptions hr {
+  display: none;
+}
+
+.accountOptions div:last-child button div {
+  display: none;
+}
+
+.accountOptions div:last-child button {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  gap            : .5rem;
+  border         : .063rem solid transparent;
+}
+
+.accountOptions div:last-child button:hover {
+  background  : var(--primaryLight) !important;
+  border-color: var(--primary);
+}
+
+.accountOptions div:last-child button::after {
+  content       : "Cerrar sesión";
+  font-size     : 16px;
+  font-weight   : 400;
+  line-height   : 19.2px;
+  text-transform: none;
+}
+
+.accountOptions div:last-child button::before {
+  content   : url("/arquivos/logout-01.svg");
+  margin-top: .25rem;
+}
+
+.accountOptions div:last-child button :global(.vtex-button__label),
+.accountOptions div:last-child button :global(.vtex-button__spinner-container) {
+  display: none;
+}
+
+.formFooter .sendButton button:hover {
+  background: var(--primaryDark);
+}

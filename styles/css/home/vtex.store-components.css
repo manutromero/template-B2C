@@ -1,0 +1,54 @@
+.backToTopButtonActive {
+  right : .75rem;
+  bottom: 2rem;
+}
+
+.backToTopButtonActive :local(button) {
+  background   : var(--white);
+  height       : 3.5rem;
+  width        : 3.5rem;
+  border       : .063rem solid var(--primary);
+  border-radius: 50%;
+}
+
+.backToTopButtonActive :local(button):hover,
+.backToTopButtonActive :local(button):focus {
+  background  : var(--white) !important;
+  border-color: var(--primary) !important;
+}
+
+.backToTopButtonActive :local(button) :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+
+.backToTopButtonActive :local(button) :global(.vtex-button__label) :local(svg) {
+  width : 1.5rem;
+  height: 1.5rem;
+}
+
+
+@media (width > 64.25rem) {
+  .backToTopButtonActive :local(button) {
+    height         : 3rem;
+    width          : 10rem;
+    padding        : .75rem 1.20rem;
+    border-radius  : 6.25rem;
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: space-between;
+  }
+
+  .backToTopButtonActive :local(button)::before {
+    content    : "Volver arriba";
+    color      : var(--primary);
+    font-weight: 400;
+    font-size  : 1rem;
+    line-height: 1.2rem;
+  }
+
+  .backToTopButtonActive {
+    right : 4.688rem;
+    bottom: 3.469rem;
+  }
+}

@@ -1,0 +1,90 @@
+{
+    "responsive-layout.mobile#pdp": {
+        "title": "Contenedor producto mobile",
+        "children": [
+            "flex-layout.row#product-breadcrumb",
+            "flex-layout.row#product-main",
+            "__fold__.mobile",
+            "flex-layout.row#description-specification",
+            "flex-layout.row#wrapper-slider-pdp"
+        ]
+    },
+    "flex-layout.row#description-specification": {
+        "props": {
+            "blockClass": "description"
+        },
+        "children": [
+            "flex-layout.col#description-specification"
+        ]
+    },
+    "flex-layout.col#description-specification": {
+        "children": [
+            "disclosure-layout#description",
+            "disclosure-layout#specification"
+        ],
+        "props": {
+            "blockClass": "description-specification"
+        }
+    },
+    "disclosure-layout#description": {
+        "children": [
+            "disclosure-trigger#description",
+            "disclosure-content#description"
+        ],
+        "props": {
+            "blockClass": "description",
+            "initialVisibility": "visible"
+        }
+    },
+    "disclosure-trigger#description": {
+        "children": [
+            "rich-text#description"
+        ],
+        "props": {
+            "blockClass": "description"
+        }
+    },
+    "disclosure-content#description": {
+        "children": [
+            "product-description#pdp"
+        ],
+        "props": {
+            "blockClass": "description"
+        }
+    },
+    "rich-text#description": {
+        "props": {
+            "text": "Descripción",
+            "blockClass": "description"
+        }
+    },
+    "disclosure-layout#specification": {
+        "children": [
+            "disclosure-trigger#specification",
+            "disclosure-content#specification"
+        ],
+        "props": {
+            "blockClass": "specification",
+            "initialVisibility": "visible"
+        }
+    },
+    "disclosure-trigger#specification": {
+        "children": [
+            "rich-text#specification"
+        ],
+        "props": {
+            "blockClass": "specification"
+        }
+    },
+    "disclosure-content#specification": {
+        "children": [
+            "product-specification-group#table-pdp"
+        ]
+    },
+    "rich-text#specification": {
+        "props": {
+            "text": "Especificaciones",
+            "blockClass": "specification"
+        }
+    }
+}

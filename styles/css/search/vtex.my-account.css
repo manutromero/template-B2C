@@ -1,0 +1,55 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--btn-plp) :global(.c-on-disabled),
+:global(.vtex-flex-layout-0-x-flexRow--pdp-button) :global(.c-on-disabled) {
+  background  : var(--grayLight);
+  border-color: var(--grayLight);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--btn-plp) :global(.c-on-disabled):hover,
+:global(.vtex-flex-layout-0-x-flexRow--pdp-button) :global(.c-on-disabled):hover {
+  background  : var(--grayLight);
+  border-color: var(--grayLight);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--btn-plp) :global(.c-on-disabled) :global(.vtex-add-to-cart-button-0-x-buttonText),
+:global(.vtex-flex-layout-0-x-flexRow--pdp-button) :global(.c-on-disabled) :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  color: var(--darkLight);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--btn-plp) :global(.c-on-disabled) :global(.vtex-add-to-cart-button-0-x-buttonText)::after {
+  content: '' !important;
+}
+
+:global(.vtex-product-quantity-1-x-quantitySelectorStepper) :global(.vtex-numeric-stepper__minus-button-container) :global(.c-action-primary) {
+  background                : var(--primaryLight);
+  width                     : 36px;
+  height                    : 36px;
+  padding                   : 0;
+  gap                       : 10px;
+  opacity                   : 0px;
+  border-color              : var(--primaryLight);
+  border-top-right-radius   : 32px !important;
+  border-top-left-radius    : 32px;
+  border-bottom-left-radius : 32px;
+  border-bottom-right-radius: 32px !important;
+}
+
+:global(.vtex-product-quantity-1-x-quantitySelectorStepper) :global(.vtex-numeric-stepper__minus-button-container) :global(.c-disabled) {
+  background                : var(--neutral-gray-50);
+  border-color              : var(--neutral-gray-50);
+  border-top-right-radius   : 32px !important;
+  border-bottom-right-radius: 32px !important;
+}
+
+@media (min-width: 64rem) {
+  :global(.vtex-store-components-3-x-carouselGaleryThumbs--image-pdp) :global(.swiper-container)::after {
+    content : '';
+    position: absolute;
+    bottom  : 0;
+    width   : 100%;
+    height  : 7%;
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0) 0%,
+        var(--white) 50%);
+    z-index: 1;
+  }
+}

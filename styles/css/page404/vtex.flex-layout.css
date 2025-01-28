@@ -1,0 +1,85 @@
+/* Base styles - Mobile First */
+.flexRow--container-404 :global(.vtex-store-components-3-x-container) {
+  padding: 0 !important;
+}
+
+.flexCol--card-404 {
+  display       : flex;
+  flex-direction: column;
+  z-index       : 1;
+  position      : absolute;
+  top           : 50%;
+  right         : 50%;
+  transform     : translate(50%, -50%);
+  width         : auto !important;
+  height        : auto;
+  text-align    : center;
+  align-items   : center;
+}
+
+.flexColChild--card-404 {
+  height: auto !important;
+}
+
+.flexRowContent--container-404 {
+  display       : flex;
+  flex-direction: column;
+}
+
+.flexRowContent--container-404 .stretchChildrenWidth {
+  width: 100% !important;
+}
+
+.flexCol--image-container-404 {
+  height  : 614px !important;
+  position: relative;
+}
+
+.flexCol--card-404 :global(.vtex-store-link-0-x-link--button-home-404) {
+  display        : flex;
+  width          : 319px !important;
+  height         : 48px !important;
+  border-radius  : 100px;
+  background     : var(--primary);
+  text-align     : center;
+  justify-content: center;
+  align-items    : center;
+  text-decoration: none;
+}
+
+.flexCol--card-404 :global(.vtex-store-link-0-x-label--button-home-404) {
+  font-size  : 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color      : var(--white);
+}
+
+:global(.vtex-store-components-3-x-imageElement--404page-image) {
+  height: 615px;
+  width : 100%;
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 48.01rem) {
+  .flexCol--card-404 {
+    top      : 20rem;
+    right    : 10rem;
+    transform: none;
+  }
+
+  .flexCol--card-404 :global(.vtex-store-link-0-x-link--button-home-404) {
+    width: 462px !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .flexCol--card-404 {
+    right: 20rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .flexCol--card-404 {
+    right: 30rem;
+  }
+}

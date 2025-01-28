@@ -1,0 +1,233 @@
+.removeAllItemsButtonWrapper :local(div[class="vtex-button__label flex items-center justify-center h-100 ph6 "]) {
+  color: #DC3F3F;
+}
+
+.removeAllItemsButtonWrapper :local(button[class="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-transparent b--transparent c-action-primary hover-b--transparent hover-bg-action-secondary hover-b--action-secondary pointer "]):hover {
+  background-color: transparent;
+}
+
+.rowContainer:nth-child(even) {
+  background-color: var(--white);
+}
+
+.pageContainer :local(div[class="styleguide__layout flex justify-center pb7 bg-muted-5 min-vh-100"]) {
+  background-color: var(--white);
+}
+
+.showDifferencesContainer :global(.vtex-checkbox__line-container) {
+  align-items: center;
+}
+
+.drawerOpened :global(.vtex-styleguide-9-x-jsFocusVisible) {
+  height: 250px;
+}
+
+.drawerOpened :local(div[class="flex flex-row items-center pointer"]) {
+  height: 64px;
+}
+
+.drawer :local(span[class="vtex-product-summary-2-x-productBrand vtex-product-summary-2-x-brandName t-body"]) {
+  font-size: 14px;
+}
+
+.drawer :global(.vtex-product-summary-2-x-image) {
+  width: 100px;
+  min-height: 150px;
+}
+
+.drawer :global(.vtex-product-summary-2-x-imageStackContainer) {
+  align-items: flex-start;
+}
+
+.compareProductButtonWrapper :local(button[class="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-small t-action--small bg-action-primary b--action-primary c-on-action-primary hover-bg-action-primary hover-b--action-primary hover-c-on-action-primary pointer w-100 "]):hover {
+  background-color: var(--Primary-Prpura-800, #492A77);
+  border-color: var(--Primary-Prpura-800, #492A77);
+}
+
+.drawer :global(.vtex-product-summary-2-x-nameContainer),
+.drawer :global(.vtex-product-summary-2-x-column) {
+  width: max-content;
+}
+
+.drawer :global(.vtex-product-summary-2-x-element) {
+  height: max-content;
+}
+
+.drawer :global(.vtex-flex-layout-0-x-flexRowContent) {
+  display: flex;
+}
+
+.closeButton {
+  border: transparent;
+}
+
+.expandCollapseButton {
+  border: transparent;
+}
+
+.comparisonButtons {
+  align-items: center;
+}
+
+.productSummaryRowContainer {
+  width: inherit;
+}
+
+.fieldNameCol {
+  min-width: 140px;
+}
+
+.pageContainer :local(div[class="mt3"]) {
+  width: inherit;
+}
+
+.pageContainer :local(div[class="styleguide__pageBlock flex flex-column"]) {
+  max-width: 800px;
+  margin   : 0 auto;
+  width    : 100%;
+}
+
+.hideOrShowText {
+  text-transform: capitalize;
+}
+
+.productSummaryRowContainer :global(.vtex-slider-layout-0-x-slideChildrenContainer) {
+  width: initial;
+}
+
+
+.pageContainer :local(div[class="vtex-pageHeader__title t-heading-2 order-0 flex-grow-1"]) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 323px;
+  margin-right: 26px;
+  font-family: 'latoBold';
+}
+
+.pageContainer :local(div[class="styleguide__box bg-base t-body c-on-base br3 b--muted-4 ba pa7"]) {
+  border-radius: 24px;
+  border       : 2px solid var(--Neutral-Grey-100, #E7E7E7);
+}
+
+.removeAllItemsButtonWrapper :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+
+.pageContainer :local(div[class*="c-on-base"][class*="justify-between"]) {
+  justify-content: unset;
+}
+
+.rowContainer :global(.vtex-product-comparison-0-x-fieldNameCol) {
+  font-family: 'latoBold';
+  font-size: 14px;
+}
+
+.removeAllWrapper :global(.vtex-button__label) {
+  text-transform: initial;
+}
+
+.compareProductButtonWrapper :global(.vtex-button__label) {
+  text-transform: capitalize;
+}
+
+@media screen and (min-width:768px) {
+  .compareProductButtonWrapper {
+    width: 100%;
+    max-width: 138px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .hideOrShowText, .drawerTitleInnerContainer, .removeAllWrapper :global(.vtex-button__label) {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width:440px) {
+  .productSummaryRowContainer :global(.vtex-slider-layout-0-x-sliderLayoutContainer--comparison-page) {
+    width: 100%;
+  }
+
+  .rowContainer :global(.vtex-slider-layout-0-x-sliderLayoutContainer) {
+    width: 50%;
+  }
+
+  .productSummaryRowContainer :global(.vtex-slider-layout-0-x-slide--comparison-page) {
+    width: 100% !important;
+    max-width: 266px;
+  }
+
+  .productSummaryRowContainer :global(.vtex-slider-layout-0-x-slideChildrenContainer) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .pageContainer :local(div[class="vtex-pageHeader__title t-heading-2 order-0 flex-grow-1"]) {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width:640px) {
+  .fieldNameCol {
+    min-width: 95px;
+  }
+
+  .pageContainer :local(div[class="styleguide__box bg-base t-body c-on-base br3 b--muted-4 ba pa7"]) {
+    border       : 2px solid var(--gray);
+    border-radius: 24px;
+    padding      : 0 20px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .pageContainer :local(div[class="styleguide__pageBlock flex flex-column"]) {
+    max-width: 1100px;
+  }
+
+  .fieldNameCol {
+    min-width: 130px;
+  }
+
+  .pageContainer :global(.vtex-pageHeader__container) {
+    max-width: 1115px !important;
+    margin: 2.5rem auto 2.5rem auto !important;
+    padding: 2rem 2rem 0.625rem 2rem;
+  }
+
+}
+
+@media screen and (max-width:1024px) {
+  .productSummaryRowContainer {
+    flex-direction: column-reverse;
+    align-items   : center;
+  }
+
+  .productSummaryRowContainer :global(.vtex-product-comparison-0-x-fieldNameCol) {
+    justify-content: center;
+  }
+
+  .showDifferencesContainer {
+    width    : 100%;
+    min-width: 195px;
+  }
+
+  .pageContainer :local(div[class="flex flex-column flex-row-ns mb5-ns"]) {
+    padding: 0 18px;
+  }
+}
+
+
+@media screen and (min-width:330px) and (max-width:420px) {
+  .comparisonButtons :global(.vtex-button__label) {
+    padding-left : 0.3rem;
+    padding-right: 0.3rem;
+  }
+}
+
+@media (min-width:64rem) {
+  .productSummaryRowContainer {
+    max-width: -webkit-fill-available;
+  }
+}

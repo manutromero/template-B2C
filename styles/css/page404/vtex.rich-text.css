@@ -1,0 +1,35 @@
+/* Base styles - Mobile First */
+.paragraph--title-card-one {
+    color: var(--white);
+    font-size: 49.17px;
+    font-weight: 700;
+    line-height: 59px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.paragraph--title-card-two {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    color: var(--white);
+}
+
+.paragraph--title-card-three {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: var(--white);
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 48.01rem) {
+    .paragraph--title-card-one {
+        font-size: 74px;
+    }
+}

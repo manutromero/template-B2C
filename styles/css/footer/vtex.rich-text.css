@@ -1,0 +1,53 @@
+.container--footer-text {
+  font-weight: 400;
+  font-size  : 20px;
+  line-height: 24px;
+  color      : var(--dark);
+  text-align : start;
+}
+
+.container--watermark {
+  color         : var(--primaryDark);
+  font-weight   : 500;
+  font-size     : 17px;
+  line-height   : 20px;
+  letter-spacing: 2%;
+}
+
+.paragraph--watermark {
+  margin: 0;
+}
+
+.container--powered-text {
+  color         : var(--primaryDark);
+  font-weight   : 500;
+  font-size     : 18px;
+  line-height   : 21px;
+  letter-spacing: 2%;
+}
+
+.paragraph--powered-text {
+  margin: 0 0 .65rem 0;
+}
+
+.paragraph--footer-text {
+  margin-left: 12px;
+  margin-top : 24px;
+  font-family: latoRegular;
+}
+
+@media (width > 64rem) {
+  .paragraph--powered-text {
+    margin: 0 0 .20rem 0;
+  }
+
+  .container--footer-text {
+  font-size  : 16px;
+  line-height: 19px;
+  }
+
+  .paragraph--footer-text {
+  margin-left: 0;
+  margin-top : 48px;
+  }
+}

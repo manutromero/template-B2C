@@ -1,0 +1,29 @@
+{
+	"responsive-layout.mobile#page-404": {
+		"title": "Contenedor mobile",
+		"children": ["flex-layout.row#container-image-404-mobile"]
+	},
+	"flex-layout.row#container-image-404-mobile": {
+		"title": "contenedor",
+		"children": [
+			"flex-layout.col#container-card-404",
+			"flex-layout.col#container-image-4044-mobile"
+		],
+		"props": {
+			"blockClass": "container-404"
+		}
+	},
+	"flex-layout.col#container-image-4044-mobile": {
+		"title": "contenedor imagen",
+		"children": ["image#404page-mobile"],
+		"props": {
+			"blockClass": "image-container-404"
+		}
+	},
+	"image#404page-mobile": {
+		"props": {
+			"src": "/arquivos/404-image-mobile.jpg",
+			"blockClass": "404page-image"
+		}
+	}
+}

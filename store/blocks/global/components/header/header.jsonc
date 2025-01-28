@@ -1,0 +1,48 @@
+{
+	"logo#logo": {
+		"title": "Logo",
+		"props": {
+			"title": "Logo",
+			"href": "/",
+			"url": "/arquivos/Logo-ITG.svg",
+			"width": 125,
+			"height": 55,
+			"blockClass": "logo"
+		}
+	},
+
+	//navbar links
+	"link#promotions": {
+		"props": {
+			"label": "PROMOCIONES",
+			"href": "/promociones",
+			"blockClass": "promotions"
+		}
+	},
+	"link#about-us": {
+		"props": {
+			"label": "Sobre Nosotros",
+			"href": "/sobre-nosotros",
+			"blockClass": "about-us"
+		}
+	},
+	"link#contact": {
+		"props": {
+			"label": "Contáctanos",
+			"href": "/",
+			"blockClass": "contact"
+		}
+	},
+
+	// menu
+	"category-menu": {
+		"props": {
+			"mobileMode": true,
+			"showAllDepartments": true,
+			"showSubcategories": true,
+			"menuDisposition": "center",
+			"departments": [],
+			"sortSubcategories": "name"
+		}
+	}
+}

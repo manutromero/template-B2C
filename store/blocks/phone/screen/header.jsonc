@@ -1,0 +1,16 @@
+{
+	"header-layout.mobile": {
+		"title": "Header layout mobile",
+		"children": ["sticky-layout#mobile"]
+	},
+	"sticky-layout#mobile": {
+		"children": [
+			"flex-layout.row#telemarketing",
+			"header-row#mobile",
+			"header-row#navbar"
+		],
+		"props": {
+			"blockClass": "header-sticky--mobile"
+		}
+	}
+}

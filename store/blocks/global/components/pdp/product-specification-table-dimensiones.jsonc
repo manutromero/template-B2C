@@ -1,0 +1,83 @@
+{
+    "product-specification-group#table-pdp-dimension": {
+        "props": {
+            "filter": {
+                "type": "show",
+                "specificationGroups": [
+                    "Dimensiones"
+                ]
+            }
+        },
+        "children": [
+            "flex-layout.row#spec-group-dimensions"
+        ]
+    },
+    "flex-layout.row#spec-group-dimensions": {
+        "props": {
+            "blockClass": [
+                "productSpecificationGroup",
+                "height-auto"
+            ]
+        },
+        "children": [
+            "flex-layout.col#spec-group-dimensions"
+        ]
+    },
+    "flex-layout.col#spec-group-dimensions": {
+        "children": [
+            "product-specification#-dimensions"
+        ],
+        "props": {
+            "blockClass": "container-pdp-specification"
+        }
+    },
+    "product-specification#-dimensions": {
+        "children": [
+            "flex-layout.row#spec-item-dimensions"
+        ]
+    },
+    "flex-layout.row#spec-item-dimensions": {
+        "props": {
+            "blockClass": "productSpecification-pdp"
+        },
+        "children": [
+            "flex-layout.col#spec-name-dimensions",
+            "flex-layout.col#spec-value-dimensions"
+        ]
+    },
+    "flex-layout.col#spec-name-dimensions": {
+        "props": {
+            "blockClass": "productSpecificationName",
+            "width": {
+                "mobile": "50%",
+                "desktop": "25%"
+            }
+        },
+        "children": [
+            "product-specification-text#specification-dimensions"
+        ]
+    },
+    "flex-layout.col#spec-value-dimensions": {
+        "props": {
+            "blockClass": "productSpecificationValue"
+        },
+        "children": [
+            "product-specification-values#-dimensions"
+        ]
+    },
+    "product-specification-values#-dimensions": {
+        "children": [
+            "product-specification-text#value-dimensions"
+        ]
+    },
+    "product-specification-text#specification-dimensions": {
+        "props": {
+            "message": "{specificationName}"
+        }
+    },
+    "product-specification-text#value-dimensions": {
+        "props": {
+            "message": "{specificationValue}"
+        }
+    }
+}

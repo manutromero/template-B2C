@@ -1,0 +1,201 @@
+{
+	"disclosure-layout-group#group-page-static-modular": {
+		"children": [
+			"disclosure-layout#asks-one",
+			"disclosure-layout#asks-two",
+            "disclosure-layout#asks-three",
+            "disclosure-layout#asks-four",
+            "disclosure-layout#asks-five"
+		]
+	},
+    "disclosure-state-indicator#tab-static": {
+		"props": {
+			"Show": "icon#plus-tab-blue",
+			"Hide": "icon#minus-tab-blue"
+		}
+	},
+	"icon#minus-tab-blue": {
+		"props": {
+			"id": "minus-tab-blue",
+			"size": "24",
+			"activeClassName": "vtex-blue-icon"
+		}
+	},
+	"icon#plus-tab-blue": {
+		"props": {
+			"id": "plus-tab-blue",
+			"size": "24",
+			"activeClassName": "vtex-blue-icon"
+		}
+	},
+	//asks - one
+	"disclosure-layout#asks-one": {
+		"children": [
+			"disclosure-trigger#asks-one",
+			"disclosure-content#asks-one"
+		],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+	"disclosure-trigger#asks-one": {
+		"children": ["rich-text#asks-one", "disclosure-state-indicator#tab-static"],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+    "rich-text#asks-one": {
+		"props": {
+			"text": "¿Cómo puedo realizar un pedido en su tienda en línea?",
+            "blockClass": "asks-one"
+		}
+	},
+	"disclosure-content#asks-one": {
+		"children": ["rich-text#asks-one-text"],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+    "rich-text#asks-one-text": {
+		"props": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam felis et orci aliquam mollis. Nam dui ipsum, malesuada non convallis et, vestibulum quis ipsum. Praesent aliquet vestibulum massa sed ornare. Sed lobortis fringilla dignissim. Fusce sollicitudin tincidunt dui, in vehicula eros mollis a. Sed euismod libero nec est tincidunt, eget sollicitudin eros efficitur. Vestibulum sit amet justo scelerisque, placerat odio at, varius ligula. Suspendisse maximus nunc magna, nec faucibus nisi facilisis nec. Nullam mi risus, feugiat quis fermentum quis, tristique sit amet libero. Integer sit amet est mauris.",
+            "blockClass": "asks-one-text"
+		}
+	},
+    //asks - two
+	"disclosure-layout#asks-two": {
+		"children": [
+			"disclosure-trigger#asks-two",
+			"disclosure-content#asks-two"
+		],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+	"disclosure-trigger#asks-two": {
+		"children": ["rich-text#asks-two", "disclosure-state-indicator#tab-static"],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+    "rich-text#asks-two": {
+		"props": {
+			"text": "¿Qué opciones de pago están disponibles en su sitio web?",
+            "blockClass": "asks-one"
+		}
+	},
+	"disclosure-content#asks-two": {
+		"children": ["rich-text#asks-two-text"],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+    "rich-text#asks-two-text": {
+		"props": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam felis et orci aliquam mollis. Nam dui ipsum, malesuada non convallis et, vestibulum quis ipsum. Praesent aliquet vestibulum massa sed ornare. Sed lobortis fringilla dignissim. Fusce sollicitudin tincidunt dui, in vehicula eros mollis a. Sed euismod libero nec est tincidunt, eget sollicitudin eros efficitur. Vestibulum sit amet justo scelerisque, placerat odio at, varius ligula. Suspendisse maximus nunc magna, nec faucibus nisi facilisis nec. Nullam mi risus, feugiat quis fermentum quis, tristique sit amet libero. Integer sit amet est mauris.",
+            "blockClass": "asks-one-text"
+		}
+	},
+    //asks - three
+	"disclosure-layout#asks-three": {
+		"children": [
+			"disclosure-trigger#asks-three",
+			"disclosure-content#asks-three"
+		],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+	"disclosure-trigger#asks-three": {
+		"children": ["rich-text#asks-three", "disclosure-state-indicator#tab-static"],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+    "rich-text#asks-three": {
+		"props": {
+			"text": "¿Cuánto tiempo tarda el envío y cuánto cuesta?",
+            "blockClass": "asks-one"
+		}
+	},
+	"disclosure-content#asks-three": {
+		"children": ["rich-text#asks-three-text"],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+    "rich-text#asks-three-text": {
+		"props": {
+			"text": "En algunos casos, el costo de envío puede variar según el peso o el tamaño del paquete, la ubicación del destinatario y la opción de envío seleccionada. Algunos ecommerce también ofrecen envío gratuito para pedidos superiores a un cierto monto.",
+            "blockClass": "asks-one-text"
+		}
+	},
+    //asks - four
+	"disclosure-layout#asks-four": {
+		"children": [
+			"disclosure-trigger#asks-four",
+			"disclosure-content#asks-four"
+		],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+	"disclosure-trigger#asks-four": {
+		"children": ["rich-text#asks-four", "disclosure-state-indicator#tab-static"],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+    "rich-text#asks-four": {
+		"props": {
+			"text": "¿Puedo cancelar mi pedido después de haberlo realizado?",
+            "blockClass": "asks-one"
+		}
+	},
+	"disclosure-content#asks-four": {
+		"children": ["rich-text#asks-four-text"],
+        "props":{
+            "blockClass": "asks-content"
+        }
+	},
+    "rich-text#asks-four-text": {
+		"props": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam felis et orci aliquam mollis. Nam dui ipsum, malesuada non convallis et, vestibulum quis ipsum. Praesent aliquet vestibulum massa sed ornare. Sed lobortis fringilla dignissim. Fusce sollicitudin tincidunt dui, in vehicula eros mollis a. Sed euismod libero nec est tincidunt, eget sollicitudin eros efficitur. Vestibulum sit amet justo scelerisque, placerat odio at, varius ligula. Suspendisse maximus nunc magna, nec faucibus nisi facilisis nec. Nullam mi risus, feugiat quis fermentum quis, tristique sit amet libero. Integer sit amet est mauris.",
+            "blockClass": "asks-one-text"
+		}
+	},
+    //asks - five
+	"disclosure-layout#asks-five": {
+		"children": [
+			"disclosure-trigger#asks-five",
+			"disclosure-content#asks-five"
+		],
+        "props":{
+            "blockClass": ["asks-content", "borderDesktop"]
+        }
+	},
+	"disclosure-trigger#asks-five": {
+		"children": ["rich-text#asks-five", "disclosure-state-indicator#tab-static"],
+        "props":{
+            "blockClass": ["asks-content", "borderDesktop"]
+        }
+	},
+    "rich-text#asks-five": {
+		"props": {
+			"text": "¿Cómo puedo hacer un seguimiento de mi pedido?",
+            "blockClass": "asks-one"
+		}
+	},
+	"disclosure-content#asks-five": {
+		"children": ["rich-text#asks-five-text"],
+        "props":{
+            "blockClass": ["asks-content", "borderDesktop"]
+        }
+	},
+    "rich-text#asks-five-text": {
+		"props": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam felis et orci aliquam mollis. Nam dui ipsum, malesuada non convallis et, vestibulum quis ipsum. Praesent aliquet vestibulum massa sed ornare. Sed lobortis fringilla dignissim. Fusce sollicitudin tincidunt dui, in vehicula eros mollis a. Sed euismod libero nec est tincidunt, eget sollicitudin eros efficitur. Vestibulum sit amet justo scelerisque, placerat odio at, varius ligula. Suspendisse maximus nunc magna, nec faucibus nisi facilisis nec. Nullam mi risus, feugiat quis fermentum quis, tristique sit amet libero. Integer sit amet est mauris.",
+            "blockClass": "asks-one-text"
+		}
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"store.search.product-comparison": {
+		"blocks": ["search-result-layout#global__search-result"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"simulationBehavior": "default",
+				"maxItemsPerPage": 12
+			}
+		}
+	},
+	"store.search.product-comparison#brand": {
+		"blocks": ["search-result-layout#global__search-result"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"simulationBehavior": "default",
+				"maxItemsPerPage": 12
+			}
+		}
+	},
+	"store.search.product-comparison#department": {
+		"blocks": ["search-result-layout#global__search-result"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"simulationBehavior": "default",
+				"maxItemsPerPage": 12
+			}
+		}
+	},
+	"store.search.product-comparison#category": {
+		"blocks": ["search-result-layout#global__search-result"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"simulationBehavior": "default",
+				"maxItemsPerPage": 12
+			}
+		}
+	},
+	"store.search.product-comparison#subcategory": {
+		"blocks": ["search-result-layout#global__search-result"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"simulationBehavior": "default",
+				"maxItemsPerPage": 12
+			}
+		}
+	},
+	"search-result-layout#global__search-result": {
+		"title": "Contenedor Plp",
+		"blocks": [
+			"search-result-layout.desktop.product-comparison#desktop__search-result--layout",
+			"search-result-layout.mobile#mobile__search-result--layout",
+			"search-not-found-layout"
+		],
+		"props": {
+			"preventRouteChange": true
+		}
+	}
+}

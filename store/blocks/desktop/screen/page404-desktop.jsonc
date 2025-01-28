@@ -1,0 +1,76 @@
+{
+	"responsive-layout.desktop#page-404": {
+		"title": "Contenedor desktop",
+		"children": ["flex-layout.row#container-image-404"]
+	},
+	"flex-layout.row#container-image-404": {
+		"title": "Contendor Imagen - card 404",
+		"children": [
+			"flex-layout.col#container-image-4044",
+			"flex-layout.col#container-card-404"
+		],
+		"props": {
+			"blockClass": "container-404",
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"flex-layout.col#container-image-4044": {
+		"title": "Contenedor imagen",
+		"children": ["image#404page"],
+		"props": {
+			"blockClass": "image-container-404",
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"image#404page": {
+		"props": {
+			"src": "/arquivos/404-image.jpg",
+			"blockClass": "404page-image"
+		}
+	},
+	"flex-layout.col#container-card-404": {
+		"title": "Contenedor card textos 404",
+		"children": [
+			"rich-text#card-text-one",
+			"rich-text#card-text-two",
+			"rich-text#card-text-three",
+			"link#button-home"
+		],
+		"props": {
+			"blockClass": ["card-404", "card__404-mobile"],
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true
+		}
+	},
+	"rich-text#card-text-one": {
+		"title": "Titulo Algo salio mal",
+		"props": {
+			"blockClass": "title-card-one",
+			"text": "Algo salió Mal"
+		}
+	},
+	"rich-text#card-text-two": {
+		"title": "Subtitulo card",
+		"props": {
+			"blockClass": "title-card-two",
+			"text": "(Error 404)"
+		}
+	},
+	"rich-text#card-text-three": {
+		"title": "Texto card",
+		"props": {
+			"blockClass": "title-card-three",
+			"text": "No encontramos la página que buscas. <br> Intenta ir al inicio de nuevo."
+		}
+	},
+	"link#button-home": {
+		"title": "Boton para volver al home",
+		"props": {
+			"href": "/",
+			"label": "Ir al inicio",
+			"blockClass": "button-home-404"
+		}
+	}
+}

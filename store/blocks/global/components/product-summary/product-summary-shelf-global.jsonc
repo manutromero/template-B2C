@@ -1,0 +1,24 @@
+{
+	"product-summary.shelf#products-global": {
+		"children": [
+			"product-summary-image#global",
+			"product-summary-brand",
+			"product-summary-name",
+			"product-summary-price",
+			"flex-layout.row#button-add-to-cart"
+		],
+		"props": {
+			"blockClass": "vitrina-home"
+		}
+	},
+	"product-summary-image#global": {
+		"props": {
+			"showBadge": false,
+			"aspectRatio": {
+				"desktop": "3:4",
+				"mobile": "1:1"
+			},
+			"blockClass": "imagen-summary"
+		}
+	}
+}

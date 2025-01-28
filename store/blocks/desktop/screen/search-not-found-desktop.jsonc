@@ -1,0 +1,117 @@
+{
+	"responsive-layout.desktop#search-not-found": {
+		"title": "Contenedor Desktop",
+		"children": [
+			"flex-layout.row#container-text-search",
+			"flex-layout.row#shopByCategorySection-search",
+			"__fold__",
+			"flex-layout.row#wrapper-slider-search"
+		]
+	},
+	"flex-layout.row#container-text-search": {
+		"title": "Contenedor OOPS",
+		"children": [
+			"rich-text#not-found-oops",
+			"flex-layout.col#container-text-search-two"
+		],
+		"props": {
+			"blockClass": "wrapper-search"
+		}
+	},
+	"rich-text#not-found-oops": {
+		"props": {
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"text": "OOPS!",
+			"blockClass": "search-oops"
+		}
+	},
+	"flex-layout.col#container-text-search-two": {
+		"title": "Contenedor de textos secundarios",
+		"children": ["not-found", "rich-text#not-found-text-two"],
+		"props": {
+			"blockClass": "wrapper-search"
+		}
+	},
+	"rich-text#not-found-text-two": {
+		"props": {
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"blockClass": ["search-text", "search-text-two"],
+			"text": "Puedes buscar con otros términos"
+		}
+	},
+	"flex-layout.row#shopByCategorySection-search": {
+		"props": {
+			"blockClass": ["showcaseSection", "search-category"],
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#wrapper-col-shopByCategorySection-search"]
+	},
+	"flex-layout.col#wrapper-col-shopByCategorySection-search": {
+		"title": "Contenedor Category Section",
+		"props": {
+			"blockClass": "showcaseSection",
+			"fullWidth": true
+		},
+		"children": [
+			"flex-layout.row#titleShopByCategorySection-search",
+			"slider-layout#sliderShopByCategorySection"
+		]
+	},
+	"flex-layout.row#titleShopByCategorySection-search": {
+		"title": "Contenedor titulo Category Section",
+		"props": {
+			"blockClass": "titleShopByBrandSection"
+		},
+		"children": ["rich-text#title-category-section-search"]
+	},
+	"rich-text#title-category-section-search": {
+		"title": "Titulo Categorías",
+		"props": {
+			"blockClass": ["shopByBrandTitle", "searchCategory"],
+			"text": "Busca por categorías",
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"font": "t-heading-2"
+		}
+	},
+	"flex-layout.row#wrapper-slider-search": {
+		"title": "Slider vitrinas",
+		"props": {
+			"blockClass": ["Wrapper-home", "search-slider"],
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#wrapper-col-slider-search"]
+	},
+	"flex-layout.col#wrapper-col-slider-search": {
+		"title": "Contenedor Category Section",
+		"props": {
+			"blockClass": "showcaseSection",
+			"fullWidth": true
+		},
+		"children": [
+			"rich-text#title-collection-section-search",
+			"list-context.product-list#products-global-search"
+		]
+	},
+	"rich-text#title-collection-section-search": {
+		"title": "Titulo Recomendados para ti",
+		"props": {
+			"blockClass": ["shopByBrandTitle", "title-collection-section-search"],
+			"text": "Recomendados para ti",
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"font": "t-heading-2"
+		}
+	},
+	"list-context.product-list#products-global-search": {
+		"blocks": ["product-summary.shelf#products-global"],
+		"children": ["slider-layout#products-global-shelf"],
+		"props": {
+			"category": "2",
+			"orderBy": "OrderByTopSaleDESC",
+			"blockClass": "vitrina-mobile-home"
+		}
+	}
+}

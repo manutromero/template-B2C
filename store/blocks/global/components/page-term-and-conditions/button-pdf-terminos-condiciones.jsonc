@@ -1,0 +1,176 @@
+{
+    "flex-layout.col#container-button-terminos-condiciones-one": {
+        "title": "Contendor botones pdf bloque 1",
+        "children": [
+            "link#pdf-1-terminos",
+            "link#pdf-2-terminos",
+            "link#pdf-3-terminos",
+            "link#pdf-4-terminos"
+        ],
+        "props": {
+            "blockClass": "container-buttons-pdf",
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        }
+    },
+    "flex-layout.col#container-button-terminos-condiciones-two": {
+        "title": "Contendor botones pdf bloque 2",
+        "children": [
+            "link#pdf-5-terminos",
+            "link#pdf-6-terminos",
+            "link#pdf-7-terminos",
+            "link#pdf-8-terminos"
+        ],
+        "props": {
+            "blockClass": "container-buttons-pdf",
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        }
+    },
+    "icon#caret-right": {
+        "title": "icono",
+        "props": {
+            "id": "nav-thin-caret--right",
+            "size": "18",
+            "activeClassName": "vtex-blue-icon"
+        }
+    },
+    "link#pdf-1-terminos": {
+        "title": "Button política general garantía",
+        "props": {
+            "href": "/",
+            "label": "Política general de garantía",
+            "target": "_blank",
+            "displayMode": "button",
+            "buttonProps": {
+                "variant": "secundary",
+                "size": "regular"
+            },
+            "blockClass": "button-pdf-terminos"
+        },
+        "children": [
+            "icon#caret-right"
+        ]
+    },
+    "link#pdf-2-terminos": {
+        "title": "Button política privacidad datos",
+        "props": {
+            "href": "/",
+            "label": "Política de privacidad de datos del cliente",
+            "target": "_blank",
+            "displayMode": "button",
+            "buttonProps": {
+                "variant": "secundary",
+                "size": "regular"
+            },
+            "blockClass": "button-pdf-terminos"
+        },
+        "children": [
+            "icon#caret-right"
+        ]
+    },
+    "link#pdf-3-terminos": {
+        "title": "Button política servicio reparación",
+        "props": {
+            "href": "/",
+            "label": "Política de Servicio de reparación y mantenimento",
+            "target": "_blank",
+            "displayMode": "button",
+            "buttonProps": {
+                "variant": "secundary",
+                "size": "regular"
+            },
+            "blockClass": "button-pdf-terminos"
+        },
+        "children": [
+            "icon#caret-right"
+        ]
+    },
+    "link#pdf-4-terminos": {
+        "title": "Button política garantía ceramica",
+        "props": {
+            "href": "/",
+            "label": "Política de garantía para cerámica",
+            "target": "_blank",
+            "displayMode": "button",
+            "buttonProps": {
+                "variant": "secundary",
+                "size": "regular"
+            },
+            "blockClass": "button-pdf-terminos"
+        },
+        "children": [
+            "icon#caret-right"
+        ]
+    },
+    "link#pdf-5-terminos": {
+        "title": "Button tiempo garantía linea",
+        "props": {
+            "href": "/",
+            "label": "Tiempo de garantía por línea de producto",
+            "target": "_blank",
+            "displayMode": "button",
+            "buttonProps": {
+                "variant": "secundary",
+                "size": "regular"
+            },
+            "blockClass": "button-pdf-terminos"
+        },
+        "children": [
+            "icon#caret-right"
+        ]
+    },
+    "link#pdf-6-terminos": {
+        "title": "Button política servicio visitas",
+        "props": {
+            "href": "/",
+            "label": "Política de Servicio de visitas e Instalación de equipos",
+            "target": "_blank",
+            "displayMode": "button",
+            "buttonProps": {
+                "variant": "secundary",
+                "size": "regular"
+            },
+            "blockClass": "button-pdf-terminos"
+        },
+        "children": [
+            "icon#caret-right"
+        ]
+    },
+    "link#pdf-7-terminos": {
+        "title": "Button política garantia producto",
+        "props": {
+            "href": "/",
+            "label": "Política de garantía de productos LG",
+            "target": "_blank",
+            "displayMode": "button",
+            "buttonProps": {
+                "variant": "secundary",
+                "size": "regular"
+            },
+            "blockClass": "button-pdf-terminos"
+        },
+        "children": [
+            "icon#caret-right"
+        ]
+    },
+    "link#pdf-8-terminos": {
+        "title": "Button política garantia pintura",
+        "props": {
+            "href": "/",
+            "label": "Política de garantía para pintura",
+            "target": "_blank",
+            "displayMode": "button",
+            "buttonProps": {
+                "variant": "secundary",
+                "size": "regular"
+            },
+            "blockClass": "button-pdf-terminos"
+        },
+        "children": [
+            "icon#caret-right"
+        ]
+    }
+}

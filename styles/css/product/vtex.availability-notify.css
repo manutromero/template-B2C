@@ -1,0 +1,76 @@
+.content {
+  flex-direction: column;
+}
+
+.title {
+  color: var(--Dark-Mid, #525A62);
+  font-family: 'latoRegular';
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.notifyLabel {
+  color: var(--Dark-Mid, #525A62);
+  font-size: 14px;
+  font-family: 'latoRegular';
+}
+
+.submit :global(.vtex-button) {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 32px;
+  border: 1px solid var(--Primary-Prpura-800, #492A77);
+  color: var(--Primary-Prpura-800, #492A77);
+  text-transform: capitalize;
+  font-family: 'latoRegular';
+  font-size: 18px;
+}
+
+.inputName :local(label[class="vtex-input w-100"]) :local(div[class="vtex-input-prefix__group flex flex-row items-stretch overflow-hidden br2 bw1 b--solid b--muted-4 hover-b--muted-3 h-regular "]):hover, .inputName :local(label[class="vtex-input w-100"]) :local(div[class="vtex-input-prefix__group flex flex-row items-stretch overflow-hidden br2 bw1 b--solid b--muted-4 hover-b--muted-3 h-regular "]):focus {
+  border-color: var(--Brand-Purple-700, #6D00CC)!important;
+  border: 1px solid;
+  background-color: var(--Neutral-Background, #F5F4F6);
+}
+.inputName :local(div[class="vtex-input-prefix__group flex flex-row items-stretch overflow-hidden br2 bw1 b--solid b--muted-2 h-regular "]) {
+  border-color: var(--Brand-Purple-700, #6D00CC)   !important;
+  border: 1px solid;
+  background-color: var(--Neutral-Background, #F5F4F6);
+}
+
+.inputName :local(input[class="vtex-styleguide-9-x-input ma0 border-box vtex-styleguide-9-x-hideDecorators vtex-styleguide-9-x-noAppearance br2   w-100 bn outline-0 bg-base c-on-base b--muted-2 t-body ph5 "]), .inputName :local(input[class="vtex-styleguide-9-x-input ma0 border-box vtex-styleguide-9-x-hideDecorators vtex-styleguide-9-x-noAppearance br2   w-100 bn outline-0 bg-base c-on-base b--muted-4 hover-b--muted-3 t-body ph5 "]) {
+  background-color: var(--Neutral-Background, #F5F4F6) !important;
+}
+
+.inputName :local(div[class="vtex-input-prefix__group flex flex-row items-stretch overflow-hidden br2 bw1 b--solid b--muted-4 hover-b--muted-3 h-regular "]) {
+  border-style: none;
+}
+
+.inputEmail :local(label[class="vtex-input w-100"]) :local(div[class="vtex-input-prefix__group flex flex-row items-stretch overflow-hidden br2 bw1 b--solid b--muted-4 hover-b--muted-3 h-regular "]):hover, .inputName :local(label[class="vtex-input w-100"]) :local(div[class="vtex-input-prefix__group flex flex-row items-stretch overflow-hidden br2 bw1 b--solid b--muted-4 hover-b--muted-3 h-regular "]):focus {
+  border-color: var(--Brand-Purple-700, #6D00CC)!important;
+  border: 1px solid;
+  background-color: var(--Neutral-Background, #F5F4F6);
+}
+.inputEmail :local(div[class="vtex-input-prefix__group flex flex-row items-stretch overflow-hidden br2 bw1 b--solid b--muted-2 h-regular "]) {
+  border-color: var(--Brand-Purple-700, #6D00CC)   !important;
+  border: 1px solid;
+  background-color: var(--Neutral-Background, #F5F4F6);
+}
+
+.inputEmail :local(input[class="vtex-styleguide-9-x-input ma0 border-box vtex-styleguide-9-x-hideDecorators vtex-styleguide-9-x-noAppearance br2   w-100 bn outline-0 bg-base c-on-base b--muted-2 t-body ph5 "]), .inputEmail :local(input[class="vtex-styleguide-9-x-input ma0 border-box vtex-styleguide-9-x-hideDecorators vtex-styleguide-9-x-noAppearance br2   w-100 bn outline-0 bg-base c-on-base b--muted-4 hover-b--muted-3 t-body ph5 "])  {
+  background-color: var(--Neutral-Background, #F5F4F6) !important;
+}
+
+.inputEmail :local(div[class="vtex-input-prefix__group flex flex-row items-stretch overflow-hidden br2 bw1 b--solid b--muted-4 hover-b--muted-3 h-regular "]) {
+  border-style: none;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .notifyLabel {
+    font-size: 16px;
+  }
+}

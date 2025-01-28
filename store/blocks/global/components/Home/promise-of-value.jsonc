@@ -1,0 +1,47 @@
+{
+	"flex-layout.row#wrapper-banners-promise-home": {
+		"props": {
+			"blockClass": "wrapper-banners-sections-home",
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#banners-promise-sections-home"]
+	},
+	"flex-layout.col#banners-promise-sections-home": {
+		"props": {
+			"blockClass": "banners-00-sections-home-col",
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#banners-11-sections-home"]
+	},
+	"flex-layout.col#banners-11-sections-home": {
+		"title": "Promesa de valor",
+		"props": {
+			"blockClass": "banners-01-sections-home-col",
+			"fullWidth": true
+		},
+		"children": [
+			"responsive-layout.desktop#banner-home-11",
+			"responsive-layout.mobile#banner-home-11"
+		]
+	},
+	"responsive-layout.desktop#banner-home-11": {
+		"title": "wrapper banner 11 desktop",
+		"children": ["image#banner-desktop-home-11"]
+	},
+	"responsive-layout.mobile#banner-home-11": {
+		"title": "wrapper banner 11 phone",
+		"children": ["image#banner-phone-home-11"]
+	},
+	"image#banner-desktop-home-11": {
+		"title": "Banner 11 desktop",
+		"props": {
+			"src": "arquivos/info-banner.jpg"
+		}
+	},
+	"image#banner-phone-home-11": {
+		"title": "Banner 11 mobile",
+		"props": {
+			"src": "/arquivos/info-banner-mobile.jpg"
+		}
+	}
+}

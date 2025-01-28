@@ -1,0 +1,31 @@
+{
+  "list-context.product-list#products-global": {
+    "title": "Vitrina de productos",
+    "blocks": [
+      "product-summary.shelf#products-global"
+    ],
+    "children": [
+      "slider-layout#products-global-shelf"
+    ],
+    "props": {
+      "collection": "143",
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "vitrina-mobile-home"
+    }
+  },
+  "slider-layout#products-global-shelf": {
+    "title": "Configuraciones Slider - Productos",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "slide-vitrina-home",
+      "showNavigationArrows": "desktopOnly",
+      "centerMode": "to-the-left",
+      "centerModeSlidesGap": 2
+    }
+  }
+}

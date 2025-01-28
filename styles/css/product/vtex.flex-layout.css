@@ -1,0 +1,256 @@
+/* Base styles - Mobile First */
+.flexRow--breadcrumb-pdp {
+  margin   : 0 auto;
+  max-width: 1440px;
+  padding  : 0 12px;
+}
+
+.flexRow--product-pdp {
+  margin        : 0 auto;
+  max-width     : 1074px;
+  padding       : 20px 12px;
+}
+
+.flexRowContent--product-pdp {
+  display       : flex;
+  flex-direction: column;
+  margin-top    : 0;
+  padding-bottom: 0;
+  margin-bottom : 0;
+}
+
+.flexCol--rigth-col-container {
+  display       : flex;
+  flex-direction: column;
+  width         : 100%;
+}
+
+.flexRowContent--right-col-one,
+.flexRowContent--right-col-two {
+  display       : flex;
+  flex-direction: column;
+}
+
+.flexColChild--rigth-col-container {
+  width: 100% !important;
+}
+
+.flexRowContent--right-col-one .stretchChildrenWidth,
+.flexRowContent--right-col-two .stretchChildrenWidth {
+  width: 100% !important;
+}
+
+.flexRowContent--right-col-one :global(.vtex-product-identifier-0-x-product-identifier__label) {
+  font-size: 0;
+}
+
+.flexRowContent--right-col-one :global(.vtex-product-identifier-0-x-product-identifier__label)::before {
+  content    : "ID";
+  font-size  : 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color      : var(--grayLig2);
+}
+
+.flexRowContent--right-col-one :global(.vtex-product-identifier-0-x-product-identifier__value),
+.flexRowContent--right-col-one :global(.vtex-product-identifier-0-x-product-identifier__separator) {
+  font-size  : 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color      : var(--grayLig2);
+}
+
+.flexRowContent--product-name :global(.vtex-store-components-3-x-productBrand) {
+  font-size  : 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align : left;
+  color      : var(--dark);
+}
+
+.flexRowContent--list-price-pdp {
+  display        : flex;
+  flex-direction : row;
+  justify-content: flex-start;
+  gap            : 4rem;
+}
+
+.flexRowContent--pdp-button :global(.vtex-button) {
+  background-color: var(--primary);
+  border-color    : var(--primary);
+  width           : 385px;
+}
+
+.flexRowContent--pdp-button :global(.vtex-button):hover {
+  background-color: var(--primaryDark);
+  border-color    : var(--primaryDark);
+}
+
+.flexRowContent--pdp-button :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-size  : 16px;
+  font-weight: 800;
+  line-height: 21.6px;
+  text-align : center;
+  color      : var(--white);
+}
+
+.flexRowContent--pdp-button :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  justify-content: flex-start;
+}
+
+.flexColChild--description {
+  display       : flex;
+  flex-direction: column;
+  margin-top    : 24px;
+}
+
+.flexRow--pdp-slider {
+  margin-bottom: 3rem;
+  margin-top   : 31px;
+}
+
+.flexRow--pdp-slider :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+  bottom: -1rem;
+}
+
+.flexRowContent--pdp-button {
+  padding-right: 1rem;
+  margin-bottom: 0;
+}
+
+.flexColChild--container-pdp-specification .flexRow--productSpecification-pdp:nth-child(2n + 1) {
+  background : var(--lightBlue);
+}
+
+.flexColChild--container-pdp-specification .flexRow--productSpecification-pdp {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  padding        : 1rem 1rem;
+}
+
+.flexColChild--container-pdp-specification .flexRow--productSpecification-pdp:first-child {
+  border-radius: 12px 12px 0 0;
+}
+
+.flexColChild--container-pdp-specification .flexRow--productSpecification-pdp:last-child {
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 8px;
+}
+
+.flexCol--container-pdp-specification {
+  margin-top   : 16px;
+}
+
+.flexRow--description{
+  padding: 0 16px 0 16px;
+}
+
+.flexRowContent--right-col-one {
+  display        : flex;
+  flex-direction : column;
+  justify-content: start;
+  gap            : .5rem;
+  height         : 100%;
+}
+
+.flexRow--right-col-one {
+  height: 100%;
+}
+
+.flexRow--btn-plp {
+  min-height: 71px;
+}
+
+.flexRowContent--payments-pdp .stretchChildrenWidth {
+  width          : 15% !important;
+  padding-right  : 0;
+  justify-content: flex-start;
+}
+
+.flexRowContent--payments-pdp {
+  display        : flex;
+  flex-direction : row;
+  align-items    : center;
+  justify-content: flex-start;
+  gap            : 5px;
+}
+
+.flexRow--pdp-slider :global(.vtex-rich-text-0-x-paragraph--shopByBrandTitle) {
+  color      : var(--dark);
+  font-size  : 24px;
+  font-weight: 700;
+  text-align : left;
+}
+
+.flexRowContent--productSpecificationGroup {
+  border-bottom: 1px solid var(--gray);
+}
+
+/* Media Queries for larger screens */
+@media screen and (min-width: 48.01rem) {
+  .flexRow--breadcrumb-pdp {
+    padding: 0 4.5rem;
+  }
+
+  .flexRowContent--product-pdp {
+    padding-top   : 0;
+    flex-direction: row;
+    margin-bottom : 0;
+  }
+
+  .flexCol--rigth-col-container {
+    flex-direction: row;
+  }
+
+  .flexColChild--rigth-col-container {
+    width: 50%;
+  }
+
+  .flexRowContent--list-price-pdp {
+    justify-content: unset;
+  }
+
+  .flexRowContent--pdp-button :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    font-size: 18px;
+  }
+
+  .flexColChild--description {
+    margin-top: 2rem;
+  }
+
+  .flexRow--pdp-slider :global(.vtex-rich-text-0-x-paragraph--shopByBrandTitle) {
+    font-size: 32px;
+  }
+
+  .flexRowContent--payments-pdp .stretchChildrenWidth {
+    width: 25% !important;
+  }
+
+  .flexRowContent .flexRowContent--productSpecificationGroup {
+    height  : 160px;
+    overflow: overlay;
+  }
+
+  .flexRowContent--height-auto {
+    height: auto !important;
+  }
+}
+
+@media (min-width: 64rem) {
+  .flexRowContent--description-new {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .flexRowContent--description-new .stretchChildrenWidth {
+    width: 100% !important;
+  }
+
+  .flexColChild--container-pdp-specification .flexRow--productSpecification-pdp:nth-child(2n + 1) {
+    background : var(--box-shadow-minicart);
+  }
+  .flexRow--product-pdp {
+    padding-bottom: 32px;
+  }
+}

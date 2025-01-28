@@ -1,0 +1,28 @@
+{
+	"list-context.image-list#banner-phone": {
+		"title": "Banner Home Mobile",
+		"children": ["slider-layout#banners-home-desktop"],
+		"props": {
+			"preload": true,
+			"experimentalSetExplicitDimensions": true,
+			"height": 360,
+			"images": [
+				{
+					"loading": "eager",
+					"image": "/arquivos/banner-home-mobile.png",
+					"description": "Descripción de imagen"
+				},
+				{
+					"loading": "lazy",
+					"image": "/arquivos/banner-home-mobile.png",
+					"description": "Descripción de imagen"
+				},
+				{
+					"loading": "lazy",
+					"image": "/arquivos/banner-home-mobile.png",
+					"description": "Descripción de imagen"
+				}
+			]
+		}
+	}
+}

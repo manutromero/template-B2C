@@ -1,0 +1,124 @@
+{
+	"flex-layout.row#wrapper-banners-sections-home": {
+		"props": {
+			"blockClass": "wrapper-banners-sections-home",
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#banners-00-sections-home"]
+	},
+	"flex-layout.col#banners-00-sections-home": {
+		"title": "Grupo de banners",
+		"props": {
+			"blockClass": "banners-00-sections-home-col",
+			"fullWidth": true
+		},
+		"children": [
+			"flex-layout.col#banners-01-sections-home",
+			"flex-layout.row#banners-02-sections-home"
+		]
+	},
+	"flex-layout.col#banners-01-sections-home": {
+		"title": "Wrapper - Baner 01",
+		"props": {
+			"blockClass": ["banners-01-sections-home-col", "banner-margin"],
+			"fullWidth": true
+		},
+		"children": [
+			"responsive-layout.desktop#banner-home-01",
+			"responsive-layout.mobile#banner-home-01"
+		]
+	},
+	"responsive-layout.desktop#banner-home-01": {
+		"title": "wrapper banner 01 desktop",
+		"children": ["image#banner-desktop-home-01"]
+	},
+	"responsive-layout.mobile#banner-home-01": {
+		"title": "wrapper banner 01 phone",
+		"children": ["image#banner-phone-home-01"]
+	},
+	"image#banner-desktop-home-01": {
+		"title": "Banner 01 desktop",
+		"props": {
+			"src": "/arquivos/info-banner.jpg"
+		}
+	},
+	"image#banner-phone-home-01": {
+		"title": "Banner 01 mobile",
+		"props": {
+			"src": "/arquivos/info-banner-mobile.jpg"
+		}
+	},
+	"flex-layout.row#banners-02-sections-home": {
+		"title": "Wrapper seccion 02 - 03 Banner",
+		"props": {
+			"blockClass": "banners-02-sections-home-row",
+			"fullWidth": true
+		},
+		"children": [
+			"flex-layout.col#banners-02-sections-home",
+			"flex-layout.col#banners-03-sections-home"
+		]
+	},
+	"flex-layout.col#banners-02-sections-home": {
+		"title": "Wrapper - Baner 02",
+		"props": {
+			"blockClass": "banners-02-sections-home-col",
+			"fullWidth": true
+		},
+		"children": [
+			"responsive-layout.desktop#banner-home-02",
+			"responsive-layout.mobile#banner-home-02"
+		]
+	},
+	"responsive-layout.desktop#banner-home-02": {
+		"title": "wrapper banner 02 desktop",
+		"children": ["image#banner-desktop-home-02"]
+	},
+	"responsive-layout.mobile#banner-home-02": {
+		"title": "wrapper banner 02 phone",
+		"children": ["image#banner-phone-home-02"]
+	},
+	"image#banner-desktop-home-02": {
+		"title": "Banner 02 desktop",
+		"props": {
+			"src": "/arquivos/discount-banner.jpg"
+		}
+	},
+	"image#banner-phone-home-02": {
+		"title": "Banner 02 mobile",
+		"props": {
+			"src": "/arquivos/discount-banner-mobile.jpg"
+		}
+	},
+	"flex-layout.col#banners-03-sections-home": {
+		"title": "Wrapper - Baner 03",
+		"props": {
+			"blockClass": "banners-03-sections-home-col",
+			"fullWidth": true
+		},
+		"children": [
+			"responsive-layout.desktop#banner-home-03",
+			"responsive-layout.mobile#banner-home-03"
+		]
+	},
+	"responsive-layout.desktop#banner-home-03": {
+		"title": "wrapper banner 03 desktop",
+		"children": ["image#banner-desktop-home-03"]
+	},
+	"responsive-layout.mobile#banner-home-03": {
+		"title": "wrapper banner 03 phone",
+		"children": ["image#banner-phone-home-03"]
+	},
+	"image#banner-desktop-home-03": {
+		"title": "Banner 03 desktop",
+		"props": {
+			"src": "/arquivos/discount-banner.jpg"
+		}
+	},
+	"image#banner-phone-home-03": {
+		"title": "Banner 03 mobile",
+		"props": {
+			"src": "/arquivos/discount-banner-mobile.jpg"
+		}
+	}
+}

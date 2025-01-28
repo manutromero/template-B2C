@@ -1,0 +1,104 @@
+/* general */
+.headerRowContainer--mobile :global(.vtex-store-components-3-x-logoContainer--logo),
+.headerRowContainer--desktop :global(.vtex-store-components-3-x-logoContainer--logo) {
+  padding: 0;
+}
+
+
+/* Header allowing */
+
+.headerRowContainer--desktop,
+.headerRowContainer--mobile {
+  padding        : 0.5rem 0.75rem;
+  display        : flex;
+  justify-content: space-between;
+  flex-wrap      : wrap;
+  margin         : 0 auto;
+  max-width      : 1440px;
+}
+
+.headerRowContainer--desktop {
+  padding: 0 4rem;
+}
+
+/* Search Bar */
+
+.headerRowContainer--desktop :global(.vtex-store-components-3-x-searchBarContainer),
+.headerRowContainer--mobile :global(.vtex-store-components-3-x-searchBarContainer) {
+  width    : 100%;
+  max-width: none;
+}
+
+.headerRowContainer--desktop :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input-prefix__group),
+.headerRowContainer--mobile :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input-prefix__group) {
+  border-radius: 2rem;
+  height       : 3rem;
+  border-color : transparent;
+}
+
+
+.headerRowContainer--desktop :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input-prefix__group):focus,
+.headerRowContainer--mobile :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input-prefix__group):focus {
+  border-color: var(--primary);
+  transition  : .125s ease-in-out;
+}
+
+.headerRowContainer--desktop :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-styleguide-9-x-input),
+.headerRowContainer--mobile :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-styleguide-9-x-input) {
+  background: var(--primaryLight);
+}
+
+.headerRowContainer--desktop :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input__suffix),
+.headerRowContainer--mobile :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input__suffix) {
+  background: var(--primaryLight);
+}
+
+.headerRowContainer--desktop :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-store-components-3-x-searchIcon--search-bar--desktop),
+.headerRowContainer--mobile :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-store-components-3-x-searchIcon--search-bar--mobile) {
+  margin-top: .35rem;
+  height    : 1.5rem;
+  width     : 1.5rem;
+}
+
+/* media query allowed */
+@media (width > 40rem) {
+
+  .headerRowContainer--desktop,
+  .headerRowContainer--mobile {
+    flex-wrap: nowrap;
+  }
+
+  .headerRowContainer--mobile :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input) {
+    margin-left: 3.5rem;
+  }
+
+  .headerRowContainer--desktop :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input) {
+    margin-left: 1.75rem;
+  }
+}
+
+/* menu */
+
+.headerRow--navbar--mobile {
+  padding       : 0 .75rem;
+  padding-bottom: .75rem;
+  background    : var(--white);
+}
+
+.headerRowContentContainer--navbar--mobile {
+  padding: 0;
+}
+
+.headerRowBackground--navbar--mobile {
+  border-radius: 2rem;
+  padding      : .5rem 0;
+  background   : var(--primaryLight);
+  height       : 3rem;
+  display      : flex;
+  align-items  : center;
+}
+
+.headerRowContainer--navbar--desktop {
+  display        : flex;
+  justify-content: center;
+}

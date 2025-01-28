@@ -1,0 +1,61 @@
+{
+	"flex-layout.row#shopByCategorySection": {
+		"props": {
+			"blockClass": ["showcaseSection", "mobile-category"],
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#wrapper-col-shopByCategorySection"]
+	},
+	"flex-layout.col#wrapper-col-shopByCategorySection": {
+		"title": "Wrapper Categorias Destacadas",
+		"props": {
+			"blockClass": "showcaseSection",
+			"fullWidth": true
+		},
+		"children": [
+			"flex-layout.row#titleShopByCategorySection",
+			"slider-layout#sliderShopByCategorySection"
+		]
+	},
+	"flex-layout.row#titleShopByCategorySection": {
+		"props": {
+			"blockClass": "titleShopByBrandSection"
+		},
+		"children": ["rich-text#title-category-section"]
+	},
+	"rich-text#title-category-section": {
+		"title": "Titulo Categorías",
+		"props": {
+			"blockClass": "shopByBrandTitle",
+			"text": "Compra por categorías",
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"font": "t-heading-2"
+		}
+	},
+	"slider-layout#sliderShopByCategorySection": {
+		"title": "Slider Categorias Destacadas",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 4,
+				"tablet": 3,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "desktopOnly",
+			"blockClass": "slide-vitrina-home",
+			"centerMode": "to-the-left",
+			"centerModeSlidesGap": 16
+		},
+		"children": [
+			"link#category-01",
+			"link#category-02",
+			"link#category-03",
+			"link#category-04",
+			"link#category-05",
+			"link#category-06",
+			"link#category-07",
+			"link#category-08"
+		]
+	}
+}

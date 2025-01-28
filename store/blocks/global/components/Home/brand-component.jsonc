@@ -1,0 +1,62 @@
+{
+	"flex-layout.row#shopByBrandSection": {
+		"props": {
+			"blockClass": ["showcaseSection", "mobile-category"],
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#wrapper-col-shopByBrandSection"]
+	},
+	"flex-layout.col#wrapper-col-shopByBrandSection": {
+		"title": "Marcas Destacadas",
+		"props": {
+			"blockClass": "showcaseSection",
+			"fullWidth": true
+		},
+		"children": [
+			"flex-layout.row#titleShopByBrandSection",
+			"slider-layout#sliderShopByBrandSection"
+		]
+	},
+	"flex-layout.row#titleShopByBrandSection": {
+		"title": "Titulo Marcas Destacadas",
+		"props": {
+			"blockClass": "titleShopByBrandSection"
+		},
+		"children": ["rich-text#title-brand-section"]
+	},
+	"rich-text#title-brand-section": {
+		"title": "Titulo Marcas Destacadas",
+		"props": {
+			"blockClass": "shopByBrandTitle",
+			"text": "Nuestras marcas",
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"font": "t-heading-2"
+		}
+	},
+	"slider-layout#sliderShopByBrandSection": {
+		"title": "Slider - Marcas Destacadas",
+		"props": {
+			"itemsPerPage": {
+				"desktop": 4,
+				"tablet": 3,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "desktopOnly",
+			"blockClass": "slide-vitrina-home",
+			"centerMode": "to-the-left",
+			"centerModeSlidesGap": 16
+		},
+		"children": [
+			"link#brand-01",
+			"link#brand-02",
+			"link#brand-03",
+			"link#brand-04",
+			"link#brand-05",
+			"link#brand-06",
+			"link#brand-07",
+			"link#brand-08"
+		]
+	}
+}

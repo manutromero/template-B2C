@@ -1,0 +1,32 @@
+.element--comparison-page-summary :global(.vtex-product-summary-2-x-nameContainer) {
+  padding: 0 0 8px 0;
+}
+
+.element--comparison-page-summary :global(.vtex-product-summary-2-x-brandName) {
+  font-family: 'latoBold';
+}
+
+.element--comparison-page-summary :global(.vtex-product-summary-2-x-priceContainer) {
+  padding   : 0;
+  min-height: 0;
+}
+
+.element--comparison-page-summary :global(.vtex-product-summary-2-x-currencyContainer) {
+  font-size  : 18px;
+  font-family: 'latoBold';
+  color      : var(--Primary-Prpura-800, #492A77);
+}
+
+.element--comparison-page-summary :global(.vtex-product-summary-2-x-buyButtonText) {
+  display    : flex;
+  align-items: center;
+  gap        : 5px;
+}
+
+.element--comparison-page-summary :global(.vtex-product-summary-2-x-buyButtonText)::after {
+  content: url('/arquivos/shopping-cart-add-01.svg');
+}
+
+.element--comparison-page-summary :global(.vtex-store-components-3-x-container) {
+  padding-bottom: 16.67px;
+}

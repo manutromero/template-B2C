@@ -1,0 +1,157 @@
+{
+    "store.custom#terminos-y-condiciones": {
+        "title": "contenedor terminos y condiciones",
+        "children": [
+            "flex-layout.row#container-breadcrumb-term",
+            "rich-text#terminos-y-condiciones",
+            "flex-layout.row#container-button-terminos-condiciones",
+            "flex-layout.row#container-text-terminos",
+            "flex-layout.row#container-text-user-information",
+            "flex-layout.row#container-buy-with-complete-security",
+            "flex-layout.row#container-for-sales-through-whatsApp"
+        ]
+    },
+    //Breadcrumb
+    "flex-layout.row#container-breadcrumb-term": {
+        "title": "Contendor breadcrumb",
+        "children": [
+            "rich-text#breadcrumb-term"
+        ],
+        "props": {
+            "blockClass": "container-static-content",
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#breadcrumb-term": {
+        "props": {
+            "text": "[**inicio**](/)[/terminos y condiciones](/terminos-y-condiciones) ",
+            "blockClass": "breadcrumb"
+        }
+    },
+    //Title terminos y condiciones
+    "rich-text#terminos-y-condiciones": {
+        "props": {
+            "text": "Términos y condiciones",
+            "blockClass": "title-terminos"
+        }
+    },
+    //Buttons Pdf
+    "flex-layout.row#container-button-terminos-condiciones": {
+        "title": "Contendor botones pdf",
+        "children": [
+            "flex-layout.col#container-button-terminos-condiciones-one",
+            "flex-layout.col#container-button-terminos-condiciones-two"
+        ],
+        "props": {
+            "blockClass": "container-buttons-pdf",
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        }
+    },
+    //text terminos y condiciones
+    "flex-layout.row#container-text-terminos": {
+        "children": [
+            "rich-text#text-terminos"
+        ],
+        "props": {
+            "blockClass": "container-text-terminos",
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "rich-text#text-terminos": {
+        "props": {
+            "text": "Somos una empresa comprometida con ofrecer soluciones de valor para nuestros clientes, que beneficien a nuestra gente, accionistas, clientes, proveedores y comunidad. Por tanto, queremos cumplir con un servicio extraordinario al cliente, con colaboradores comprometidos, que permitan una experiencia única de compra para nuestros clientes. A continuación podés consultas nuestras políticas:",
+            "blockClass": "text-terminos"
+        }
+    },
+    //required-user-information
+    "flex-layout.row#container-text-user-information": {
+        "title": "Contendor texto terminos",
+        "children": [
+            "rich-text#title-required-user-information",
+            "rich-text#text-required-user-information"
+        ],
+        "props": {
+            "blockClass": "container-text-terminos",
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        }
+    },
+    "rich-text#title-required-user-information": {
+        "title": "title",
+        "props": {
+            "text": "Información requerida del usuario",
+            "blockClass": "title-required-user-information"
+        }
+    },
+    "rich-text#text-required-user-information": {
+        "title": "text",
+        "props": {
+            "text": "Formulario Nueva Cuenta www.sinsa.com.ni solicita a los usuarios información personal como su nombre y apellido, correo electrónico, un tipo de identificación, esta puede ser: cédula de identidad, cédula de residencia, RUC o pasaporte, finalmente un número telefónico de contacto. Esta es usada para crear un perfil de cliente que permita brindar una atención personalizada y gozar de promociones exclusivas, así mismo brindar seguimiento a pedidos o compras realizadas. Los datos personales de los clientes registrados en sinsa.com.ni únicamente serán para obtener un perfil completo de cada cliente, y SINSA no traspasará la información bajo ninguna circunstancia a ninguna empresa relacionada o tercera.",
+            "blockClass": "text-required-user-information"
+        }
+    },
+    //buy-with-complete-security
+    "flex-layout.row#container-buy-with-complete-security": {
+        "title": "Contenedor texto compra",
+        "children": [
+            "rich-text#title-buy-with-complete-security",
+            "rich-text#text-buy-with-complete-security"
+        ],
+        "props": {
+            "blockClass": "container-text-terminos",
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        }
+    },
+    "rich-text#title-buy-with-complete-security": {
+        "title": "title",
+        "props": {
+            "text": "Compra con total seguridad",
+            "blockClass": "title-required-user-information"
+        }
+    },
+    "rich-text#text-buy-with-complete-security": {
+        "title": "text",
+        "props": {
+            "text": "SINSA usa un sistema de seguridad llamado SSL (Secure Socket Layer), para transmitir la información de manera encriptada. Esta tecnología es actualmente el estándar para realizar transacciones electrónicas seguras, lo que significa que toda tu información personal no podrá ser leída ni capturada por terceros mientras esta viaja por la red. Nuestro Certificado SSL te garantiza que www.sinsa.com.ni es el único que puede leer tu información. Para tu seguridad y conveniencia también contamos con el programa de seguridad internacional 3DSecure para compras con tarjetas marcas Visa y MasterCard. Además del respaldo de ejecución de transacciones vía BAC.",
+            "blockClass": "text-required-user-information"
+        }
+    },
+    //for-sales-through-whatsApp
+    "flex-layout.row#container-for-sales-through-whatsApp": {
+        "title": "Contenedor texto ventas whatsapp",
+        "children": [
+            "rich-text#title-for-sales-through-whatsApp",
+            "rich-text#text-for-sales-through-whatsApp"
+        ],
+        "props": {
+            "blockClass": [
+                "container-text-terminos",
+                "padding-terminos"
+            ],
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        }
+    },
+    "rich-text#title-for-sales-through-whatsApp": {
+        "title": "title",
+        "props": {
+            "text": "Para ventas a través de Whatsapp",
+            "blockClass": "title-required-user-information"
+        }
+    },
+    "rich-text#text-for-sales-through-whatsApp": {
+        "title": "text",
+        "props": {
+            "text": "Los productos vendidos por nuestro canal digital tienen los precios vigentes a nivel nacional. El costo de envío dependerá del volumen o del peso de su compra y de la zona de entrega. Para mayor información consulte con un agente de ventas en línea a través de nuestro Whatsapp +505 8888 9994",
+            "blockClass": "text-required-user-information"
+        }
+    }
+}

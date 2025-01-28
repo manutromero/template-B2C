@@ -1,0 +1,81 @@
+.containerNormal--vitrina-home :global(.vtex-store-components-3-x-listPriceLabel),
+.containerNormal--vitrina-home :global(.vtex-store-components-3-x-sellingPrice) :global(.vtex-store-components-3-x-sellingPriceLabel) {
+    display: none;
+}
+
+.containerNormal--vitrina-home :global(.vtex-store-components-3-x-listPriceValue) {
+    font-weight : 400;
+    line-height : 16.8px;
+    color       : var(--darkLight);
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.containerNormal--vitrina-home :global(.vtex-store-components-3-x-priceContainer) {
+    justify-content: flex-start;
+    text-align     : left;
+}
+
+.containerNormal--vitrina-home :global(.vtex-store-components-3-x-sellingPrice) {
+    font-weight : 700;
+    line-height : 24px !important;
+    text-align  : left;
+    color       : var(--primary) !important;
+    padding-left: 0;
+    margin-top  : -3px;
+    font-size: 20px;
+}
+
+.element--list-search {
+    display       : flex;
+    flex-direction: row;
+}
+
+.containerNormal--list-search {
+    width    : 100%;
+    max-width: 100% !important;
+}
+
+.containerNormal--list-search .image {
+    border-radius: 24px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--one-product__list) .imageContainer {
+    margin-left: 8px;
+}
+
+.element--vitrina-home :global(.vtex-add-to-cart-button-0-x-buttonText--product-plp-button) {
+    font-size  : 16px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--imagen-product__list) .imageStackContainer {
+    padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--imagen-product__list) .element--list-search {
+    padding: 10px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--imagen-product__list) .imageContainer {
+    height : auto !important;
+    padding: 0;
+}
+
+.imageNormal {
+    border-radius: 20px;
+    min-height: 210px;
+}
+
+.imageWrapper--imagen-summary{
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container--search{
+        min-height: 510px;
+    }
+  }
+  

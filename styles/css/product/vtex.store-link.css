@@ -1,0 +1,18 @@
+.link--comparison-page {
+  justify-content: center;
+  display        : flex;
+  padding-bottom : 55px;
+  text-decoration: none;
+  color          : var(--Primary-Prpura-800, #492A77);
+  font-family    : 'latoRegular';
+  font-size      : 16px;
+  font-style     : normal;
+  font-weight    : 400;
+  line-height    : normal;
+}
+
+.label--comparison-page {
+  border-radius: 100px;
+  border       : 1px solid var(--Primary-Prpura-800, #492A77);
+  padding      : 14px 54.9px;
+}

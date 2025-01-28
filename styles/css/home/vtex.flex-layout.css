@@ -1,0 +1,309 @@
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) {
+  margin         : 0px;
+  max-width      : 100%;
+  display        : flex;
+  justify-content: space-evenly;
+  align-items    : center;
+  flex-direction : column;
+  margin-bottom  : 32px;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-contentForm) :global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-contentForm) :global(.vtex-styleguide-9-x-input) {
+  background-color: var(--grayLight);
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-loginOptionsContainer) {
+  border       : 1px solid var(--gray);
+  border-radius: 32px;
+  margin-top   : 1.5rem;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-contentFormVisible),
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content--emailAndPassword) :global(.vtex-login-2-x-contentForm),
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content--emailVerification) :global(.vtex-login-2-x-contentForm) {
+  border       : 1px solid var(--gray);
+  border-radius: 32px;
+  width        : 336px;
+  margin-top   : 1.5rem;
+  padding      : 48px 32px;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content--emailAndPassword) :global(.vtex-login-2-x-contentForm) {
+  height    : 100%;
+  min-height: 410px;
+  padding   : 28px 32px;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content--emailVerification) :global(.vtex-login-2-x-contentForm) {
+  height    : 100%;
+  max-height: 410px;
+  padding   : 28px 32px 48px;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content--emailAndPassword) :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-formLinkContainer) {
+  margin-right: 20px;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-formFooter) {
+  border: none;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-inputContainerPassword) :global(.vtex-input__suffix) {
+  background-color: var(--grayLight);
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) {
+  padding: 0;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-accessCodeOptionBtn) :global(.vtex-button),
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-emailPasswordOptionBtn) :global(.vtex-button) {
+  width : 272px;
+  height: 48px;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-formTitle) {
+  padding       : 0;
+  display       : flex;
+  flex-direction: column;
+  font-family   : 'latoRegular';
+  font-size     : 16px;
+  color         : var(--darkMid);
+  font-weight   : 500;
+  margin        : 16px 0 24px;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-formTitle)::before {
+  font-family  : 'latoBold';
+  font-weight  : 700;
+  font-size    : 32px;
+  margin-bottom: 24px !important;
+  color        : var(--dark);
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-optionsSticky) :global(.vtex-login-2-x-formTitle)::before {
+  content: 'Método de ingreso';
+  margin : 0% 0% 7% 0%;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-emailVerification) :global(.vtex-login-2-x-formTitle)::before {
+  content: 'Ingresa a tu cuenta';
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-codeConfirmation) :global(.vtex-login-2-x-formTitle)::before {
+  content: 'Ingresa a tu cuenta';
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-loginOptionsContainer) :global(.vtex-login-2-x-optionsSticky) {
+  width          : 336px;
+  min-height     : 253px;
+  padding        : 0 33.5px 0;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  flex-direction : column;
+}
+
+:global(.vtex-login-2-x-dontHaveAccount) {
+  display: none;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-inputContainerPassword) {
+  color    : var(--grayLight);
+  font-size: 0.5rem;
+}
+
+.flexRow--wrapper-login-home {
+  min-height: 433px;
+}
+
+.flexRow--wrapper-login-home :global(.vtex-login-2-x-loading) {
+  display: none;
+}
+
+.flexRowContent--wrapper-brands {
+  display  : flex;
+  flex-wrap: wrap;
+  gap      : 2rem;
+}
+
+/* banner inicio */
+.flexRow--wrapper-banners-sections-home {
+  margin: 12px;
+}
+
+.flexRow--wrapper-banners-sections-home:last-child {
+  margin-bottom: 120px;
+}
+
+.flexCol--banners-03-sections-home-col,
+.flexCol--banners-02-sections-home-col {
+  border-radius  : 24px;
+  overflow       : hidden;
+  text-align     : center;
+  justify-content: center;
+}
+
+.flexCol--banners-03-sections-home-col,
+.flexCol--banners-02-sections-home-col {
+  min-height: 311px;
+  height    : 311px;
+}
+
+.flexCol--banners-01-sections-home-col {
+  min-height     : 128px;
+  margin         : auto;
+  border-radius  : 24px;
+  overflow       : hidden;
+  text-align     : center;
+  justify-content: center;
+}
+
+.flexRowContent--wrapper-banners-04-sections-home {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-around;
+}
+
+.flexRowContent--wrapper-banners-04-sections-home :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 163px !important;
+}
+
+.flexCol--banners-00-sections-home-col .flexColChild--banners-00-sections-home-col {
+  margin   : 0px 0px 16px 0;
+  max-width: 336px;
+}
+
+.flexCol--banners-00-sections-home-col {
+  align-items: center;
+}
+
+.flexRowContent--banners-02-sections-home-row :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  margin: 0px 0px 16px 0;
+}
+
+/* Form Request */
+.flexRow--form-request__container {
+  padding      : 2rem;
+  max-width    : 336px;
+  min-height   : 255px;
+  border-radius: 2rem;
+  border       : 0.0625rem solid var(--gray);
+  margin       : 0 auto;
+
+}
+
+.flexRowContent--form-request__container {
+  display        : flex;
+  flex-direction : column;
+  gap            : 2rem;
+  justify-content: center;
+}
+
+
+.flexRowContent--form-request-allowed__container :global(.vtex-store-link-0-x-link),
+.flexRowContent--form-request__container :global(.vtex-store-link-0-x-link) {
+  background     : var(--primary);
+  width          : 17rem;
+  height         : 3rem;
+  padding        : 0.75rem 1.5rem;
+  border-radius  : 6.25rem;
+  display        : grid;
+  place-content  : center;
+  color          : var(--white);
+  text-decoration: none !important;
+}
+
+.flexRowContent--form-request__container :local(div[class="pr0 items-stretch vtex-flex-layout-0-x-stretchChildrenWidth   flex"]) {
+  width: auto !important;
+}
+
+.flexRow--form-request-allowed__container {
+  width : 100%;
+  margin: 2rem 0 0;
+  height: 18.75rem;
+}
+
+.flexRowContent--form-request-allowed__container {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  flex-direction : column;
+}
+
+.flexRowContent--imagen-register-banner {
+  padding  : 1rem 1rem;
+  max-width: 1250px;
+  margin   : 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 40rem) {}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  .flexRow--Wrapper-home {
+    max-width: 1290px;
+    margin   : auto;
+  }
+
+  .flexCol--banners-00-sections-home-col {
+    max-width: 1290px;
+  }
+
+  .flexCol--banners-03-sections-home-col,
+  .flexCol--banners-02-sections-home-col {
+    min-height: 311px;
+    height    : 311px;
+  }
+
+  .flexCol--banners-01-sections-home-col {
+    min-height: 196px;
+    height    : 196px;
+  }
+
+  /* inicio banners promocionales */
+  .flexColChild--banners-00-sections-home-col {
+    margin: 20px 0px;
+  }
+
+  .flexCol--banners-00-sections-home-col :global(.vtex-flex-layout-0-x-flexColChild--banners-00-sections-home-col) {
+    max-width    : none;
+    margin       : inherit;
+    margin-bottom: 16px;
+  }
+
+  .flexRowContent--banners-02-sections-home-row :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    margin: 0px 16px 16px 0;
+  }
+
+  .flexRowContent--banners-09-sections-home-row :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    margin: 0px 16px 16px 0;
+  }
+
+  /* Fin banners promocionales */
+
+  .flexCol--banner-margin {
+    margin-top   : 35px;
+    margin-bottom: 17px;
+  }
+}
+
+
+@media screen and (max-width: 48rem) {
+  .flexRow--mobile-category {
+    margin-bottom: 3rem;
+  }
+
+  .flexColChild--carousel-home :global(.vtex-slider-layout-0-x-paginationDotsContainer--slide-vitrina-home) {
+    bottom: -0.5rem;
+  }
+
+  .flexColChild--carousel-home {
+    margin-bottom: 30px;
+  }
+}

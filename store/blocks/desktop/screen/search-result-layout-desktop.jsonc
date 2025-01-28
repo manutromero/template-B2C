@@ -1,0 +1,262 @@
+{
+  "search-result-layout.desktop.product-comparison#desktop__search-result--layout": {
+    "title": "Contenedor Plp desktop",
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid",
+      "blockClass": "customQuery"
+    },
+    "children": [
+      "responsive-layout.desktop#search",
+      "responsive-layout.mobile#search"
+    ]
+  },
+  "responsive-layout.desktop#search": {
+    "children": [
+      "flex-layout.row#wrapper_search-result",
+      "flex-layout.row#banner-one"
+    ]
+  },
+  "flex-layout.row#wrapper_search-result": {
+    "props": {
+      "blockClass": "wrapper_search-result",
+      "colGap": 7
+    },
+    "children": [
+      "flex-layout.col#left_search-result",
+      "flex-layout.col#right_search-result"
+    ]
+  },
+  "search-banner#one": {
+    "props": {
+      "area": "one",
+      "blockClass": "myBanner",
+      "horizontalAlignment": "center"
+    }
+  },
+  "flex-layout.row#banner-one": {
+    "children": [
+      "search-banner#one"
+    ]
+  },
+  "flex-layout.col#left_search-result": {
+    "title": "Contenedor filtros",
+    "props": {
+      "width": "25%",
+      "blockClass": "container_filter-desktop"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "filter-navigator.v3": {
+    "blocks": [
+      "sidebar-close-button"
+    ],
+    "props": {
+      "initiallyCollapsed": false,
+      "truncateFilters": true,
+      "maxItemsDepartment": 10,
+      "maxItemsCategory": 10,
+      "navigationTypeOnMobile": "collapsible"
+    }
+  },
+  "flex-layout.col#right_search-result": {
+    "title": "Contenedor de gallery - breadcumb - title",
+    "props": {
+      "width": "76%",
+      "blockClass": "gallery-desktop"
+    },
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#result"
+    ]
+  },
+  "flex-layout.row#searchbread": {
+    "children": [
+      "breadcrumb.search"
+    ],
+    "props": {
+      "blockClass": "wrapper-breadcrumb",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#searchtitle": {
+    "props": {
+      "blockClass": "wrapper-title-search"
+    },
+    "children": [
+      "search-title.v2"
+    ]
+  },
+  "flex-layout.row#result": {
+    "title": "Contenedor gallery",
+    "children": [
+      "flex-layout.col#content"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "result__category"
+    }
+  },
+  "flex-layout.col#content": {
+    "children": [
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#searchinfo": {
+    "title": "Contenedor order by - total productos",
+    "children": [
+      "flex-layout.row#productCount",
+      "flex-layout.row#orderByAndSwitcher"
+    ]
+  },
+  "flex-layout.row#productCount": {
+    "title": "Contenedor total productos",
+    "children": [
+      "total-products.v2"
+    ],
+    "props": {
+      "blockClass": "wrapper-total-products"
+    }
+  },
+  "flex-layout.row#orderByAndSwitcher": {
+    "children": [
+      "order-by.v2",
+      "gallery-layout-switcher"
+    ],
+    "props": {
+      "horizontalAlign": "right",
+      "preventHorizontalStretch": true,
+      "blockClass": "orderByAndSwitcher",
+      "colGap": 3
+    }
+  },
+  "gallery-layout-switcher": {
+    "title": "gallery switcher",
+    "children": [
+      "gallery-layout-option#grid",
+      "gallery-layout-option#list"
+    ]
+  },
+  "gallery-layout-option#grid": {
+    "title": "grid gallery",
+    "props": {
+      "name": "grid"
+    },
+    "children": [
+      "icon-grid",
+      "responsive-layout.desktop#textOptionGrid"
+    ]
+  },
+  "gallery-layout-option#list": {
+    "title": "list gallery",
+    "props": {
+      "name": "list"
+    },
+    "children": [
+      "icon-inline-grid",
+      "responsive-layout.desktop#textOptionList"
+    ]
+  },
+  "responsive-layout.desktop#textOptionGrid": {
+    "children": [
+      "rich-text#option-grid"
+    ]
+  },
+  "responsive-layout.desktop#textOptionList": {
+    "children": [
+      "rich-text#option-list"
+    ]
+  },
+  "rich-text#option-grid": {
+    "title": "texto grid gallery",
+    "props": {
+      "text": "Retícula",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  },
+  "rich-text#option-list": {
+    "title": "texto list gallery",
+    "props": {
+      "text": "Lista",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  },
+  "flex-layout.row#fetchprevious": {
+    "title": "Contenedor boton ver anterior",
+    "props": {
+      "marginBottom": 3,
+      "blockClass": "menos-product"
+    },
+    "children": [
+      "search-fetch-previous"
+    ]
+  },
+  "search-fetch-previous": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
+  "flex-layout.row#products": {
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": {
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+  "gallery": {
+    "props": {
+      "customSummaryInterval": 1,
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1008px)": 3,
+            "(min-width:623px) and (max-width:1007px)": 3,
+            "(max-width:622px)": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "GridSummary": "product-summary.shelf#products-global_grid-search",
+      "ListSummary": "product-summary.shelf#products-global_grid-search__list-search"
+    }
+  },
+  "flex-layout.row#fetchmore": {
+    "title": "Contenedor boton ver mas productos",
+    "props": {
+      "marginTop": 3,
+      "blockClass": "fetchmore-gallery"
+    },
+    "children": [
+      "search-fetch-more"
+    ]
+  },
+  "search-fetch-more": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+	"list-context.image-list#banner-desktop": {
+		"title": "Banner Home desktop",
+		"children": ["slider-layout#banners-home-desktop"],
+		"props": {
+			"height": 650,
+			"images": [
+				{
+					"image": "/arquivos/banner-home.png",
+					"mobileImage": "/arquivos/banner-home-mobile.png",
+					"description": "Descripción de imagen"
+				},
+				{
+					"image": "/arquivos/banner-home.png",
+					"mobileImage": "/arquivos/banner-home-mobile.png",
+					"description": "Descripción de imagen"
+				},
+				{
+					"image": "/arquivos/banner-home.png",
+					"mobileImage": "/arquivos/banner-home-mobile.png",
+					"description": "Descripción de imagen"
+				}
+			]
+		}
+	}
+}

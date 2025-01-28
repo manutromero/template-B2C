@@ -1,0 +1,61 @@
+.flexRowContent--container-text-terminos,
+.flexRow--container-buttons-pdf {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.938rem;
+    padding-right: 0.938rem;
+}
+
+.flexRow--container-text-terminos,
+.flexRow--container-static-content,
+.flexRow--container-buttons-pdf {
+    max-width: 1074px;
+    margin: 0 auto;
+}
+
+.flexRowContent--padding-terminos {
+    padding-bottom: 7rem;
+}
+
+.flexRowContent--container-buttons-pdf {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flexRow--container-buttons-pdf {
+    margin-top: 15px;
+}
+
+.flexRow--container-static-content {
+    padding-left: 0.938rem;
+    padding-right: 0.938rem;
+    max-width: 1074px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.flexRow--width-static__modular {
+    max-width: 1292px;
+    padding-left: 0.938rem !important;
+}
+
+@media (min-width: 64rem) {
+
+    .flexRowContent--container-text-terminos,
+    .flexRow--container-buttons-pdf,
+    .flexRow--container-static-content {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .flexRowContent--padding-terminos {
+        padding-bottom: 3rem;
+    }
+
+    .flexRowContent--container-buttons-pdf {
+        flex-direction: row;
+        gap: 16px;
+    }
+}

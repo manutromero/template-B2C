@@ -1,0 +1,30 @@
+{
+	"flex-layout.row#wrapper-slider": {
+		"props": {
+			"blockClass": "Wrapper-home",
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#wrapper-col-slider"]
+	},
+	"flex-layout.col#wrapper-col-slider": {
+		"title": "Productos Recomendados",
+		"props": {
+			"blockClass": ["showcaseSection", "carousel-home"],
+			"fullWidth": true
+		},
+		"children": [
+			"rich-text#title-collection-section",
+			"list-context.product-list#products-global"
+		]
+	},
+	"rich-text#title-collection-section": {
+		"title": "Titulo Productos Recomendados",
+		"props": {
+			"blockClass": "shopByBrandTitle",
+			"text": "Recomendados para ti",
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"font": "t-heading-2"
+		}
+	}
+}

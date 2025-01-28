@@ -1,0 +1,23 @@
+{
+	"name": "itglobers-store-theme-en",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"cypress:open": "./cypress-local.sh open",
+		"cypress:run": "./cypress-local.sh run",
+		"lint": "eslint --fix ./**/*.jsonc ./**/*.ts ./**/*.js",
+		"format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,jsonc}\""
+	},
+	"repository": "git@github.com:ITGlobers/itglobers-store-theme-en.git",
+	"author": "Daniel Velasco <daniel.velasco@itglobers.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"@eslint/js": "^9.2.0",
+		"cypress": "4.5.0",
+		"eslint": "^9.2.0",
+		"eslint-plugin-jsonc": "^2.15.1",
+		"prettier": "^3.2.5",
+		"typescript": "^5.4.5",
+		"typescript-eslint": "^7.8.0"
+	}
+}

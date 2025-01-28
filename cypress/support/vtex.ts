@@ -1,0 +1,20 @@
+function setVtexIdCookie() {
+	const cookieOptions = {
+		domain: `.${new URL(Cypress.config().baseUrl as string).hostname}`
+	}
+	return cy.setCookie(
+		'VtexIdclientAutCookie',
+		Cypress.env('authToken') as string,
+		cookieOptions
+	)
+}
+
+Cypress.Commands.add('setVtexIdCookie', setVtexIdCookie)
+
+/* eslint-disable */
+declare namespace Cypress {
+	interface Chainable<Subject> {
+		setVtexIdCookie: typeof setVtexIdCookie
+	}
+}
+/* eslint-enable */

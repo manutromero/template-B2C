@@ -1,0 +1,10 @@
+@media (width < 40rem) {
+	.paragraph--drawer-text {
+		display: none;
+	}
+}
+.wrapper--Wrapper-check-permission-text {
+	width: 100%;
+	padding-top: 25px;
+	text-align: center;
+}

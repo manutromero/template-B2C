@@ -1,0 +1,49 @@
+.paragraph--title-info-required-user {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: var(--dark);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.paragraph--text-info-required-user {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: var(--darkMid);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.paragraph--asks-one {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--dark);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.paragraph--asks-one-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: var(--darkMid);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container--asks-one-text {
+    margin: 0px 15px;
+}
+
+@media (min-width: 64rem) {
+    .container--marginBotton-desktop {
+        margin-bottom: 24px;
+    }
+}

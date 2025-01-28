@@ -1,0 +1,5 @@
+@media (width < 64rem) {
+  .container {
+    box-shadow: 0px 16px 16px 8px var(--box-shadow);
+  }
+}

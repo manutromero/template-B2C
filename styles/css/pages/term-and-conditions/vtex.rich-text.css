@@ -1,0 +1,84 @@
+.wrapper--title-terminos .paragraph {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: var(--dark);
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.paragraph--text-terminos,
+.paragraph--text-required-user-information {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: var(--darkMid);
+}
+
+.paragraph--title-required-user-information {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: var(--dark);
+}
+
+.link--text-required-user-information {
+    text-decoration: none;
+    color: var(--darkMid);
+}
+
+.paragraph--text-required-user-information,
+.paragraph--text-terminos {
+    margin-top: 0;
+}
+
+.container--title-terminos {
+    max-width: 1074px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.paragraph--breadcrumb {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: var(--primaryDark);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.strong--breadcrumb {
+    font-size: 0;
+    line-height: normal;
+}
+
+.strong--breadcrumb::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00127 22L8.75064 18.4911C8.61589 16.6046 10.11 15 12.0012 15C13.8925 15 15.3866 16.6046 15.2519 18.4911L15.0012 22" stroke="%230F478A" stroke-width="1.5"/><path d="M2.35139 13.2135C1.99837 10.9162 1.82186 9.76763 2.25617 8.74938C2.69047 7.73112 3.65403 7.03443 5.58114 5.64106L7.02099 4.6C9.41829 2.86667 10.617 2 12 2C13.3831 2 14.5817 2.86667 16.979 4.6L18.4189 5.64106C20.346 7.03443 21.3096 7.73112 21.7439 8.74938C22.1782 9.76763 22.0017 10.9162 21.6486 13.2135L21.3476 15.1724C20.8472 18.4289 20.5969 20.0572 19.429 21.0286C18.2611 22 16.5537 22 13.1388 22H10.8612C7.44634 22 5.73891 22 4.571 21.0286C3.40309 20.0572 3.15287 18.4289 2.65243 15.1724L2.35139 13.2135Z" stroke="%230F478A" stroke-width="1.5" stroke-linejoin="round"/></svg>');
+}
+
+.link--breadcrumb {
+    text-decoration: none;
+    color: var(--primaryDark);
+}
+
+@media (min-width: 64rem) {
+    .container--title-terminos {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .paragraph--breadcrumb {
+        font-size: 18px;
+    }
+}

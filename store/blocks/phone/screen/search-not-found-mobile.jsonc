@@ -1,0 +1,26 @@
+{
+    "responsive-layout.mobile#search-not-found": {
+        "title": "Contenedor Mobile",
+        "children": [
+            "flex-layout.row#container-breadcrumb-search",
+            "flex-layout.row#container-text-search",
+            "__fold__.mobile",
+            "flex-layout.row#shopByCategorySection-search",
+            "flex-layout.row#wrapper-slider-search"
+        ]
+    },
+    "flex-layout.row#container-breadcrumb-search": {
+        "title": "container breadcrumb",
+        "children": [
+            "breadcrumb.search"
+        ],
+        "props": {
+            "blockClass": "breadcrumb-search"
+        }
+    },
+    "breadcrumb.search": {
+        "props": {
+            "showOnMobile": true
+        }
+    }
+}

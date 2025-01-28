@@ -1,0 +1,61 @@
+{
+	"flex-layout.row#footer--mobile": {
+		"title": "Main container",
+		"children": ["flex-layout.col#footer--mobile"],
+		"props": {
+			"blockClass": "footer--mobile",
+			"marginBottom": 0,
+			"marginTop": 0,
+			"fullWidth": true
+		}
+	},
+
+	"flex-layout.col#footer--mobile": {
+		"title": "Main container flex col",
+		"children": [
+			"flex-layout.col#footer__container-top--mobile",
+			"flex-layout.col#footer__container-middle--mobile",
+			"flex-layout.col#footer__container-bottom--mobile"
+		],
+		"props": {
+			"blockClass": "footer--mobile",
+			"fullWidth": true,
+			"preserveLayoutOnMobile": true
+		}
+	},
+
+	// footer top
+	"flex-layout.col#footer__container-top--mobile": {
+		"title": "Footer top",
+		"children": ["logo#logo-white"],
+		"props": {
+			"blockClass": "footer__container-top--mobile",
+			"width": "100%",
+			"horizontalAlign": "center",
+			"verticalAlign": "middle"
+		}
+	},
+
+	//footer middle
+	"flex-layout.col#footer__container-middle--mobile": {
+		"title": "footer middle",
+		"children": ["rich-text#footer-text", "flex-layout.col#footer__links"],
+		"props": {
+			"blockClass": "footer__container-middle--mobile",
+			"horizontalAlign": "center",
+			"verticalAlign": "top",
+			"preventVerticalStretch": true
+		}
+	},
+
+	//footer bottom
+	"flex-layout.col#footer__container-bottom--mobile": {
+		"title": "footer bottom",
+		"children": ["flex-layout.col#footer__rights-reserved"],
+		"props": {
+			"blockClass": "footer__container-bottom--mobile",
+			"verticalAlign": "middle",
+			"horizontalAlign": "center"
+		}
+	}
+}

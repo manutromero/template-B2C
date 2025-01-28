@@ -1,0 +1,378 @@
+.flexRow--header__container-two--mobile,
+.flexRow--header__search-container--desktop {
+  width: 100%;
+}
+
+/* */
+.flexRow--header__container--desktop {
+  width: 100%;
+}
+
+/* Search */
+
+.flexCol--header__search-bar--desktop {
+  max-width: 637px;
+}
+
+/* Order icon */
+
+.flexRowContent--header__container-two--mobile :global(.vtex-store-link-0-x-childrenContainer) {
+  background     : var(--primaryLight);
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  height         : 3rem;
+  width          : 3rem;
+  border-radius  : 50%;
+}
+
+/* Login */
+.flexCol--header__login--desktop {
+  display    : flex;
+  align-items: center;
+}
+
+.flexColChild--header__login--desktop :global(.vtex-button):hover,
+.flexColChild--header__login--mobile :global(.vtex-button):hover {
+  background: transparent;
+}
+
+.flexColChild--header__login--desktop :global(.vtex-button):focus,
+.flexColChild--header__login--mobile :global(.vtex-button):focus {
+  background: white;
+}
+
+.flexColChild--header__login--desktop :global(.vtex-button),
+.flexColChild--header__login--mobile :global(.vtex-button) {
+  position    : relative;
+  margin-left : .4rem;
+  background  : var(--white);
+  border-color: var(--white);
+}
+
+.flexColChild--header__login--mobile :global(.vtex-button)::before {
+  content  : url("/arquivos/Account.svg");
+  position : absolute;
+  top      : 50%;
+  left     : 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flexColChild--header__login--desktop :global(.vtex-button)::before {
+  content  : url("/arquivos/Account.svg");
+  position : absolute;
+  top      : 50%;
+  left     : 0;
+  transform: translate(-50%, -50%);
+}
+
+.flexColChild--header__login--desktop :global(.vtex-button__label) {
+  padding: 0 0 0 .75rem;
+}
+
+.flexColChild--header__login--desktop :global(.vtex-button__label) :global(.vtex-login-2-x-profile) {
+  color: var(--darkMid);
+}
+
+
+/* Minicart */
+
+.flexCol--header__minicart--mobile :global(.vtex-minicart-2-x-openIconContainer) {
+  padding: .5rem;
+}
+
+.flexColChild--header__minicart--desktop :global(.vtex-button):hover,
+.flexColChild--header__minicart--mobile :global(.vtex-button):hover {
+  background: transparent;
+}
+
+.flexColChild--header__minicart--desktop :global(.vtex-button) :global(.vtex-button__label)::after {
+  content        : "Carrito";
+  font-size      : 1rem;
+  text-decoration: none;
+  margin-left    : .5rem;
+  color          : var(--darkMid);
+}
+
+.flexColChild--header__minicart--desktop :global(.vtex-minicart-2-x-minicartContainer) :global(.vtex-minicart-2-x-openIconContainer) {
+  padding: 0;
+}
+
+.flexColChild--header__minicart--mobile :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-minicart-2-x-minicartQuantityBadge),
+.flexColChild--header__minicart--desktop :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-minicart-2-x-minicartQuantityBadge) {
+  top : -.35rem;
+  left: -.45rem;
+}
+
+/* menu */
+
+:local(body[class="bg-base"]) :global(.vtex-category-menu-2-x-animation) {
+  transform: translateX(-128%) !important;
+}
+
+:local(body[class="bg-base vtex-category-menu-2-x-sidebarOpen"]) :global(.vtex-category-menu-2-x-animation) {
+  transform: translateX(0%) !important;
+}
+
+:global(.vtex-category-menu-2-x-animation) {
+  width: auto !important;
+}
+
+.flexColChild--menu__container--mobile :local(div[class="flex pa4 pointer"]) {
+  position: relative;
+}
+
+.flexColChild--menu__container--mobile :local(div[class="flex pa4 pointer"] svg) {
+  display: none;
+}
+
+.flexColChild--menu__container--mobile :local(div[class="flex pa4 pointer"])::before {
+  content  : url('/arquivos/menu-02.svg');
+  transform: scale(1.5);
+  font-size: 20px;
+}
+
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContainer) {
+  background     : var(--primary);
+  border-radius  : 50%;
+  width          : 48px;
+  height         : 48px;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContainer) :global(.vtex-category-menu-2-x-sidebarScrim) {
+  width: 1600px
+}
+
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContainer) :global(.vtex-category-menu-2-x-sidebarScrim),
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarContainer) :global(.vtex-category-menu-2-x-sidebarScrim) {
+  background: var(--primary);
+  left      : 0;
+}
+
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebar) {
+  width        : 336px;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebar)::-webkit-scrollbar,
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebar)::-webkit-scrollbar {
+  display: none;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarContainer) :local(div svg) {
+  transform: scale(1.2);
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarHeader),
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarHeader) {
+  background     : var(--primary);
+  display        : flex;
+  align-items    : center;
+  justify-content: start;
+  gap            : .625rem;
+  margin         : 1.5rem auto .875rem;
+  height         : 3.375rem;
+  border-radius  : 2rem;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarHeader) {
+  width: 345px;
+}
+
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarHeader) {
+  width: 16.125rem;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarHeader)::after,
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarHeader)::after {
+  content    : "Departamentos";
+  font-size  : 1.563rem;
+  font-weight: 400;
+  line-height: 30px;
+  color      : var(--white);
+}
+
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  flex-direction : column;
+  margin-left    : .250rem;
+  margin-right   : 0;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarContent) :local(li),
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li) {
+  width : 311px;
+  margin: 0 auto;
+}
+
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li ul li ul li[class="pa5 pointer t-body c-muted-2 ma0 list"]),
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li ul li ul li[class="list ma0 pa0"]) {
+  width: 300px;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarContent) :local(li span[class="pa5 pointer t-body c-muted-2 ma0 list"]),
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li span[class="pa5 pointer t-body c-muted-2 ma0 list"]) {
+  font-size  : 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  color      : var(--dark);
+}
+
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li ul li ul) :global(.vtex-category-menu-2-x-sidebarItemContainer) {
+  width: 100%;
+}
+
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li) :global(.vtex-category-menu-2-x-sidebarItemContainer) {
+  margin: 0 auto;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarContent) :local(li) :global(.vtex-category-menu-2-x-sidebarItemContainer) :local(span[class="t-body lh-solid"]),
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li) :global(.vtex-category-menu-2-x-sidebarItemContainer) :local(span[class="t-body lh-solid"]) {
+  padding-right: .5rem;
+  font-size    : 16px;
+  font-weight  : 500;
+  line-height  : 19.2px;
+  color        : var(--dark);
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarContent) :local(li) :global(.vtex-category-menu-2-x-sidebarItemContainer):hover,
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li) :global(.vtex-category-menu-2-x-sidebarItemContainer):hover {
+  background   : var(--primaryLight);
+  border-radius: 2rem;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarContent) :local(li ul li:nth-child(2) span),
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li ul li:nth-child(2) span) {
+  color      : var(--primary) !important;
+  font-weight: 400 !important;
+}
+
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li ul li:nth-child(2):hover) {
+  background   : var(--primaryLight);
+  border-radius: 2rem;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarContent) :local(li) :global(.vtex-category-menu-2-x-sidebarItemContainer) :local(span[class="c-on base"]),
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li) :global(.vtex-category-menu-2-x-sidebarItemContainer) :local(span[class="c-on base"]) {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarContent) :local(li) :global(.vtex-category-menu-2-x-sidebarItemContainer) :local(svg),
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li) :global(.vtex-category-menu-2-x-sidebarItemContainer) :local(svg) {
+  transform: scale(.7) translateY(.188rem);
+  color    : var(--dark) !important;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebarContent) :local(li ul li ul li span),
+.flexColChild--menu__container--mobile :global(.vtex-category-menu-2-x-sidebarContent) :local(li ul li ul li span) {
+  color        : var(--primary) !important;
+  font-weight  : 400 !important;
+  padding-right: .5rem;
+}
+
+.flexRowContent--navbar--desktop :global(.vtex-category-menu-2-x-sidebar) {
+  width        : 24.063rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.flexRow--navbar--desktop {
+  background    : var(--primaryLight);
+  border-radius : 2rem;
+  height        : 3.1875rem;
+  max-width     : 1404px;
+  width         : 100%;
+  margin        : 0 1rem;
+  margin-bottom : .25rem;
+  padding-left  : 0.4375rem;
+  display       : flex;
+  flex-direction: row;
+  align-items   : center;
+
+}
+
+.flexCol--navbar__container--desktop {
+  display       : flex;
+  flex-direction: row;
+  gap           : 2.5rem;
+}
+
+.flexColChild--navbar__container--desktop {
+  display    : flex;
+  align-items: center;
+}
+
+.flexCol--navbar__container--desktop {
+  margin-right: 7.5rem;
+}
+
+/* navbar links */
+.flexCol--navbar__container--desktop :global(.vtex-store-link-0-x-link--promotions),
+.flexCol--navbar__container--desktop :global(.vtex-store-link-0-x-link--about-us),
+.flexCol--navbar__container--desktop :global(.vtex-store-link-0-x-link--contact) {
+  font-weight    : 600;
+  text-decoration: none;
+  size           : 1rem;
+  line-height    : 1.25rem;
+}
+
+.flexCol--navbar__container--desktop :global(.vtex-store-link-0-x-link--promotions) {
+  color: var(--primaryDark);
+}
+
+.flexCol--navbar__container--desktop :global(.vtex-store-link-0-x-link--about-us),
+.flexCol--navbar__container--desktop :global(.vtex-store-link-0-x-link--contact) {
+  color: var(--darkMid);
+}
+
+@media (width < 40rem) {
+  .flexCol--header__minicart--mobile :global(.vtex-button__label) {
+    padding: 0;
+  }
+}
+
+@media (width > 26.563rem) {
+  .flexRow--header__container-one--mobile {
+    margin-right: .4rem;
+  }
+}
+
+@media (width > 40rem) {
+
+  .flexRow--header__container-one--mobile,
+  .flexRow--header__container-two--desktop {
+    order: 3;
+  }
+
+  .flexRowContent--navbar--desktop :local(div[class="flex pa4 pointer"]) {
+    padding-left  : 1.5rem;
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    gap           : .5rem;
+    position      : relative;
+    background    : var(--primary);
+    width         : 11.5rem;
+    height        : 2.375rem;
+    border-radius : 2rem;
+  }
+
+  .flexRowContent--navbar--desktop :local(div[class="flex pa4 pointer"])::after {
+    content  : "Departamentos";
+    font-size: 0.875rem;
+    color    : white;
+  }
+}
+
+@media (width > 86.25rem) {
+  .flexCol--navbar__container--desktop {
+    margin-right: 15rem;
+  }
+
+}

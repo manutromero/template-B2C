@@ -1,0 +1,14 @@
+:global(.vtex-order-placed-2-x-confirmationMessage) strong {
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: 700 !important;
+}
+
+:global(.vtex-order-placed-2-x-orderPaymentItem) :global(.t-body) :global(.c-muted-1),
+:global(.vtex-order-placed-2-x-orderPaymentItem) :global(.t-body) :global(.items-center) {
+display: none;
+}
+
+:global(.vtex-order-placed-2-x-productImageWrapper) img {
+    border-radius: 16px;
+}

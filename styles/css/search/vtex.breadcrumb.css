@@ -1,0 +1,25 @@
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  outline: none !important;
+  color: var(--darkMid);
+}
+
+.arrow :local(svg[class=" vtex-breadcrumb-1-x-caretIcon"]) {
+  display: none;
+}
+
+.arrow {
+  padding-right: 0;
+}
+
+
+.link {
+  text-transform: lowercase;
+}
+
+.container .arrow:last-child .link {
+  color: var(--primaryDark);
+}
+

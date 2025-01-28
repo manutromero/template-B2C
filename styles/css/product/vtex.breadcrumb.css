@@ -1,0 +1,51 @@
+/* Base styles - Mobile First */
+.link--pdp {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: var(--darkMid);
+    text-transform: lowercase;
+}
+
+.term--pdp {
+    color: var(--primaryDark);
+}
+
+.term {
+    text-transform: lowercase;
+}
+
+.caretIcon {
+    display: none;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.arrow::before {
+    content: "/";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: var(--darkMid);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 0 24px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 48rem) {
+    .container--pdp {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
