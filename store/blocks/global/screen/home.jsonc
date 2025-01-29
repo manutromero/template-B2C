@@ -18,6 +18,7 @@
     },
     "children": [
       "list-context.image-list#banner-desktop",
+      "wrapper-greeting",
       "flex-layout.row#shopByCategorySection",
       "flex-layout.row#wrapper-slider",
       "__fold__.desktop",
