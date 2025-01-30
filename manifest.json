@@ -1,5 +1,5 @@
 {
-  "vendor": "qamkpmovilidadco",
+  "vendor": "itgloberspartnerpe",
   "name": "template-b2c",
   "version": "0.0.3",
   "builders": {
@@ -62,7 +62,7 @@
     "vtex.my-authentication": "1.x",
     "vtex.store-form": "0.x",
     "vtex.product-comparison": "0.x",
-    "qamkpmovilidadco.frontend-app": "0.x"
+    "itgloberspartnerpe.frontend-app": "0.x"
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x"
